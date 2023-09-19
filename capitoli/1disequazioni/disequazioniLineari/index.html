@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+    <script src="../../../js/monomialAndPolynomial.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title id="titleTag"><!-- Automatico --></title>
+</head>
+
+<body>
+        <br>
+        <div id="chapterNumber" style="display: none;">1</div>
+        <div id="paragraphTitle" style="display: none;">Disequazioni lineari</div>
+        
+        <div class="gray"> 
+            <div class="homeIconContainer">
+                <a href="../../indiceMateriale.html"><img class="homeIcon" src="../../../css/img/home.png"></a>
+            </div>
+            
+            <code><b id="bTagTitoloCapitolo">
+                <!-- Automatico -->
+            </b></code> 
+            <br>
+            <div class="select">
+                <div class="selected-option"><code><b id="bTagTitoloParagrafo">/ <!-- Automatico --></b></code></div>
+                <div class="dropdown">
+                    <!-- Automatico -->
+                </div>
+            </div>            
+        </div>
+
+        <br>
+
+        <nav class="navigationBar">
+            <div onclick="changeParagraph(`previous`)" class="item prev">
+                <img class="icon" src="../../../css/img/leftArrow.png">
+            </div>
+            <div class="item explanationButton">
+                <div onclick="showExplanation()"><img class="icon" src="../../../css/img/presentation.png"></div>
+            </div>
+            <div class="item exerciseButton">
+                <div onclick="showExercise()"><img class="icon" src="../../../css/img/homework.png"></div>
+            </div>
+            <div onclick="changeParagraph(`next`)" class="item next">
+                <img class="icon" src="../../../css/img/rightArrow.png">
+            </div>
+        </nav>
+
+        <br>
+
+    
+
+        <section class="explanation">
+    
+            <div class="h3">
+                <span class="sub-par" id="paragraphCircledNumber"><!-- Automatico --></span>
+                <h3 id="h3ParagraphTitle"><!-- Automatico --></h3>
+            </div>
+            
+            <br>
+
+            <div>
+
+                <h3 class="blue">Introduzione</h3>
+                <br>
+                
+                Consideriamo la diseguaglianza vera
+                \[
+                    10 \gt 2
+                \]
+                <ul>
+                    <li>
+                        <u>Sommiamo</u> la stessa quantità al membro sinistro e destro della diseguaglianza:
+                        \[
+                            \begin{align*}
+                                10 \color{red}{} + 3 \color{black}{} &\gt 2 \color{red}{} + 3
+                                \\\\
+                                13 &\gt 5
+                            \end{align*}
+                        \]
+                        Da una diseguaglianza <b>vera</b> ne abbiamo ottenuta un'altra altrettanto <b>vera</b>.
+                    </li>
+                    <br>
+                    <li>
+                        <u>Sottraiamo</u> la stessa quantità dal membro sinistro e destro della diseguaglianza:
+                        \[
+                            \begin{align*}
+                                10 \color{red}{} - 12 \color{black}{} &\gt 2 \color{red}{} - 12
+                                \\\\
+                                -2 &\gt -10
+                            \end{align*}
+                        \]
+                        Anche in questo caso da una diseguaglianza <b>vera</b> ne abbiamo ottenuta una <b>vera</b>.
+                    </li>
+                    <br>
+                    <br>
+                    <li>
+                        <u>Moltiplichiamo</u> la stessa quantità <u>positiva</u> al membro sinistro e destro della diseguaglianza:
+                        \[
+                            \begin{align*}
+                                10 \color{red}{} \cdot 3 \color{black}{} &\gt 2 \color{red}{} \cdot 3
+                                \\\\
+                                30 &\gt 6
+                            \end{align*}
+                        \]
+                        Di nuovo tutto liscio: da una diseguaglianza <b>vera</b> ne abbiamo ottenuta una <b>vera</b>.
+                    </li>
+                    <br>
+                    <li>
+                        <u>Moltiplichiamo</u> per un numero <u>negativo</u> il membro sinistro e destro della diseguaglianza:
+                        \[
+                            \begin{align*}
+                                10 \color{red}{} \cdot (-2) \color{black}{} &\gt 2 \color{red}{} \cdot (-2)
+                                \\\\
+                                -20 &\gt -4
+                            \end{align*}
+                        \]
+                        Questa volta da una diseguaglianza <b>vera</b> ne abbiamo ottenuta una <b>falsa</b> 😕
+                        <br>
+                        Se però <b>ribaltiamo</b> il verso della diseguaglianza otteniamo un'affermazione <b>vera</b>.
+                        <br>
+                        <br>
+                        Lo stesso fenomeno lo possiamo osservare <u>dividendo</u> entrambi i membri per una quantità 
+                        <u>negativa</u>.
+                    </li>
+                </ul>
+                
+                <br>
+                <br>
+                
+                Riassumiamo quanto osservato in una regola:
+
+                <br>
+                <br>
+
+                <span id="regola1" class="gray"><b>Regola</b></span>
+                <div class="grayBorder">
+                    ⚠️⚠️⚠️
+                    <br>
+                    
+                    Data una diseguaglianza vera, se <b>moltiplichiamo</b> oppure <b>dividiamo</b> entrambi i membri 
+                    <b>per un numero negativo</b>, per ottenere un'affermazione ancora vera è necessario <b>ribaltare il verso della diseguaglianza</b>. 
+                    
+                    
+                    <br>                    
+                    <br>
+
+                    In tutti gli altri casi (somma, sottrazione, moltiplicazione per un positivo, divisione per un positivo), 
+                    da una diseguaglianza vera se ne ottiene una ancora vera.
+                    <br>
+                    <br>
+                    <img src="img/disequazioniLineari(1).png" style="width: 100%;">
+                </div>
+
+                <br>
+                    <br>
+                    <h3 class="yellow">Esempi</h3>
+                    <div class="esempi-container">  
+                        <b>Esempio 1</b>                          
+                        \[
+                            \begin{align*}
+                                2  &\color{blue}{}\boldsymbol{\lt} \color{black}{} 4
+                                \\\\
+                                4 \color{red}{} \cdot (-3) \color{black}{} &\color{blue}{}\boldsymbol{\gt} \color{black}{} 2 \color{red}{} \cdot (-3)
+                                \\\\
+                                -20 &\gt -4
+                            \end{align*}
+                        \]
+
+                        <br>
+                        <hr>
+                        <br>
+                        <b>Esempio 2</b>                          
+                        \[
+                            \begin{align*}
+                                15  &\color{blue}{}\boldsymbol{\gt} \color{black}{} 10
+                                \\\\
+                                \color{red}{}\dfrac{\color{black}{15}}{5}\color{black}{} &\color{blue}{}\boldsymbol{\lt} \color{black}{} \color{red}{}\dfrac{\color{black}{10}}{5}
+                                \\\\
+                                -20 &\gt -4
+                            \end{align*}
+                        \]   
+
+                        <br>
+                        <hr>
+                        <br>
+
+                        <b>Esempio 3</b>                          
+                        \[
+                            \begin{align*}
+                                -2  \lt \color{black}{} 7
+                                \\\\
+                                -2 \color{red}{} + 5 \color{black}{} \lt 7 \color{red}{} + 5
+                                \\\\
+                                3 \lt 12
+                            \end{align*}
+                        \]                        
+                    </div>
+
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <h3 class="blue">Disequazioni di 1° grado (lineari)</h3>
+                    <br>
+                    Una <b>disequazione</b> è una diseguaglianza nella quale compare almeno un'incognita. 
+                    <br>
+                    Ad esempio, consideriamo la seguente
+                    \[
+                        4x - 8 \gt 0
+                    \]
+                    Risolvere una disequazione significa trovare tutti i valori che sostituiti alla \(x\) rendono 
+                    vera la diseguaglianza.
+                    <br>
+                    <br>
+                    Per risolvere la disequazione 
+                    \[
+                        4x - 8 \gt 0
+                    \]
+                    possiamo usare i ragionamenti che abbiamo riassunto nella <a href="#regola1">regola</a> illustrata precedentemente.
+                    <br>
+                    <br>
+                    Per "levare" il \(-8\) del primo membro, sommiamo il valore \(\color{red}{8}\) ad entrambi i membri:
+                    \[
+                        \begin{align*}
+                            4x - 8 \color{red}{} + 8 \color{black}{} &\gt 0 \color{red}{} + 8
+                            \\\\
+                            4x \gt  8
+                        \end{align*}
+                    \]
+                    Ora vogliamo isolare la \(x\). 
+                    <br>
+                    Per "levare" il coefficiente \(4\) della \(x\), possiamo dividere entrambi i 
+                    membri per \(\color{red}{}4\). Siccome il numero per cui dividiamo è positivo, il verso della diseguaglianza rimane lo stesso.
+                    \[
+                        \begin{align*}
+                            \color{red}{}\dfrac{\color{black}{}4x}{4} \gt  \color{red}{}\dfrac{\color{black}{}8}{4}
+                            \\\\
+                            x \gt 2
+                        \end{align*}
+                    \]
+                    Ecco trovate tutte le soluzioni! Se in
+                    \[
+                        4x - 8 \gt 0
+                    \]
+                    al posto della \(x\) inserisco un valore \(x \gt 2\), ovvero più grande di \(2\), ottengo un'uguaglianza vera
+
+                    <br>
+                    <br>
+
+                    <h3 class="yellow">Esempi</h3>
+                    <div class="esempi-container">
+                        <div id="esempio1">
+                            <div id="slide-container1">
+                        
+                                <div class="slide1" style="display: block;">
+                                    <div class="grayBorder">
+                                        Risolvere la disequazione 
+                                        \[
+                                            2x -3 \gt 0
+                                        \]
+                                    </div>
+                                    <br>
+                                    <b>Svolgimento</b>
+                                    <br>
+
+                                    Per prima cosa spostiamo \(-3\) dall'altra parte del simbolo di disuguaglianza cambiandolo di segno
+                                    \[
+                                        2x \gt 3
+                                    \]
+                                    Ora dividiamo entrambi i membri per \(2\).
+                                    
+                                    \[
+                                        \begin{align*}
+                                            \dfrac{2x}{2} &amp;\gt \dfrac{3}{2}
+                                            \\\\
+                                            x &amp;\gt \dfrac{3}{2}
+                                        \end{align*}
+                                    \]
+                                    In conclusione la disequazione
+                                    \[
+                                        2x - 3 \gt 0
+                                    \]
+                                    ha come soluzioni tutti i valori di \(x\) tali che
+                                    \[
+                                        x \gt \dfrac{3}{2}
+                                    \]
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <br>
+                        <hr>
+                        <br>
+                        
+                        <button onclick="generaEsempio(1)">Genera un altro esempio</button>
+                    </div>
+
+            </div>
+
+         </section>
+
+         <section class="exercise">
+            <div class="h3">
+                <span class="sub-par" id="exParagraphNumber"><!-- Automatico --></span>
+                <h3>Esercizi</h3>
+            </div>
+            <br>
+
+            <p>
+                <!-- Preambolo esercizio -->
+            </p>
+            
+            <br>
+
+            <!-- Esercizi -->
+            
+        </section>
+    
+
+
+    <script>
+    </script>
+
+
+    <br>
+    <br>
+    <script src="script.js"></script>
+    <script src="../../../js/pageManagment.js"></script>
+    <script src="../../../js/exerciseManagment.js"></script>
+</body>

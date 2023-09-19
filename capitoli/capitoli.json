@@ -1,0 +1,63 @@
+{
+    "capitolo": [
+        {
+        "numero": 1,
+        "titolo": "Le disequazioni",
+        "nomeCartella": "1disequazioni",
+        "paragrafo": [
+            {
+                "numero": 1,
+                "titolo": "Disequazioni lineari",
+                "nomeCartella": "disequazioniLineari"
+            }
+        ]
+        }
+    ],
+
+    "daSvolgere": [
+        {
+        "numero": 1,
+        "titolo": "Le funzioni",
+        "paragrafo": [
+            
+            {
+                "numero": "1.",
+                "titolo": "Simmetrie del grafico di una funzione",
+                "nomeCartella": "1-**simmetrieGraficoFunzione"
+            },
+            {
+                "numero": "1.**",
+                "titolo": "Dilatazione e contrazione del grafico di una funzione",
+                "nomeCartella": "1-**dilatazioneContrazioneGraficoFunzione"
+            },
+            {
+                "numero": "1.**",
+                "titolo": "Funzioni pari e dispari",
+                "nomeCartella": "1-**funzioniPariDispari"
+            },
+            {
+                "numero": "1.**",
+                "titolo": "Funzione inversa",
+                "nomeCartella": "1-**funzioneInversa"
+            },
+            {
+                "numero": "1.**",
+                "titolo": "Composizione di funzioni",
+                "nomeCartella": "1-**composizioneFunzioni"
+            },
+            {
+                "numero": "",
+                "titolo": "Esempi più astratti di funzione",
+                "nomeCartella": "esempiAstratti"
+            },
+            {
+                "numero": "",
+                "titolo": "Operazioni tra funzioni",
+                "nomeCartella": "operazioniFunzioni"
+            }
+            
+        ]
+        }
+    ]
+  }
+  
