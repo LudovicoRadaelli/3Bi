@@ -6,9 +6,16 @@
         "nomeCartella": "1disequazioni",
         "paragrafo": [
             {
-                "numero": 1,
                 "titolo": "Disequazioni lineari",
                 "nomeCartella": "disequazioniLineari"
+            },
+            {
+                "titolo": "Equazioni di secondo grado",
+                "nomeCartella": "equazioniSecondoGrado"
+            },
+            {
+                "titolo": "Polinomi di secondo grado e parabola",
+                "nomeCartella": "polinomiSecondoGradoEParabola"
             }
         ]
         }
