@@ -16,7 +16,7 @@ fetch("capitoli.json")
             let nomeCartellaParagrafo = jsonContent["capitolo"][chapterNumber -1]["paragrafo"][i]["nomeCartella"]
             let a = document.createElement("a");
             a.href = `${nomeCartellaCapitolo}/${nomeCartellaParagrafo}/index.html`;
-            a.innerHTML = `<code><b>${paragraphNumber}) ${paragraphTitle}</b></code><br>`
+            a.innerHTML = `<code><b>${paragraphNumber}) ${paragraphTitle}</b></code><br><br>`
             div.appendChild(a);
         }
     }
