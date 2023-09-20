@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title id="titleTag"><!-- Automatico --></title>
+</head>
+
+<body>
+        <br>
+        <div id="chapterNumber" style="display: none;">1</div>
+        <div id="paragraphTitle" style="display: none;">Equazioni di secondo grado</div>
+        
+        <div class="gray"> 
+            <div class="homeIconContainer">
+                <a href="../../indiceMateriale.html"><img class="homeIcon" src="../../../css/img/home.png"></a>
+            </div>
+            
+            <code><b id="bTagTitoloCapitolo">
+                <!-- Automatico -->
+            </b></code> 
+            <br>
+            <div class="select">
+                <div class="selected-option"><code><b id="bTagTitoloParagrafo">/ <!-- Automatico --></b></code></div>
+                <div class="dropdown">
+                    <!-- Automatico -->
+                </div>
+            </div>            
+        </div>
+
+        <br>
+
+        <nav class="navigationBar">
+            <div onclick="changeParagraph(`previous`)" class="item prev">
+                <img class="icon" src="../../../css/img/leftArrow.png">
+            </div>
+            <div class="item explanationButton">
+                <div onclick="showExplanation()"><img class="icon" src="../../../css/img/presentation.png"></div>
+            </div>
+            <!-- <div class="item exerciseButton">
+                <div onclick="showExercise()"><img class="icon" src="../../../css/img/homework.png"></div>
+            </div> -->
+            <div onclick="changeParagraph(`next`)" class="item next">
+                <img class="icon" src="../../../css/img/rightArrow.png">
+            </div>
+        </nav>
+
+        <br>
+
+    
+
+        <section class="explanation">
+    
+            <div class="h3">
+                <span class="sub-par" id="paragraphCircledNumber"><!-- Automatico --></span>
+                <h3 id="h3ParagraphTitle"><!-- Automatico --></h3>
+            </div>
+            
+            <br>
+            <br>
+
+            <h3 class="blue">Formula risolutiva</h3>
+
+            <br>
+
+            <div>
+            <div>
+                <iframe style="width: 100%;" src="https://www.youtube.com/embed/S7J12_B8oug?si=kRThXJ3zd8TE16Q5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <br>
+            <p class="grayBackground">
+                Data l'equazione 
+                \[
+                    \color{red}{a}\,\color{black}{x^2}\, + \color{blue}{b}\,\color{black}{x}\, + \color{darkorange}{c}\,\,  \color{black}{}= 0
+                \]
+                la forumula risolutiva è
+                \[
+                    x = \dfrac{-\color{blue}{b}\color{black}{} \pm \sqrt{\color{blue}{b}\color{black}{}^2 - 4 \cdot \color{red}{a}\color{black} \cdot  \color{darkorange}{c}\color{black}}}{2\color{red}{a}}
+                \]
+            </p>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+
+            <h3 class="blue">Numero di soluzioni</h3>        
+
+
+            <br>
+            <iframe style="width: 100%;" src="https://www.youtube.com/embed/YIP7MoUuVOo?si=-fgSg6yxHjfvLosl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br>
+            <br>
+            <p>
+                Data l'equazione 
+                \[
+                    \color{red}{a}\,\color{black}{x^2}\, + \color{blue}{b}\,\color{black}{x}\, + \color{darkorange}{c}\,\,  \color{black}{}= 0
+                \]
+                sappiamo che la formula risolutiva è 
+                \[
+                    x = \dfrac{-\color{blue}{b}\color{black}{} \pm \sqrt{\color{blue}{b}\color{black}{}^2 - 4 \cdot \color{red}{a}\color{black} \cdot  \color{darkorange}{c}\color{black}}}{2\color{red}{a}}
+                \]
+                
+                Indichiamo con la lettera \(\Delta\) il contenuto della radice presente nella formula, ovvero 
+                
+                \[\Delta = \color{blue}{b}^2 \color{black}{-4}\,\color{red}{a}\,\color{darkorange}{c} \]
+                
+                il numero di soluzioni dipende dal segno di \(\Delta\):
+            </p>
+            <br>
+            <div class="grayBackground">
+                <ul>
+                    <li>
+                        Se \(\Delta \gt 0\),
+                        <br>
+                        allora l'equazione ha <b>due</b> soluzioni;
+                    </li>
+                    <br>
+                    <li>
+                        Se \(\Delta = 0\),
+                        <br>
+                        allora l'equazione ha <b>una</b> soluzioni;
+                    </li>
+                    <br>
+                    <li>
+                        Se \(\Delta \lt 0\),
+                        <br>
+                        allora l'equazione ha <b>zero</b> soluzioni;
+                    </li>
+                </ul>
+            </div>
+
+            <br>
+
+            <h3 class="yellow">Esempi</h3>
+            <div class="esempi-container">
+
+                <b>Equazione con 2 soluzioni</b>
+                <iframe style="width: 100%;" src="https://www.youtube.com/embed/JIeg7jziqu4?si=f2GhPyd5LWG4QGrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+                <br>
+                <hr>
+                <br>
+
+                <b>Equazione con 1 soluzione</b>
+                <iframe style="width: 100%;" src="https://www.youtube.com/embed/_8Vctl3Y-1U?si=_5eWjSPjpI-NlMtK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+                <br>
+                <hr>
+                <br>
+
+                <b>Equazione con 0 soluzioni</b>
+                <iframe style="width: 100%;" src="https://www.youtube.com/embed/8LdfIyHKffg?si=4upDLh2GeqPxOWeC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <br>
+
+            </div>
+            </div>
+
+         </section>
+
+         <section class="exercise">
+            <div class="h3">
+                <span class="sub-par" id="exParagraphNumber"><!-- Automatico --></span>
+                <h3>Esercizi</h3>
+            </div>
+            <br>
+
+            <p>
+                <!-- Preambolo esercizio -->
+            </p>
+            
+            <br>
+
+            <!-- Esercizi -->
+            
+        </section>
+    
+
+
+    <script>
+        
+    </script>
+    
+    
+    
+    
+    
+    
+    
+
+
+    <br>
+    <br>
+
+    <script src="../../../js/pageManagment.js"></script>
+    <script src="../../../js/exerciseManagment.js"></script>
+</body>
