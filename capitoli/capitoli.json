@@ -16,6 +16,10 @@
             {
                 "titolo": "Polinomi di secondo grado e parabola",
                 "nomeCartella": "polinomiSecondoGradoEParabola"
+            },
+            {
+                "titolo": "Segno di un polinomio di secondo grado",
+                "nomeCartella": "segnoPolinomioSecondoGrado"
             }
         ]
         }
