@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title id="titleTag"><!-- Automatico --></title>
+</head>
+
+<body>
+        <br>
+        <div id="chapterNumber" style="display: none;">1</div>
+        <div id="paragraphTitle" style="display: none;">Segno di un polinomio di secondo grado</div>
+        
+        <div class="gray"> 
+            <div class="homeIconContainer">
+                <a href="../../indiceMateriale.html"><img class="homeIcon" src="../../../css/img/home.png"></a>
+            </div>
+            
+            <code><b id="bTagTitoloCapitolo">
+                <!-- Automatico -->
+            </b></code> 
+            <br>
+            <div class="select">
+                <div class="selected-option"><code><b id="bTagTitoloParagrafo">/ <!-- Automatico --></b></code></div>
+                <div class="dropdown">
+                    <!-- Automatico -->
+                </div>
+            </div>            
+        </div>
+
+        <br>
+
+        <nav class="navigationBar">
+            <div onclick="changeParagraph(`previous`)" class="item prev">
+                <img class="icon" src="../../../css/img/leftArrow.png">
+            </div>
+            <div class="item explanationButton">
+                <div onclick="showExplanation()"><img class="icon" src="../../../css/img/presentation.png"></div>
+            </div>
+            <!-- <div class="item exerciseButton">
+                <div onclick="showExercise()"><img class="icon" src="../../../css/img/homework.png"></div>
+            </div> -->
+            <div onclick="changeParagraph(`next`)" class="item next">
+                <img class="icon" src="../../../css/img/rightArrow.png">
+            </div>
+        </nav>
+
+        <br>
+
+    
+
+        <section class="explanation">
+    
+            <div class="h3">
+                <span class="sub-par" id="paragraphCircledNumber"><!-- Automatico --></span>
+                <h3 id="h3ParagraphTitle"><!-- Automatico --></h3>
+            </div>
+            
+            <br>
+            <br>
+
+            <div>
+                <h3 class="blue">                    
+                    Metodo della parabola
+                </h3>
+                <br>
+                <br>
+                <iframe style="width: 100%;" src="https://www.youtube.com/embed/7-4q_OwrISA?si=mo7tiwn9gWOloPzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <br>
+                <iframe style="width: 100%;" src="https://www.youtube.com/embed/LFutYV_HdWQ?si=gPAapImp2W3ZeQlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                <br>
+                <br>
+                
+                <p>
+                    Consideriamo il polinomio 
+                    \[
+                        3x^2 +2x -5
+                    \]
+                    Il <b>segno</b> di questo polinomio dipende dal valore che assegnamo alla \(x\).
+                    <br>
+                    <br>
+                    Raccogliamo qualche esempio nella taballa che segue
+                    <br>
+                    <br>
+                    <div style="width: 100%; overflow-x:auto">
+                        <table style="margin: 0.1rem">
+                            <tr>
+                                <th>
+                                    \[
+                                        \text{valore di}\,\,\,\color{red}{x}
+                                    \]
+                                </th>
+                                <th style="font-size: 0.9rem;">
+                                    \[
+                                        \text{valore di}\,\,\, 3\color{red}{x}\color{black}{}^2 +2\color{red}{x}\color{black}{} -5
+                                    \]
+                                </th>
+                                <th>
+                                    <p>Segno</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    \[
+                                        \color{red}{2}
+                                    \]
+                                </td>
+                                <td style="font-size: 0.8rem;">
+                                    \[
+                                        3\cdot\color{red}{2}\color{black}{}^2 +2\cdot\color{red}{2}\color{black}{} -5 = 11
+                                    \]
+                                </td>
+                                <td>
+                                    \[
+                                        \boldsymbol{+}
+                                    \]
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    \[
+                                        \color{red}{-1}
+                                    \]
+                                </td>
+                                <td style="font-size: 0.8rem;">
+                                    \[
+                                        3\cdot\color{red}{\left(-1\right)}\color{black}{}^2 +2\cdot\color{red}{\left(-1\right)}\color{black}{} -5 = -4
+                                    \]
+                                </td>
+                                <td>
+                                    \[
+                                        \boldsymbol{-}
+                                    \]
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    \[
+                                        \color{red}{0}
+                                    \]
+                                </td>
+                                <td style="font-size: 0.8rem;">
+                                    \[
+                                        3\cdot\color{red}{0}\color{black}{}^2 +2\cdot\color{red}{0}\color{black}{} -5 = -5
+                                    \]
+                                </td>
+                                <td>
+                                    \[
+                                        \boldsymbol{-}
+                                    \]
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    \[
+                                        \color{red}{-5}
+                                    \]
+                                </td>
+                                <td style="font-size: 0.8rem;">
+                                    \[
+                                        3\cdot\color{red}{\left(-5\right)}\color{black}{}^2 +2\cdot\color{red}{\left(-5\right)}\color{black}{} -5 = 110
+                                    \]
+                                </td>
+                                <td>
+                                    \[
+                                        \boldsymbol{+}
+                                    \]
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    <br>
+                </p>
+                
+            
+                <p>
+                    Il nostro obiettivo è scoprire quali valori della \(x\) rendono il polinomio
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        positivo
+                    </li>
+                    <li>
+                        nullo
+                    </li>
+                    <li>
+                        negativo
+                    </li>
+                </ul>
+                <br>
+                <p>
+                    In altre parole vogliamo <b>studiare il segno</b> del polinomio al variare del valore della \(x\).
+                </p>
+                <br>
+                <p>
+                    Per farlo risolviamo l'equazione associata al polinomio e disegnamo la parabola che lo rappresenta:
+                </p>
+                <p>
+                    \[
+                        \begin{align*}
+                            x = \,& \dfrac{-2 \pm \sqrt{2^2 -4 \cdot 3 \cdot \left(-5\right)}}{2 \cdot 3} = 
+                            \\\\
+                            = \,& \dfrac{-2 \pm \sqrt{64}}{6} = \dfrac{-2 \pm 8}{6} 
+                        \end{align*}
+                    \]
+                    quindi
+                    \[
+                        \begin{align*}
+                            x = \dfrac{-2 + 8}{6} \quad&\text{oppure}\quad x = \dfrac{-2 - 8}{6}
+                            \\\\
+                            x = 1 \quad&\text{oppure}\quad x = -\dfrac{5}{3}
+                        \end{align*}
+                    \]
+                    di conseguenza la parabola che rappresenta il polinomio è la seguente
+                </p>
+                <br>
+                <img src="img/segnoParabola(1).png" alt="" style="max-width: 300px; width: 100%; margin: auto">
+                <br>
+                <p>
+                    A partire da questo grafico è possibile stabilire il segno del polinomio \(3x^2 +2x -5\). Infatti, 
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        i valori della \(x\) in corrispondenza dei quali il grafico si trova <b style="color: red">sopra</b> l'asse delle \(x\) sono quelli per cui il polinomio ha segno \(\boldsymbol{\color{red}{+}}\)
+                    </li>
+                    <br>
+                    <li>
+                        i valori della \(x\) in corrispondenza dei quali il grafico si trova <b style="color: blue">sotto</b> l'asse delle \(x\) sono quelli per cui il polinomio ha segno \(\boldsymbol{\color{blue}{-}}\)
+                    </li>
+                    <br>
+                    <li>
+                        i valori della \(x\) in corrispondenza dei quali il grafico <b style="color: gray">interseca</b> l'asse delle \(x\) sono quelli per cui il polinomio vale \(\boldsymbol{\color{gray}{0}}\)
+                    </li>
+                </ul>
+                <br>
+                <p>
+                    Rappresentiamo queste informazioni sul grafico della parabola:
+                </p>
+                <br>
+                <img src="img/segnoParabola(2).png" alt="" style="max-width: 300px; width: 100%; margin: auto;">
+                <br>
+                <p>
+                    Possiamo concludere che 
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        \(3x^2 +2x -5 \lt 0 \quad\)  se
+                        <br>
+                        <br>
+                        \(x \lt -\dfrac{5}{3}\quad\)  oppure \(\quad x \gt 1\)
+                    </li>
+                    <br>
+                    <li>
+                        \(3x^2 +2x -5 = 0 \quad\)  se
+                        <br>
+                        <br>
+                        \(x = -\dfrac{5}{3}\quad\)  oppure \(\quad x = 1\)
+                    </li>
+                    <br>
+                    <li>
+                        \(3x^2 +2x -5 \gt 0 \quad\)  se
+                        <br>
+                        <br>
+                        \(\dfrac{5}{3} \lt x \lt 1\)
+                    </li>
+                </ul>
+            </div>
+
+         </section>
+
+         <section class="exercise">
+            <div class="h3">
+                <span class="sub-par" id="exParagraphNumber"><!-- Automatico --></span>
+                <h3>Esercizi</h3>
+            </div>
+            <br>
+
+            <p>
+                <!-- Preambolo esercizio -->
+            </p>
+            
+            <br>
+
+            <!-- Esercizi -->
+            
+        </section>
+    
+
+
+    <script>
+        
+    </script>
+    
+    
+    
+    
+    
+    
+    
+
+
+    <br>
+    <br>
+
+    <script src="../../../js/pageManagment.js"></script>
+    <script src="../../../js/exerciseManagment.js"></script>
+</body>
