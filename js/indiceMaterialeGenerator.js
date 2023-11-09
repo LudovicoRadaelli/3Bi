@@ -3,7 +3,7 @@ fetch("capitoli.json")
   .then(jsonContent => {
 
     for(let chapterNumber = 1; chapterNumber <= jsonContent["capitolo"].length; chapterNumber++) {
-        let div = document.querySelectorAll(".chapter")[chapterNumber-1];
+        let div = document.querySelectorAll(".chapters")[chapterNumber-1];
         let h2 = document.createElement("h2");
         let nomeCartellaCapitolo =  jsonContent["capitolo"][chapterNumber -1]["nomeCartella"]
         h2.className = "chapter"
@@ -11,7 +11,7 @@ fetch("capitoli.json")
         div.appendChild(h2);
 
         for(let i = 0; i < jsonContent["capitolo"][chapterNumber -1]["paragrafo"].length; i++) {
-            let paragraphNumber = jsonContent["capitolo"][chapterNumber -1]["paragrafo"][i]["numero"];
+            let paragraphNumber = `${chapterNumber}.${i + 1}`;
             let paragraphTitle = jsonContent["capitolo"][chapterNumber -1]["paragrafo"][i]["titolo"];
             let nomeCartellaParagrafo = jsonContent["capitolo"][chapterNumber -1]["paragrafo"][i]["nomeCartella"]
             let a = document.createElement("a");
