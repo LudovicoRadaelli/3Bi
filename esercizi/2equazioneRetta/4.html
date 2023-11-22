@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <!-- ARGOMENTI SVOLTI -->
+    <!-- <section id="argomenti">
+        <h3 class="blue">Argomenti svolti</h3>
+        <div class="grayBorder">
+
+            <div style="text-align: left;">
+                <b>1) Radice di indice \(n\) di un numero</b>
+            </div>
+            <div class="gray">
+                [Par. 14.2, pag. da 738 a 743]
+            </div>    
+
+            <br>
+
+            <div style="text-align: left;">
+                <b>2) Condizioni d'esistenza di un radicale</b>
+            </div>
+            <div class="gray">
+                [Par. 14.2, pag. 743]
+            </div>
+
+            <br>
+
+            <p>
+                le dispense sono disponibili <a class="gray" href="../../../2/radicali/index.html">QUI</a>
+            </p>
+        </div>
+    </section> 
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    -->
+
+
+    <!-- ESERCIZI -->
+
+    <h3 class="green">Esercizio guida</h3>
+    <br>
+    <div>
+        Individuare il <b>coefficiente angolare</b> e <b>termine noto</b> della retta di equazione
+        \[
+            5x + 4y -1 = 0
+        \]
+        <b>Svolgimento</b>
+        <br>
+        <br>
+        Prima di tutto portiamo l'equazione
+        \[
+            5x + 4y -1 = 0
+        \]
+        nella forma 
+        \[
+            y = \color{blue}{}m\color{black}{}x + \color{red}{}q
+        \]
+        Per farlo isoliamo la \(y\) nell'equazione:
+        \[
+            \begin{align*}
+                & 5x +4y -1 = 0
+                \\\\
+                & 4y = -5x + 1
+                \\\\
+                & \dfrac{\cancel{4}y}{\color{green}{\cancel{4}}} = \dfrac{-5x +1}{\color{green}{4}}
+                \\\\
+                & y = \dfrac{-5x + 1}{4}
+                \\\\
+                & y = \color{blue}{}-\dfrac{5}{4}\color{black}{}x + \color{red}{}\dfrac{1}{4}
+            \end{align*}
+        \]
+        Ora che l'equazione della retta è in <b>forma esplicita</b> possiamo leggere il coefficiente 
+        angolare ed il termine noto:
+        \[
+            \begin{align*}
+                \color{blue}{}m\color{black}{} = \color{blue}{}-\dfrac{5}{4}
+                \\\\
+                \color{red}{}q\color{black}{} = \color{red}{}\dfrac{1}{4}
+            \end{align*}
+        \]
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Stabilire quali tra le seguenti rette hanno la stessa inclinazione <b>senza rappresentarle</b> sul piano cartesiano.
+        <br>
+        <br>
+        <ul>
+            <li>
+                <b>a)</b> \(\quad y = \dfrac{1}{2}x + 2\)
+            </li>
+            <br>
+            <li>
+                <b>b)</b> \(\quad y = -3x - \dfrac{1}{2}\)
+            </li>
+            <br>
+            <li>
+                <b>c)</b> \(\quad 6x - 12y - 1 = 0\)
+            </li>
+            <br>
+            <li>
+                <b>d)</b> \(\quad -4x - 3y + 3 = 0\)
+            </li>
+            <br>
+            <li>
+                <b>e)</b> \(\quad y = -\dfrac{4}{3}\)
+            </li>
+            <br>
+            <li>
+                <b>f)</b> \(\quad -3y - x + 7 = 0\)
+            </li>
+            <br>
+            <li>
+                <b>g)</b> \(\quad2y -x + 5 = 0\)
+            </li>
+            <br>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 3</h3>
+    <br>
+    <div>
+        Associare ognuna delle seguenti equazioni alla retta che descrive.
+        <br>
+        <br>
+        <ul style="list-style: none;">
+            <li>
+                <b>1)</b> \(\quad y = \dfrac{1}{5}x\)
+            </li>
+            <br>
+            <li>
+                <b>2)</b> \(\quad y = 7x\)
+            </li>
+            <br>
+            <li>
+                <b>3)</b> \(\quad y = -2x\)
+            </li>
+            <br>
+            <li>
+                <b>4)</b> \(\quad y = -0.3x\)
+            </li>
+            <br>
+            <li>
+                <b>5)</b> \(\quad y = 6\)
+            </li>
+            <br>        
+            <li>
+                <b>a)</b>
+                <br>
+                <img src="img/4(2).png" alt="">
+            </li>
+            <br>
+            <li>
+                <b>b)</b>
+                <br>
+                <img src="img/4(3).png" alt="">
+            </li>
+            <br>
+            <li>
+                <b>c)</b>
+                <br>
+                <img src="img/4(4).png" alt="" style="width: 70%">
+            </li>
+            <br>
+            <li>
+                <b>d)</b>
+                <br>
+                <img src="img/4(5).png" alt="">
+            </li>
+            <br>
+            <li>
+                <b>e)</b>
+                <br>
+                <img src="img/4(1).png" alt="">
+            </li>
+            
+            
+        </ul>
+        
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Suggerimento</b>
+        <br>
+        Per svolgere l'esercizio è sufficiente osservare i coefficienti angolari delle equazioni
+        ed usare lo schema
+        <br>
+        <br>
+        <img src="img/schemaCoefficienteAngolare.png" alt="">
+        <br>
+        visto in classe
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 3</h3>
+    <br>
+    <div>
+        Associare ognuna delle seguenti equazioni alla retta che descrive.
+        <br>
+        <br>
+        <ul style="list-style: none;">
+            <li>
+                <b>1)</b> \(\quad y = 3x + 1\)
+            </li>
+            <br>
+            <li>
+                <b>2)</b> \(\quad y = 2x - 3\)
+            </li>
+            <br>
+            <li>
+                <b>3)</b> \(\quad y = -2x + 3\)
+            </li>
+            <br>
+            <li>
+                <b>4)</b> \(\quad y =  2x - 1\)
+            </li>
+            <br>
+            <li>
+                <b>5)</b> \(\quad y = 5x + 1\)
+            </li>
+            <br>        
+            <li>
+                <b>a)</b>
+                <br>
+                <img src="img/4(7).png" alt="">
+            </li>
+            <br>
+            <li>
+                <b>b)</b>
+                <br>
+                <img src="img/4(10).png" alt="">
+            </li>
+            <br>
+            <li>
+                <b>c)</b>
+                <br>
+                <img src="img/4(6).png" alt="" style="width: 70%">
+            </li>
+            <br>
+            <li>
+                <b>d)</b>
+                <br>
+                <img src="img/4(9).png" alt="">
+            </li>
+            <br>
+            <li>
+                <b>e)</b>
+                <br>
+                <img src="img/4(8).png" alt="">
+            </li>
+            
+            
+        </ul>
+        
+    </div>
+
+    <br>
+
+    <div class="gray">
+        <b>Suggerimento</b>
+        <br>
+        Per svolgere l'esercizio è sufficiente osservate i termini noti ed i coefficienti angolari delle equazioni.
+
+    </div>
+
+    <br>
+    <br>
+
+    
+</body>
