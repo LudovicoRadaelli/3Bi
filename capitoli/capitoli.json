@@ -30,7 +30,31 @@
                 "nomeCartella": "sistemiDisequazioni"
             }
         ]
+        },
+
+        {
+            "numero": 2,
+            "titolo": "Equazione della retta",
+            "paragrafo": [
+                
+                {
+                    "numero": "1",
+                    "titolo": "Il piano cartesiano",
+                    "nomeCartella": "pianoCartesiano"
+                },
+                {
+                    "numero": "2",
+                    "titolo": "Equazione esplicita della retta",
+                    "nomeCartella": "equazioneEsplicitaRetta"
+                },
+                {
+                    "numero": "3",
+                    "titolo": "Formula della distanza tra due punti",
+                    "nomeCartella": "distanzaTraDuePunti"
+                }
+            ]
         }
+
     ],
 
     "daSvolgere": [
