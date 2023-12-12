@@ -51,6 +51,11 @@
                     "numero": "3",
                     "titolo": "Formula della distanza tra due punti",
                     "nomeCartella": "distanzaTraDuePunti"
+                },
+                {
+                    "numero": "4",
+                    "titolo": "Retta passante per due punti",
+                    "nomeCartella": "rettaPassantePerDuePunti"
                 }
             ]
         }
