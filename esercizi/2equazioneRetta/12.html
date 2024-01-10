@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <!-- ARGOMENTI SVOLTI -->
+    <!-- <section id="argomenti">
+        <h3 class="blue">Argomenti svolti</h3>
+        <div class="grayBorder">
+
+            <div style="text-align: left;">
+                <b>1) Radice di indice \(n\) di un numero</b>
+            </div>
+            <div class="gray">
+                [Par. 14.2, pag. da 738 a 743]
+            </div>    
+
+            <br>
+
+            <div style="text-align: left;">
+                <b>2) Condizioni d'esistenza di un radicale</b>
+            </div>
+            <div class="gray">
+                [Par. 14.2, pag. 743]
+            </div>
+
+            <br>
+
+            <p>
+                le dispense sono disponibili <a class="gray" href="../../../2/radicali/index.html">QUI</a>
+            </p>
+        </div>
+    </section> 
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    -->
+
+
+    <h3 class="green">Esercizio 0</h3>
+    <br>
+    <div> 
+        Ripassare i <b>sistemi lineari</b> sulle dispense disponibili <a class="blue" href="https://ludovicoradaelli.github.io/Mat/2/sistemiLineari/index.html">QUI</a>.
+        <br>
+        Nel paragrafo <span class="blue">4</span>, oltre alla video spiegazione, è presente un generatore automatico di esercizi. Potete utilizzarlo per
+        svolgere qualche esempio guidato prima di affrontare l'eserczio \(2\).        
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>            
+        Risolvere il seguente sistema utilizzando il <u>metodo di sostituzione</u>:
+        \[
+            \begin{cases}
+                3x - y = 2
+                \\\\
+                2x -y - 1 = 0
+            \end{cases}
+        \]
+    </div>
+    <div class="gray">
+        <b>Soluzione:</b>
+        \[
+            \begin{cases}
+                x = 1
+                \\\\
+                y = 1
+            \end{cases}
+        \]
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>            
+        Risolvere il seguente sistema utilizzando il <u>metodo di riduzione</u>:
+        \[
+            \begin{cases}
+                4x - 3y + 1 = 0
+                \\\\
+                2x + 5y + 7 = 0
+            \end{cases}
+        \]
+    </div>
+    <div class="gray">
+        <b>Soluzione:</b>
+        \[
+            \begin{cases}
+                x = -\dfrac{10}{13}
+                \\\\
+                y = -\dfrac{9}{13}
+            \end{cases}
+        \]
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 3</h3>
+    <br>
+    <div>            
+        Individuare le coordinate del punto \(P\) di intersezione tra le rette \(r\) ed \(s\) di equazioni
+        \[
+            r:\quad 2x + 9y - 8 = 0
+        \]
+        
+        \[
+            s:\quad -x  -3y +1 = 0
+        \]
+    </div>
+    
+    <div class="gray">
+        <b>Suggerimento: </b> 
+        <br>
+        Il nostro obiettivo è individuare le coordinate del punto dove le rette \(r\) ed \(s\) si intersecano, ovvero si incontrano.
+        Diamo nome a queste misteriose coordinate:  
+        <br>
+        <br>
+        <ul class="gray">
+            <li>
+                chiamiamo \(a\) la coordinata \(x\) del punto \(P\); 
+            </li>
+            <br>
+            <li>
+                chiamiamo \(b\) la coordinata \(y\) del punto \(P\); 
+            </li>
+        </ul>
+        <br>
+        Poiché è intersezione delle due rette, in particolare il punto \(P\) <b>appartiene alla retta \(\boldsymbol{r}\)</b>.
+        Ovvero le coordinate \((a\,;\,\,b)\) di \(P\) se sostituite nell'equazione della retta \(r\) forniscono un'uguglianza vera:
+        \[
+            2a + 9b - 8 = 0 \qquad (*)
+        \]
+        Allo stesso modo il punto \(P\) <b>appartiene alla retta \(\boldsymbol{s}\)</b>.
+        Ovvero le coordinate \((a\,;\,\,b)\) di \(P\) se sostituite nell'equazione della retta \(s\) forniscono un'uguglianza vera:
+        \[
+            -a  -3b +1 = 0 \qquad (**)
+        \]
+        Il nostro obiettivo è trovare due numeri \(a\) e \(b\) che soddisfino le equazioni \((*)\) e \((**)\), ovvero vogliamo risolvere il
+        sistema di equazioni
+        \[
+            \begin{cases}
+                2a + 9b - 8 = 0 
+                \\\\
+                -a  -3b +1 = 0                
+            \end{cases}
+        \]
+        Scegliendo un metodo qualsiasi, otteniamo la soluzione
+        \[
+            \begin{cases}
+                a = -5
+                \\\\
+                b = 2
+            \end{cases}
+        \]
+    </div>    
+    <div class="gray">
+        <b>Soluzione: </b> \(\,\,P\left(-5\,;\,\,2\right)\)
+    </div>
+
+    
+</body>
