@@ -322,7 +322,7 @@
                 </div>
             </div>        
             <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
-                <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+                <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
                 <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
             </div> 
         
@@ -332,9 +332,10 @@
     <br>
     <br>
 
-    <button id="hint2-button" onclick="showHint(2)">Svolgimento n° </button>
+    <button id="hint2-button" onclick="showHint(2)">Svolgimento n° 364</button>
     <div id="hint2" class="hint" style="display: none;">
         <div class="grayBorder">
+            <b class="gray">Svolgimento n° 364</b>
             <div class="slide-container grayBorder">
                 <div class="slide2">
                     <div class="formula">
@@ -591,12 +592,15 @@
                 </div>
             </div>        
             <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
-                <button id="previousSlide-button1" onclick="previousSlide(2)">Indietro</button>
-                <button id="nextSlide-button1" onclick="nextSlide(2)">Avanti</button>
+                <button id="previousSlide-button2" onclick="previousSlide(2)">Inietro</button>
+                <button id="nextSlide-button2" onclick="nextSlide(2)">Avanti</button>
             </div> 
-        
         </div>
     </div>
+
+    <br>
+    <br>
+
 
 
 
@@ -768,7 +772,12 @@
     <script>
         let slideIndex = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-        inizialize(1);
+        let slideContainer = document.getElementsByClassName(`slide-container`)
+            for(let i = 1; i <= slideContainer.length; i++) {
+                inizialize(i);
+            }
+        
+        
 
 
         //funzione per passare alla slide successiva
