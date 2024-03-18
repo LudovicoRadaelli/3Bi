@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div class="gray">
+        Attraverso questo esercizio potete allenare la memoria su seno, coseno e tangente  degli angoli fontamentali: \(\dfrac{\pi}{6}\), \(\dfrac{\pi}{4}\), \(\dfrac{\pi}{3}\) e multipli di \(\dfrac{\pi}{2}\)
+    </div>
+    <br>
+    
+    <div class="grayBorder">
+        <div class="geogebra-container">
+            <div id="geogebra1"></div>
+        </div>
+    
+        <div id="domanda" style="min-height: 10vh;"></div>    
+    
+        <button id="generaDomanda" onclick="generaDomanda()">Nuova domanda!</button>
+        <br>
+        <button id="rispostaCorretta" onclick="controllaSoluzione()" disabled>Controlla soluzione</button>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <ul>
+        <li>
+            Ripassare il paragrafo <b>Angoli associati</b> a pagg. 477 e 488 del libro di testo.
+        </li>
+        <br>
+        <li>
+            Svolgere gli esercizi  n° 314, 315, 316 pag. 508
+        </li>
+        <br>
+        <li>
+            Svolgere gli esercizi n° 364, 368, 369  pag. 511
+        </li>
+    </ul>
+
+    <br>    
+    <br>
+
+    <button id="hint1-button" onclick="showHint(1)">Svolgimento n° 314</button>
+    <div id="hint1" class="hint" style="display: none;">     
+        <b class="gray">Svolgimento n° 314</b>
+        <div class="grayBorder">
+            <div class="slide-container grayBorder">
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            tan(-\alpha)cos(\pi + \alpha) - cos\left(\dfrac{3}{2}\pi + \alpha\right) - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \color{blue}{}{}tan(-\alpha)\color{black}{}cos(\pi + \alpha) - cos\left(\dfrac{3}{2}\pi + \alpha\right) - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \color{blue}{}{}-tan(\alpha)\color{black}{}cos(\pi + \alpha) - cos\left(\dfrac{3}{2}\pi + \alpha\right) - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)\color{blue}{}{}cos(\pi + \alpha)\color{black}{} - cos\left(\dfrac{3}{2}\pi + \alpha\right) - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)\color{blue}{}{}(-cos(\alpha))\color{black}{} - cos\left(\dfrac{3}{2}\pi + \alpha\right) - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)(-cos(\alpha))- \color{blue}{}{}cos\left(\dfrac{3}{2}\pi + \alpha\right)\color{black}{} - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)(-cos(\alpha))- \color{blue}{}{}sin(\alpha)\color{black}{} - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)(-cos(\alpha))- sin(\alpha) - \color{blue}{}{}cot\left(\dfrac{\pi}{2} + \alpha\right)\color{black}{}
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>            
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)(-cos(\alpha))- sin(\alpha) - \color{blue}{}{}\dfrac{cos\left(\dfrac{\pi}{2} + \alpha\right)}{sin\left(\dfrac{\pi}{2} + \alpha\right)}\color{black}{}
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)(-cos(\alpha))- sin(\alpha) - \dfrac{\color{blue}{}{}cos\left(\dfrac{\pi}{2} + \alpha\right)}{sin\left(\dfrac{\pi}{2} + \alpha\right)}\color{black}{}
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)(-cos(\alpha))- sin(\alpha) - \dfrac{\color{blue}{}{}-sin(\alpha)}{sin\left(\dfrac{\pi}{2} + \alpha\right)}\color{black}{}
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)(-cos(\alpha))- sin(\alpha) - \dfrac{-sin(\alpha)}{\color{blue}{}{}sin\left(\dfrac{\pi}{2} + \alpha\right)}\color{black}{}
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)(-cos(\alpha))- sin(\alpha) - \dfrac{-sin(\alpha)}{\color{blue}{}{}cos(\alpha)}
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)(-cos(\alpha))- sin(\alpha) \color{red}{}-\color{black}{} \dfrac{\color{red}{}-\color{black}{}\sin(\alpha)}{cos(\alpha)}
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)(-cos(\alpha))- sin(\alpha) \color{red}{} + \color{black}{} \dfrac{\sin(\alpha)}{cos(\alpha)}
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            -tan(\alpha)(-cos(\alpha))- sin(\alpha)  + \color{blue}{}\dfrac{sin(\alpha)}{cos(\alpha)}
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \color{red}{}-\color{black}{}tan(\alpha)(\color{red}{}-\color{black}{}cos(\alpha))- sin(\alpha)  + \color{blue}{}tan(\alpha)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            tan(\alpha)cos(\alpha)- sin(\alpha)  + \color{blue}{}tan(\alpha)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \color{blue}{}tan(\alpha)\color{black}{}cos(\alpha)- sin(\alpha)  + tan(\alpha)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \color{blue}{}\dfrac{sin(\alpha)}{cos(\alpha)}\color{black}{}cos(\alpha)- sin(\alpha)  + tan(\alpha)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \dfrac{sin(\alpha)}{\cancel{cos(\alpha)}}\cancel{cos(\alpha)}- sin(\alpha)  + tan(\alpha)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            sin(\alpha) - sin(\alpha)  + tan(\alpha)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            tan(\alpha)
+                        \)
+                    </div>
+                    <br>
+                    <span class="gray">
+    
+                    </span>            
+                </div>
+            </div>        
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+                <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+            </div> 
+        
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <button id="hint2-button" onclick="showHint(2)">Svolgimento n° </button>
+    <div id="hint2" class="hint" style="display: none;">
+        <div class="grayBorder">
+            <div class="slide-container grayBorder">
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(cot\dfrac{5}{6}\pi + tan\dfrac{2}{3}\pi\right) \cdot sin\dfrac{5}{3}\pi + 2cos\dfrac{5}{4}\pi\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(\color{blue}{}cot\dfrac{5}{6}\pi\color{black}{} + tan\dfrac{2}{3}\pi\right) \cdot sin\dfrac{5}{3}\pi + 2cos\dfrac{5}{4}\pi\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(\color{blue}{}\dfrac{1}{tan\dfrac{5}{6}\pi}\color{black}{} + tan\dfrac{2}{3}\pi\right) \cdot sin\dfrac{5}{3}\pi + 2cos\dfrac{5}{4}\pi\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(\dfrac{1}{\color{blue}{}tan\dfrac{5}{6}\pi} + tan\dfrac{2}{3}\pi\right) \cdot sin\dfrac{5}{3}\pi + 2cos\dfrac{5}{4}\pi\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(\dfrac{1}{\color{blue}{}-\dfrac{\sqrt{3}}{3}} + tan\dfrac{2}{3}\pi\right) \cdot sin\dfrac{5}{3}\pi + 2cos\dfrac{5}{4}\pi\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(\color{blue}{}\dfrac{1}{-\dfrac{\sqrt{3}}{3}}\color{black}{} + tan\dfrac{2}{3}\pi\right) \cdot sin\dfrac{5}{3}\pi + 2cos\dfrac{5}{4}\pi\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(\color{blue}{}-\dfrac{3}{\sqrt{3}}\color{black}{} + tan\dfrac{2}{3}\pi\right) \cdot sin\dfrac{5}{3}\pi + 2cos\dfrac{5}{4}\pi\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(-\dfrac{3}{\sqrt{3}} \color{blue}{} + tan\dfrac{2}{3}\pi\color{black}{}\right) \cdot sin\dfrac{5}{3}\pi + 2cos\dfrac{5}{4}\pi\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(-\dfrac{3}{\sqrt{3}} \color{blue}{}-\sqrt{3}\color{black}{}\right) \cdot sin\dfrac{5}{3}\pi + 2cos\dfrac{5}{4}\pi\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(-\dfrac{3}{\sqrt{3}} -\sqrt{3}\right) \cdot \color{blue}{}sin\dfrac{5}{3}\pi\color{black}{} + 2cos\dfrac{5}{4}\pi\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(-\dfrac{3}{\sqrt{3}} -\sqrt{3}\right) \cdot \color{blue}{}\left(-\dfrac{\sqrt{3}}{2}\right)\color{black}{} + 2cos\dfrac{5}{4}\pi\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(-\dfrac{3}{\sqrt{3}} -\sqrt{3}\right) \cdot \left(-\dfrac{\sqrt{3}}{2}\right) + 2\color{blue}{}cos\dfrac{5}{4}\pi\color{black}{}\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(-\dfrac{3}{\sqrt{3}} -\sqrt{3}\right) \cdot \left(-\dfrac{\sqrt{3}}{2}\right) + 2\color{blue}{}\left(-\dfrac{\sqrt{2}}{2}\right)\color{black}{}\cdot sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(-\dfrac{3}{\sqrt{3}} -\sqrt{3}\right) \cdot \left(-\dfrac{\sqrt{3}}{2}\right) + 2\left(-\dfrac{\sqrt{2}}{2}\right)\cdot \color{blue}{}sin\dfrac{3}{4}\pi
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(-\dfrac{3}{\sqrt{3}} -\sqrt{3}\right) \cdot \left(-\dfrac{\sqrt{3}}{2}\right) + 2\left(-\dfrac{\sqrt{2}}{2}\right)\cdot \color{blue}{}\dfrac{\sqrt{2}}{2}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \left(\color{red}{}-\dfrac{3}{\sqrt{3}}\color{black}{} -\sqrt{3}\right) \cdot \left(\color{red}{}-\dfrac{\sqrt{3}}{2}\color{black}{}\right) + 2\left(-\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \underset{\color{red}{}+\dfrac{3}{2}\color{white}{+ \dfrac{3}{2}}}{\underbrace{\left(-\dfrac{3}{\sqrt{3}} -\sqrt{3}\right) \cdot \left(-\dfrac{\sqrt{3}}{2}\right)}} + 2\left(-\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \underset{+\dfrac{3}{2}\color{white}{+ \dfrac{3}{2}}}{\underbrace{\left(-\dfrac{3}{\sqrt{3}} \color{red}{}-\sqrt{3}\color{black}{}\right) \cdot \left(\color{red}{}-\dfrac{\sqrt{3}}{2}\color{black}{}\right)}} + 2\left(-\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \underset{+\dfrac{3}{2}\color{red}{+ \dfrac{3}{2}}}{\underbrace{\left(-\dfrac{3}{\sqrt{3}} -\sqrt{3}\right) \cdot \left(-\dfrac{\sqrt{3}}{2}\right)}} + 2\left(-\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \underset{\color{red}{+\dfrac{3}{2}+\dfrac{3}{2}}}{\underbrace{\left(-\dfrac{3}{\sqrt{3}} -\sqrt{3}\right) \cdot \left(-\dfrac{\sqrt{3}}{2}\right)}} + 2\left(-\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \color{red}{}+\dfrac{3}{2} +\dfrac{3}{2}\color{black}{} + 2\left(-\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            +\dfrac{3}{2} +\dfrac{3}{2}\color{black}{} \color{red}{}+\color{black}{} 2\left(\color{red}{}-\color{black}{}\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            +\dfrac{3}{2} +\dfrac{3}{2}\color{red}{}-\color{black}{} 2\left(\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}
+                        \)
+                    </div>
+                </div>
+                <!--  -->
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            +\dfrac{3}{2} +\dfrac{3}{2} - \color{red}{}2\color{black}{}\left(\dfrac{\color{red}{}\sqrt{2}}{2}\right)\cdot \dfrac{\color{red}{}\sqrt{2}}{2}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            +\dfrac{3}{2} +\dfrac{3}{2} - \underset{\dfrac{\color{red}{}2\cdot\sqrt{2}\cdot\sqrt{2}}{}}{\underbrace{2\left(\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}}}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            +\dfrac{3}{2} +\dfrac{3}{2} - \underset{\dfrac{2\cdot\sqrt{2}\cdot\sqrt{2}}{}}{\underbrace{2\left(\dfrac{\sqrt{2}}{\color{red}{}2}\right)\cdot \dfrac{\sqrt{2}}{\color{red}{}2}}}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            +\dfrac{3}{2} +\dfrac{3}{2} - \underset{\dfrac{2\cdot\sqrt{2}\cdot\sqrt{2}}{\color{red}{2 \cdot 2}}}{\underbrace{2\left(\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}}}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            +\dfrac{3}{2} +\dfrac{3}{2} - \underset{\dfrac{2\cdot\color{red}{\sqrt{2}\cdot\sqrt{2}}}{2 \cdot 2}}{\underbrace{2\left(\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}}}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            +\dfrac{3}{2} +\dfrac{3}{2} - \underset{\dfrac{2\cdot\color{red}{2}}{2 \cdot 2}}{\underbrace{2\left(\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}}}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            +\dfrac{3}{2} +\dfrac{3}{2} - \underset{\color{red}{\dfrac{2\cdot 2}{2 \cdot 2}}}{\underbrace{2\left(\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}}}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            +\dfrac{3}{2} +\dfrac{3}{2} - \underset{\color{red}{}1}{\underbrace{2\left(\dfrac{\sqrt{2}}{2}\right)\cdot \dfrac{\sqrt{2}}{2}}}
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            +\dfrac{3}{2} +\dfrac{3}{2} - \color{red}{}1
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \color{red}{}+\dfrac{3}{2} +\dfrac{3}{2}\color{black}{}- 1
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \color{red}{}+\dfrac{6}{2}\color{black}{} - 1
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            \color{red}{}+3\color{black}{} - 1
+                        \)
+                    </div>
+                </div>
+                <div class="slide1">
+                    <div class="formula">
+                        \(
+                            2
+                        \)
+                    </div>
+                </div>
+            </div>        
+            <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+                <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+                <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+            </div> 
+        
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var ggbApp1 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg1",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/quizSenoCosenoTangente.ggb"}, true);
+
+        window.addEventListener("load", function() { 
+            ggbApp1.inject('geogebra1');
+        });
+
+        let rispostaCorretta;
+
+        let trigFunction;
+        let angleGG;
+        let angleToPrint;
+
+        let trigFunctionIndex = 0;
+        let randomIndex = 0;
+
+        let trigFunctionList = [`sin`, `cos`, `tan`];
+        let angleListGradi = [0, 30, 45, 60, 90, 120, 135, 150, 180, 210, 225, 240, 270, 300, 315, 330];
+        let angleListRadianti = [
+            "0", 
+            "\\dfrac{\\pi}{6}", 
+            "\\dfrac{\\pi}{4}", 
+            "\\dfrac{\\pi}{3}", 
+            "\\dfrac{\\pi}{2}", 
+            "\\dfrac{2}{3}\\pi",  
+            "\\dfrac{3}{4}\\pi", 
+            "\\dfrac{5}{6}\\pi", 
+            "\\pi", 
+            "\\dfrac{7}{6}\\pi", 
+            "\\dfrac{5}{4}\\pi", 
+            "\\dfrac{4}{3}\\pi", 
+            "\\dfrac{3\\pi}{2}", 
+            "\\dfrac{5}{3}\\pi", 
+            "\\dfrac{7}{4}\\pi", 
+            "\\dfrac{11}{6}\\pi", 
+        ];
+
+        
+
+        let trigFunctionValue = [
+
+            [`0`, `1`, `0`], //0 ***
+
+            [`\\dfrac{1}{2}`, `\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{\\sqrt{3}}{3}`], //pi/6
+
+            [`\\dfrac{\\sqrt{2}}{2}`, `\\dfrac{\\sqrt{2}}{2}`, `1`], //pi/4
+
+            [`\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{1}{2}`, `\\sqrt{3}`], //pi/3
+
+            [`1`, `0`, `\\text{non esiste}`], //pi/2 ***
+
+            [`\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{1}{2}`, `-\\sqrt{3}`], //2/3pi
+
+            [`\\dfrac{\\sqrt{2}}{2}`, `-\\dfrac{\\sqrt{2}}{2}`, `-1`], //3pi/4
+
+            [`\\dfrac{1}{2}`, `-\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{\\sqrt{3}}{3}`], //5/6pi
+
+            [`0`, `-1`, `0`], //pi ***
+
+            [`-\\dfrac{1}{2}`, `-\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{\\sqrt{3}}{3}`], //7/6pi
+
+            [`-\\dfrac{\\sqrt{2}}{2}`, `-\\dfrac{\\sqrt{2}}{2}`, `1`], //5pi/4
+
+            [`-\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{1}{2}`, `\\sqrt{3}`], //4/3pi
+
+            [`-1`, `0`, `\\text{non esiste}`], //3/2pi ***
+
+            [`-\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{1}{2}`, `-\\sqrt{3}`], //5/3pi
+
+            [`-\\dfrac{\\sqrt{2}}{2}`, `\\dfrac{\\sqrt{2}}{2}`, `-1`], //7pi/4
+
+            [`-\\dfrac{1}{2}`, `\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{\\sqrt{3}}{3}`], //11/6pi
+
+        ];
+
+        function generaDomanda() {
+
+            document.getElementById("rispostaCorretta").disabled = false;
+
+            trigFunctionIndex = (trigFunctionIndex +  Math.floor(Math.random()*trigFunctionList.length))%trigFunctionList.length;
+            trigFunction = trigFunctionList[trigFunctionIndex]
+
+            randomIndex = (randomIndex + Math.floor(Math.random()*angleListGradi.length - 1))%angleListGradi.length;
+            angleGG = angleListGradi[randomIndex];
+            angleToPrint = angleListRadianti[randomIndex];
+
+            console.log(`
+            randomIndex: ${randomIndex},
+            angleGG: ${angleGG},
+            trigFunctionIndex:${trigFunctionIndex},
+            trigFunction: ${trigFunctionList[trigFunctionIndex]}
+            `)
+
+            rispostaCorretta = trigFunctionValue[randomIndex][trigFunctionIndex];
+
+            
+
+            gg1.setValue("a", angleGG);
+
+            let grid30Index = [1, 7, 9, 15];
+            let grid60Index = [3, 5, 11, 13];
+            let grid45Index = [2, 6, 10, 14];
+            let grid90Index = [0, 4, 8, 12];
+
+            for(let i = 1; i <=4; i++) {
+                gg1.setVisible(`l${i}`, false)
+            }
+
+            if(randomIndex === 1 || randomIndex === 7 || randomIndex === 9 || randomIndex === 15) {
+                gg1.setVisible("l1", true)
+            }
+            if(randomIndex === 3 || randomIndex === 5 || randomIndex === 11 || randomIndex === 13) {
+                gg1.setVisible("l2", true)
+            }
+            if(randomIndex === 2 || randomIndex === 6 || randomIndex === 10 || randomIndex === 14) {
+                gg1.setVisible("l3", true)
+            }
+            if(randomIndex === 0 || randomIndex === 4 || randomIndex === 8 || randomIndex === 12) {
+                gg1.setVisible("l4", true)
+            }
+
+
+            let domanda = document.getElementById("domanda");
+            domanda.innerHTML = 
+            `\\[
+                ${trigFunction}\\left(${angleToPrint}\\right) = \\text{.......}\\,\\,\\,?
+            \\]`
+
+            MathJax.typesetClear([domanda]);
+            MathJax.typesetPromise([domanda]).then(() => {});
+        }
+
+        function controllaSoluzione() {
+            let domanda = document.getElementById("domanda");
+            domanda.innerHTML = 
+            `\\[
+                ${trigFunction}\\left(${angleToPrint}\\right) = ${rispostaCorretta}
+            \\]`
+            MathJax.typesetClear([domanda]);
+            MathJax.typesetPromise([domanda]).then(() => {});
+        }
+
+
+    </script>
+    <script>            
+        function showHint(i) {
+            for(let j = 1; j <= document.getElementsByClassName("hint").length; j++) {
+                document.getElementById("hint"+j+"-button").style.display = "block";
+                document.getElementById("hint"+j).style.display = "none";    
+            }
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+            document.location.href = `#hint${i}`
+        }  
+
+    </script>
+    <script>
+        let slideIndex = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+        inizialize(1);
+
+
+        //funzione per passare alla slide successiva
+        function nextSlide(n) {
+            
+            //ogni volta che il bottone viene premuto scrollo in modo da centrare le slide
+            document.location.href=`#slide-container${n}`
+
+            //nascondo tutte le slide
+            let slide = document.getElementsByClassName(`slide${n}`)
+            for(let i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+
+            //aggiorno l'indice
+            slideIndex[n]++;
+
+            if(slideIndex[n] !== 0 ) {
+                //pulsante previous abiliatato
+                document.getElementById(`previousSlide-button${n}`).disabled = false;
+            }
+
+            //se ci sono ancora slide da mostrare passo alla successiva
+            if(slideIndex[n] < slide.length) {
+                slide[slideIndex[n]].style.display = "block";
+            }
+
+            //le slide da mostrare sono finite. rendo nuovamente visibile l'ultima slide (altimenti sparisce)
+            //e scrollo la vista al riquadro conclusiovo
+            if(slideIndex[n]  === slide.length -1) {
+                slide[slide.length-1].style.display = "block";
+                document.getElementById(`nextSlide-button${n}`).disabled = true;  
+            }
+
+        }
+            
+        //funzione per passare alla slide successiva
+        function previousSlide(n) {
+
+            
+            //ogni volta che il bottone viene premuto scrollo in modo da centrare le slide
+            document.location.href=`#slide-container${n}`
+
+            //nascondo tutte le slide
+            let slide = document.getElementsByClassName(`slide${n}`)
+            for(let i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";
+            }
+
+            //aggiorno l'indice
+            slideIndex[n]--;
+
+
+            //passo alla precedente. se è la prima slide disattivo il tasto previous
+            slide[slideIndex[n]].style.display = "block";
+            //slide[slideIndex[n]].style.fontSize = "1.1rem";
+            if(slideIndex[n] === 0) {
+                document.getElementById(`previousSlide-button${n}`).disabled = true;
+            } 
+
+            //nel caso in cui il pulsante next sia disabilitato lo riattivo
+            if(document.getElementById(`nextSlide-button${n}`).disabled === true) {
+                document.getElementById(`nextSlide-button${n}`).disabled = false;  
+            }
+        }
+
+
+        function inizialize(n) {
+
+            slideIndex[n] = 0
+
+            let slide = document.getElementsByClassName(`slide${n}`)
+
+            for(let i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none"
+            }
+
+            //rendo visibile la prima slide
+            slide[0].style.display = "block"
+
+            //pulsante next disabled
+            document.getElementById(`nextSlide-button${n}`).disabled = false;
+
+            //pulsante previous disabled
+            document.getElementById(`previousSlide-button${n}`).disabled = true;
+
+        }
+    </script>
+
+
+
+
+
+</body>
