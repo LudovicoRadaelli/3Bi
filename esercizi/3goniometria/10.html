@@ -332,6 +332,36 @@
     <br>
     <br>
 
+    <button id="hint4-button" onclick="showHint(4)">Svolgimento n° 315</button>
+    <div id="hint4" class="hint" style="display: none;">
+        <b class="gray">Svolgimento n° 315</b>
+        <div class="grayBorder">
+            <iframe style = "width: 100%" src="https://www.youtube.com/embed/VNyr_ZqOJkA?si=hQq5cT2J7b2KvkbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br>
+            <br>
+            ⚠️⚠️
+            <div class="gray">
+                Purtroppo il software con cui registro non ha preso l'audio del video. Lo metto comunque sperando possa esservi utile.
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    
+    <button id="hint3-button" onclick="showHint(3)">Svolgimento n° 316</button>
+    <div id="hint3" class="hint" style="display: none;">
+        <b class="gray">Svolgimento n° 316</b>
+        <div class="grayBorder">
+            <iframe style = "width: 100%" src="https://www.youtube.com/embed/SU3buIT5qh0?si=g_TNqgtBVbxc-0NQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    
+
+    <br>
+    <br>    
+
     <button id="hint2-button" onclick="showHint(2)">Svolgimento n° 364</button>
     <div id="hint2" class="hint" style="display: none;">
         <div class="grayBorder">
@@ -601,6 +631,19 @@
     <br>
     <br>
 
+    <button id="hint5-button" onclick="showHint(5)">Svolgimento n° 368</button>
+    <div id="hint5" class="hint" style="display: none;">
+        <b class="gray">Svolgimento n° 368</b>
+        <div class="grayBorder">
+            <iframe style = "width: 100%" src="https://www.youtube.com/embed/nlxnkNYUSqI?si=D1YMWA4SmV5uk_yv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    
+    
 
 
 
@@ -757,7 +800,10 @@
 
 
     </script>
-    <script>            
+    <script>    
+    
+        let currentHint = 0;
+
         function showHint(i) {
             for(let j = 1; j <= document.getElementsByClassName("hint").length; j++) {
                 document.getElementById("hint"+j+"-button").style.display = "block";
@@ -766,18 +812,29 @@
             document.getElementById("hint"+i+"-button").style.display = "none";
             document.getElementById("hint"+i).style.display = "block";
             document.location.href = `#hint${i}`
+            currentHint = i;
+            console.log(currentHint)
         }  
 
-    </script>
-    <script>
         let slideIndex = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
         let slideContainer = document.getElementsByClassName(`slide-container`)
-            for(let i = 1; i <= slideContainer.length; i++) {
-                inizialize(i);
+        for(let i = 1; i <= slideContainer.length; i++) {
+            inizialize(i);
+        }
+
+        console.log(currentHint)
+        
+        document.addEventListener("keydown", (event) => {
+            if(currentHint !== 0) {
+                if(event.key === "ArrowRight") {
+                    nextSlide(currentHint);
+                    console.log("hey")
+                } else if(event.key === "ArrowLeft") {
+                    previousSlide(currentHint);
+                }
             }
-        
-        
+        })
 
 
         //funzione per passare alla slide successiva
