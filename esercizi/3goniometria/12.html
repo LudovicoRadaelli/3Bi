@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<style>
+    a {color: #3db72b}
+</style>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    
+    <h3 class="yellow">Coordinate polari</h3>
+    <div class="esempi-container">
+        <div class="geogebra-container">
+            <div id="geogebra2" ></div>
+        </div>
+        <p class="gray" style="font-size: 0.9rem;">
+            Trascinate i punti <span style="color: rgb(255, 127, 0)">arancione</span> e 
+            <span style="color: #f40099">rosa</span> per modificare la posizione del punto \(\color{blue}{P}\).
+        </p>
+    
+        <br>
+    
+        <p>
+            Il punto \(P\) evidenziato in <span style="color: blue">blu</span> ha coordinate polari 
+            <span id="coords">\[\left(\color{#f40099}{6}\color{black}{} \,;\,\,  \color{rgb(255, 127, 0)}{\dfrac{\pi}{6}}\color{black}{}\right)\]</span>
+        </p>
+        <p>
+            La prima coordinata indica la <span style="color: rgb(244, 0, 153)">distanza</span> del punto dall'origine.
+        </p>
+        <p>
+            La seconda coordinata rappresenta l'<span style="color: rgb(255, 127, 0)">angolo</span> che si deve spaziare a partire dell'asse \(x\) per "vedere" il punto. 
+        </p>
+        
+        
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+    
+        <u><b style="font-size: 1.3rem;">Dalle coordinate polari a quelle cartesiane</b></u>
+        <br>
+        <br>
+        <p>
+            Consideriamo un punto \(P\) avete generiche coordinate polari 
+            \[\left(\color{#f40099}{r}\color{black}{}\,;\,\,\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right)\]
+        </p>        
+        <img src="img/polarToCartesian.png" alt="" style="width: 60%; margin: auto; border: 0;">
+        <br>
+        <p>
+            Usando la definizione geometrica del seno di un angolo, sappiamo che
+            \[
+                sin\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right) = \color{black}{\dfrac{\color{#3db72b}{y}}{\color{#f40099}{r}}} \color{black}{}
+                \quad\Longrightarrow\quad 
+                \color{#3db72b}{y} \color{black}{} = \color{#f40099}{r} \color{black}{} \cdot sin\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right)
+            \]
+            Allo stesso modo, usando la definizione geometrica del coseno di un angolo, si ha che
+            \[
+                cos\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right) = \color{black}{\dfrac{\color{blue}{x}}{\color{#f40099}{r}}} \color{black}{}
+                \quad\Longrightarrow\quad 
+                \color{blue}{x} \color{black}{} = \color{#f40099}{r} \color{black}{} \cdot cos\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right)
+            \]
+            Riassumendo:
+        </p>
+        <p class="grayBackground">
+            Se un punto \(P\) ha coordinate <b>polari</b> 
+            \[
+                \left(\color{#f40099}{r}\color{black}{}\,;\,\,\color{rgb(255, 127, 0)}{\alpha}\right)
+            \]
+            allora le sue coordinate <b>cartesiane</b> sono
+            \[
+                \left(
+                    \color{#f40099}{r} \color{black}{} sin\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right) \,;\,\,
+                    \color{#f40099}{r} \color{black}{} cos\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right)
+                \right)
+            \]
+        </p>
+    
+        <br>
+        <br>        
+        <hr>
+        <br>
+        <br>
+        
+        <u><b style="font-size: 1.3rem;">Dalle coordinate cartesiane a quelle polari</b></u>        
+        <br>
+        <br>
+        <p>
+            Consideriamo un punto \(P\) avete generiche coordinate cartesiane 
+            \[\left(\color{blue}{x}\color{black}{};\,\,\color{#3db72b}{y}\color{black}{}\right)\]
+            </p>            
+            <img src="img/polarToCartesian.png" alt="" style="width: 60%; margin: auto; border: 0;">
+            <br>
+            <p>
+                Il teorma di Pitagora ci permette di trovare la coordinata polare \(\color{#f40099}{r}\) del punto, ovvero la distanza del punto \(P\) dall'origine:
+                \[
+    
+                \color{#f40099}{r} \color{black}{}= \color{black}{\sqrt{\color{blue}{x}^{\color{black}{2}} + \color{#3db72b}{y}^{\color{black}{2}}}}
+                \]
+            </p>
+            <p>
+            Per trovare la coordinata polare \(\color{rgb(255, 127, 0)}{\alpha}\) possiamo usare la definizione geometrica di tangente:
+            \[
+                tan\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right) = \color{black}{\dfrac{\color{#3db72b}{y}}{\color{blue}{x}}}
+            \]
+            di conseguenza \(\color{rgb(255, 127, 0)}{\alpha}\) è l'angolo che ha tangente \(\dfrac{\color{#3db72b}{y}}{\color{blue}{x}}\).
+            <br>
+            Problema ...ci sono <b>due</b> angoli che hanno come tangente \(\dfrac{\color{#3db72b}{y}}{\color{blue}{x}}\)! Quale prendiamo?
+            <br>
+            Chiaramente la scelta dipendera dal segno di \(\color{blue}{x}\) ed \(\color{#3db72b}{y}\). Infatti sappiamo che 
+            </p>
+            <br>
+            <ul>
+                <li>
+                    se \(\color{blue}{x} \color{black}{}\gt 0\,\,\) e \(\,\,\color{#3db72b}{y} \color{black}{}\gt 0\quad\) allora \(\quad0 \lt \color{rgb(255, 127, 0)}{\alpha} \color{black}{}\lt \dfrac{\pi}{2}\) ;
+                </li>
+                <br>
+                <li>
+                se \(\color{blue}{x} \color{black}{}\lt 0\,\,\) e \(\,\,\color{#3db72b}{y} \color{black}{}\gt 0\quad\) allora \(\quad\dfrac{\pi}{2} \lt \color{rgb(255, 127, 0)}{\alpha} \color{black}{}\lt \pi\) ;
+            </li>
+            <br>
+            <li>
+                se \(\color{blue}{x} \color{black}{}\lt 0\,\,\) e \(\,\,\color{#3db72b}{y} \color{black}{}\lt 0\quad\) allora \(\quad\pi \lt \color{rgb(255, 127, 0)}{\alpha} \color{black}{}\lt \dfrac{3}{2}\pi\) ;
+            </li>
+            <br>
+            <li>
+                se \(\color{blue}{x} \color{black}{}\lt 0\,\,\) e \(\,\,\color{#3db72b}{y} \color{black}{}\gt 0\quad\) allora \(\quad\dfrac{3}{2}\pi \lt \color{rgb(255, 127, 0)}{\alpha} \color{black}{}\lt 2\pi\).
+            </li>
+            </ul>
+    
+            <br>
+        
+            <p class="gray">
+                <b>Informazione utile per l'infromatica</b>
+                <br>
+                In molti linguaggi di programmazione la funzione che 
+        </p> 
+        <br>
+        <ul class="gray">
+            <li>
+                prende in input le coordinate \(\left(y\,;\,\,x\right)\) 
+            </li>
+            <br>
+            <li>
+                restituisce come output l'angolo \(\alpha\) compreso tra l'asse \(x\) ed il raggio \(r\)
+            </li>
+        </ul>
+        <br>
+        <p class="gray">
+            è indicata con \(\boldsymbol{atan2}\). 
+            <br>
+            <a href="https://it.wikipedia.org/wiki/Arcotangente2">QUI</a> potete trovare ulteriori dettagli.
+        </p>
+    
+        <br>
+    
+        <p>
+            Riassumendo
+        </p>
+        <p class="grayBackground">
+            Se un punto \(P\) ha coordinate <b>cartesiane</b> 
+            \[
+                \left(\color{blue}{x}\color{black}{};\,\,\color{#3db72b}{y}\color{black}{}\right)
+            \]
+            allora le sue coordinate <b>polari</b> sono
+            \[
+                \left(
+                    \color{black}{\sqrt{\color{blue}{x}^{\color{black}{2}} + \color{#3db72b}{y}^{\color{black}{2}}}}
+                    \,;\,\,
+                    \color{rgb(255, 127, 0)}{\alpha}\color{black}{}
+                \right)
+            \]
+            dove \(\color{rgb(255, 127, 0)}{\alpha}\) è l'angolo che ha come tangente \(\color{black}{\dfrac{\color{#3db72b}{y}}{\color{blue}{x}}}\), preso in accordo con il segno di \(\color{blue}{x}\) ed \(\color{#3db72b}{y}\)
+        </p>
+        
+        <br>
+        <br>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        Di seguito vengono fornite le coordinate <u>polari</u> di alcuni punti. Individuare per ciascuno di essi le 
+        corrispondenti coordinate cartesiane.
+        <div class="formula">
+            \[
+                A\left(\dfrac{11}{6}\pi\,;\,\,2\right) \,\,\,\, 
+                B\left(\dfrac{2}{3}\pi\,;\,\,\dfrac{1}{2}\right) \,\,\,\, 
+                C\left(\dfrac{1}{2}\pi\,;\,\,3\right)            
+            \]
+        </div>
+        <div class="formula">
+            \[
+                D\left(\dfrac{7}{4}\pi\,;\,\,\sqrt{2}\right) \,\,\,\, 
+                E\left(\dfrac{3}{2}\pi\,;\,\,3\right) \,\,\,\, 
+                F\left(\dfrac{4}{3}\pi\,;\,\,1\right)           
+            \]
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>    
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Di seguito vengono fornite le coordinate <u>cartesiane</u> di alcuni punti. Individuare per ciascuno di essi le 
+        corrispondenti coordinate polari.
+        <div class="formula">
+            \[
+                A\left(1\,;\,\,\sqrt{3}\right) \,\,\,\, 
+                B\left(-\dfrac{5\,\sqrt{2}}{2}\,;\,\,\dfrac{5\,\sqrt{2}}{2}\right) \,\,\,\, 
+                C\left(-5\,;\,\,0\right)            
+            \]
+        </div>
+        <div class="formula">
+            \[
+                D\left(-2\sqrt{3}\,;\,\,-2\right) \,\,\,\, 
+                E\left(0\,;\,\,\dfrac{4}{3}\right) \,\,\,\, 
+                F\left(\dfrac{3}{2}\,;\,\,\dfrac{3\sqrt{3}}{2}\right)            
+            \]
+        </div>
+
+    </div>
+    
+
+    <br>    
+    <br>
+
+    <script>        
+        var ggbApp2 = new GGBApplet({
+            "appName": "classic", 
+            "id": "gg2",
+            "allowUpscale": true,
+            "showToolBar": false, 
+            "showAlgebraInput": false, 
+            "showMenuBar": false, 
+            "enableShiftDragZoom": false,
+            "scaleContainerClass":"geogebra-container",
+            "filename":"img/coordinatePolari.ggb"}, 
+            true);          
+
+        window.addEventListener("load", function() {             
+            ggbApp2.inject('geogebra2');
+        });
+        
+    </script>
+
+</body>
