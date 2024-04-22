@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <br>
+    
+    <h3 class="yellow">Formula dell'angolo aggiunto</h3>
+    <div class="esempi-container">
+        
+        <div id="slide-container1" class="slide-container grayBorder">            
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        r\,sin(x + \alpha) =
+                    \)
+                </div>
+            </div>          
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        r\,sin(x + \alpha) =
+                    \)
+                </div>
+                <span class="gray">
+                    Usiamo la formula di addizione del seno per sviluppare \(sin(x + \alpha)\)    
+                </span>
+            </div>          
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        r\,\color{red}{}sin(x + \alpha)\color{black}{} =
+                    \)
+                </div>
+                <span class="gray">
+                    Usiamo la formula di addizione del seno per sviluppare \(sin(x + \alpha)\)    
+                </span>
+            </div>          
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        r\,\color{red}{}\big[sin(x)cos(\alpha) + sin(\alpha)cos(x)\big]\color{black}{} =
+                    \)
+                </div>
+                <span class="gray">
+                    Usiamo la formula di addizione del seno per sviluppare \(sin(x + \alpha)\)    
+                </span>
+            </div>              
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        r\,\big[sin(x)cos(\alpha) + sin(\alpha)cos(x)\big] =
+                    \)
+                </div>
+                <span class="gray">
+                    Svolgiamo la moltiplicazione 
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        \color{red}{}r\color{black}{}\,\big[sin(x)cos(\alpha) + sin(\alpha)cos(x)\big] =
+                    \)
+                </div>
+                <span class="gray">
+                    Svolgiamo la moltiplicazione 
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        \color{red}{}r\,\color{black}{}sin(x)cos(\alpha) + \color{red}{}r\,\color{black}{}sin(\alpha)cos(x) =
+                    \)
+                </div>
+                <span class="gray">
+                    Svolgiamo la moltiplicazione 
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        r\,sin(x)cos(\alpha) + r\,sin(\alpha)cos(x) =
+                    \)
+                </div>
+                <span class="gray">
+                    Riordiniamo i fattori della primo addendo.
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        r\,\color{red}{}sin(x)\color{black}{}cos(\alpha) + r\,sin(\alpha)cos(x) =
+                    \)
+                </div>
+                <span class="gray">
+                    Riordiniamo i fattori della primo addendo.
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        r\,cos(\alpha)\color{red}{}sin(x)\color{black}{} + r\,sin(\alpha)cos(x) =
+                    \)
+                </div>
+                <span class="gray">
+                    Riordiniamo i fattori della primo addendo.
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        r\,cos(\alpha)sin(x) + r\,sin(\alpha)cos(x) =
+                    \)
+                </div>
+                <span class="gray">
+                    
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        r\,cos(\alpha)sin(x) + r\,sin(\alpha)cos(x) =
+                    \)
+                </div>
+                <span class="gray">
+                    Etichettiamo con \(a\) la quantità \(r\,cos(\alpha)\) nel primo addendo.
+                    \[
+                        \color{transparent}{}
+                        \begin{cases}
+                            \color{gray}{}a = r\,cos(\alpha)
+                            \\\\
+                            b = r\,sin(\alpha)
+                        \end{cases}
+                    \]
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        \color{blue}{}r\,cos(\alpha)\color{gray}{}sin(x) + r\,sin(\alpha)cos(x) =
+                    \)
+                </div>
+                <span class="gray">
+                    Etichettiamo con \(a\) la quantità \(r\,cos(\alpha)\) nel primo addendo.
+                    \[
+                        \color{transparent}{}
+                        \begin{cases}
+                            \color{gray}{}a = \color{blue}{}r\,cos(\alpha)
+                            \\\\
+                            b = r\,sin(\alpha)
+                        \end{cases}
+                    \]
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        \color{blue}{}a\,\color{black}{}sin(x) + r\,sin(\alpha)cos(x) =
+                    \)
+                </div>
+                <span class="gray">
+                    Etichettiamo con \(a\) la quantità \(r\,cos(\alpha)\) nel primo addendo.
+                    \[
+                        \color{transparent}{}
+                        \begin{cases}
+                            \color{blue}{}a\color{gray}{} = r\,cos(\alpha)
+                            \\\\
+                            b = r\,sin(\alpha)
+                        \end{cases}
+                    \]
+                </span>
+            </div>                          
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        a\,sin(x) + r\,sin(\alpha)cos(x) =
+                    \)
+                </div>
+                <span class="gray">
+                    Etichettiamo con \(b\) la quantità \(r\,sin(\alpha)\) nel secondo addendo.
+                    \[
+                        \begin{cases}
+                            a = r\,cos(\alpha)
+                            \\\\
+                            b = r\,sin(\alpha)
+                        \end{cases}
+                    \]
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        a\,sin(x) + \color{blue}{}r\,sin(\alpha)\color{black}{}cos(x) =
+                    \)
+                </div>
+                <span class="gray">
+                    Etichettiamo con \(b\) la quantità \(r\,sin(\alpha)\) nel secondo addendo.
+                    \[
+                        \begin{cases}
+                            a = r\,cos(\alpha)
+                            \\\\
+                            b = \color{blue}{}r\,sin(\alpha)
+                        \end{cases}
+                    \]
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        a\,sin(x) + \color{blue}{}b\,\color{black}{}cos(x) =
+                    \)
+                </div>
+                <span class="gray">
+                    Etichettiamo con \(b\) la quantità \(r\,sin(\alpha)\) nel secondo addendo.
+                    \[
+                        \begin{cases}
+                            a = r\,cos(\alpha)
+                            \\\\
+                            \color{blue}{}b\color{gray}{} = r\,sin(\alpha)
+                        \end{cases}
+                    \]
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        a\,sin(x) + b\,cos(x) 
+                    \)
+                </div>
+                <span class="gray">
+                    Etichettiamo con \(b\) la quantità \(r\,sin(\alpha)\) nel secondo addendo.
+                    \[
+                        \begin{cases}
+                            a = r\,cos(\alpha)
+                            \\\\
+                            b = r\,sin(\alpha)
+                        \end{cases}
+                    \]
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        a\,sin(x) + b\,cos(x) 
+                    \)
+                </div>
+                <span class="gray">
+                    Rivediamo i passaggi svolti
+                </span>
+            </div>  
+            <div class="slide1">
+                <div class="formula">
+                    \[
+                        \begin{align*}
+                            &r\,sin(x + \alpha) =
+                            \\\\
+                            =\, & r\,\big[sin(x)cos(\alpha) + sin(\alpha)cos(x)\big] =
+                            \\\\
+                            =\, & r\,sin(x)cos(\alpha) + r\,sin(\alpha)cos(x) =
+                            \\\\
+                            =\, & r\,cos(\alpha)sin(x) + r\,sin(\alpha)cos(x) =
+                            \\\\
+                            =\, & \underset{a}{\color{blue}{}\underbrace{\color{black}{}r\,cos(\alpha)}}sin(x) + \underset{b}{\color{blue}{}\underbrace{\color{black}{}r\,sin(\alpha)}}cos(x) =
+                            \\\\
+                            =\, & a\,sin(x) + b\,cos(x) =
+                        \end{align*}
+                    \]
+                    
+                </div>                
+            </div>                   
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div>  
+    
+        <br>
+        <br>
+
+        Abbiamo così dimostrato che vale la seguente formula, che è detta <b>formula dell'angolo aggiunto</b>:
+        <div class="grayBackground">
+            \[
+                a\,sin(x) + b\,cos(x) = r\,sin(x + \alpha) 
+            \]
+
+            dove i coefficienti \(a\), \(b\), \(r\) ed \(\alpha\) sono legati dalle seguenti relazioni
+            \[
+                \begin{cases} 
+                    a = r\,cos(\alpha)
+                    \\\\
+                    b = r\,sin(\alpha)
+                \end{cases}
+            \]
+        </div>
+    </div>
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        Studiare il materiale che trovate all'inizio della pagina (la formula è da ricordare a memoria).
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <ul>             
+        <li>
+            Svolgere gli esercizi n° 172, 173, 174 a pag. 498.
+        </li>   
+        <br>
+        <li>
+            Svolgere nuovamente l'esercizio 203 a pag. 499.        
+        </li>    
+    </ul>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>                
+        Svolgere nuovamente gli esercizi n° 41, 42, 43 a pag. 541.        
+    </div>
+
+    <br>
+    <br>    
+    
+    <script src="../../js/hintAndSlide.js"></script>
+</body>
+
+
+
+
+
