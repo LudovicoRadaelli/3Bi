@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <br>
+    
+    <h3 class="yellow">Formule di bisezione</h3>    
+    <div class="esempi-container">
+        Le formule di bisezione sono
+        <div class="grayBackground">
+            \[
+                sin\left(\dfrac{\alpha}{2}\right) = \pm\sqrt{\dfrac{1 - cos(\alpha)}{2}}
+            \]
+            \[
+                cos\left(\dfrac{\alpha}{2}\right) = \pm\sqrt{\dfrac{1 + cos(\alpha)}{2}}
+            \]   
+        </div>     
+
+        <br>
+        <br>
+
+        <i><b>Dimostrazione della seconda formula</b></i>
+        <div id="slide-container1" class="slide-container grayBorder">            
+            <div class="slide1">
+                Abbiamo visto che le formule di duplicazione del coseno si possono scrivere in tre modi 
+                equivalenti:
+                <br>                
+                <div >            
+                    \[
+                        \,\,\, cos(2\alpha) = cos^2(\alpha) - sin^2(\alpha)
+                    \]
+                </div>
+                <div >            
+                    \[
+                        \,\,\, cos(2\alpha) = 1 - 2sin^2(\alpha)
+                    \]
+                </div>
+                <div >            
+                    \[
+                        \,\,\, cos(2\alpha) = 2cos^2(\alpha) - 1
+                    \]
+                </div>
+            </div>      
+            <div class="slide1">
+                Abbiamo visto che le formule di duplicazione del coseno si possono scrivere in tre modi 
+                equivalenti:
+                <br>                
+                <div >            
+                    \[
+                        \,\,\, cos(2\alpha) = cos^2(\alpha) - sin^2(\alpha)
+                    \]
+                </div>
+                <div >            
+                    \[
+                        \,\,\, cos(2\alpha) = 1 - 2sin^2(\alpha)
+                    \]
+                </div>
+                <div >            
+                    \[
+                        \,\,\, cos(2\alpha) = 2cos^2(\alpha) - 1
+                    \]
+                </div>
+                Consideriamo la terza formula.
+            </div>    
+            <div class="slide1">
+                <span class="gray">
+                    Abbiamo visto che le formule di duplicazione del coseno si possono scrivere in tre modi 
+                    equivalenti:
+                </span>
+                <br>                
+                <div >            
+                    \[
+                        \color{gray}{}\,\,\, cos(2\alpha) = cos^2(\alpha) - sin^2(\alpha)
+                    \]
+                </div>
+                <div >            
+                    \[
+                        \color{gray}{}\,\,\, cos(2\alpha) = 1 - 2sin^2(\alpha)
+                    \]
+                </div>
+                <div >            
+                    \[
+                        \,\,\, cos(2\alpha) = 2cos^2(\alpha) - 1
+                    \]
+                </div>
+                <span class="gray">
+                    Consideriamo la terza formula.
+                </span> 
+            </div>    
+            <div class="slide1">
+                \[\cos(2\alpha) = 2cos^2(\alpha) - 1\]
+            </div>
+            <div class="slide1">
+                \[\cos(2\alpha) = 2cos^2(\alpha) - 1\]
+                <div>
+                    Sostituiamo l'etichetta \(\alpha\), con l'etichetta \(\spadesuit\)
+                </div>
+            </div>
+            <div class="slide1">
+                \[\cos(2{\color{blue}{}\alpha}) = 2cos^2({\color{blue}{}\alpha}) - 1\]
+                <div>
+                    Sostituiamo l'etichetta \(\alpha\), con l'etichetta \(\spadesuit\).
+                </div>
+            </div>
+            <div class="slide1">
+                \[\cos(2\spadesuit) = 2cos^2(\spadesuit) - 1\]
+                <div>
+                    Sostituiamo l'etichetta \(\alpha\), con l'etichetta \(\spadesuit\).
+                </div>
+            </div>
+            <div class="slide1">
+                \[\cos(2\spadesuit) = 2cos^2(\spadesuit) - 1\]
+                <div>
+                    Sostituiamo l'etichetta \(\alpha\), con l'etichetta \(\spadesuit\).
+                    <br>
+                    <br>
+                    Questa formula ci dice come calcolare il coseno del doppio di un angolo
+                    \(\spadesuit\) assegnato.
+                </div>
+            </div>
+            <div class="slide1">
+                \[\cos(2\spadesuit) = 2cos^2(\spadesuit) - 1\]
+                <div>
+                    Sostituiamo l'etichetta \(\alpha\), con l'etichetta \(\spadesuit\).
+                    <br>
+                    <br>            
+                    Questa formula ci dice come calcolare il coseno del doppio di un angolo
+                    \(\spadesuit\) assegnato.
+                    <br>
+                    <br>
+                    Poniamo \(\spadesuit\) uguale all'angolo \(\dfrac{\alpha}{2}\)
+                </div>
+            </div>
+            <div class="slide1">
+                \[\cos(2{\color{blue}{}\spadesuit}) = 2cos^2({\color{blue}{}\spadesuit}) - 1\]
+                <div>
+                    Sostituiamo l'etichetta \(\alpha\), con l'etichetta \(\spadesuit\).
+                    <br>
+                    <br>            
+                    Questa formula ci dice come calcolare il coseno del doppio di un angolo
+                    \(\spadesuit\) assegnato.
+                    <br>
+                    <br>
+                    Poniamo \(\spadesuit\) uguale all'angolo \(\dfrac{\alpha}{2}\)
+                </div>
+            </div>
+            <div class="slide1">
+                \[\cos\left(2{\color{blue}{}\dfrac{\alpha}{2}}\right) = 2cos^2\left({\color{blue}{}\dfrac{\alpha}{2}}\right) - 1\]
+                <div>
+                    Sostituiamo l'etichetta \(\alpha\), con l'etichetta \(\spadesuit\).
+                    <br>
+                    <br>            
+                    Questa formula ci dice come calcolare il coseno del doppio di un angolo
+                    \(\spadesuit\) assegnato.
+                    <br>
+                    <br>
+                    Poniamo \(\spadesuit\) uguale all'angolo \(\dfrac{\alpha}{2}\)
+                </div>
+            </div>
+            <div class="slide1">
+                \[\cos\left(2\dfrac{\alpha}{2}\right) = 2cos^2\left(\dfrac{\alpha}{2}\right) - 1\]
+                <div>
+                    Sostituiamo l'etichetta \(\alpha\), con l'etichetta \(\spadesuit\).
+                    <br>
+                    <br>            
+                    Questa formula ci dice come calcolare il coseno del doppio di un angolo
+                    \(\spadesuit\) assegnato.
+                    <br>
+                    <br>
+                    Poniamo \(\spadesuit\) uguale all'angolo \(\dfrac{\alpha}{2}\)
+                </div>
+            </div>
+            <div class="slide1">
+                \[\cos\left(\cancel{2}\dfrac{\alpha}{\cancel{2}}\right) = 2cos^2\left(\dfrac{\alpha}{2}\right) - 1\]
+            </div>
+            <div class="slide1">
+                \[\cos\left(\alpha\right) = 2cos^2\left(\dfrac{\alpha}{2}\right) - 1\]                
+            </div>
+            <div class="slide1">
+                \[\cos\left(\alpha\right) = 2cos^2\left(\dfrac{\alpha}{2}\right) {\color{red}{}- 1}\]                
+            </div>
+            <div class="slide1">
+                \[\cos\left(\alpha\right) {\color{red}{}+ 1} = 2cos^2\left(\dfrac{\alpha}{2}\right)\]                
+            </div>
+            <div class="slide1">
+                \[\cos\left(\alpha\right) + 1 = {\color{red}{}2}cos^2\left(\dfrac{\alpha}{2}\right)\]                
+            </div>
+            <div class="slide1">
+                \[\dfrac{\cos\left(\alpha\right) + 1}{\color{red}{}2} = cos^2\left(\dfrac{\alpha}{2}\right)\]                
+            </div>
+            <div class="slide1">
+                \[\dfrac{\cos\left(\alpha\right) + 1}{2} = cos^2\left(\dfrac{\alpha}{2}\right)\]                
+            </div>
+            <div class="slide1">
+                \[cos^2\left(\dfrac{\alpha}{2}\right) = \dfrac{\cos\left(\alpha\right) + 1}{2}\]                
+            </div>
+            <div class="slide1">
+                \[cos^2\left(\dfrac{\alpha}{2}\right) = \dfrac{1 + \cos\left(\alpha\right)}{2}\]                
+            </div>
+            <div class="slide1">
+                \[cos^2\left(\dfrac{\alpha}{2}\right) = \dfrac{1 + \cos\left(\alpha\right)}{2}\]                
+                \[cos\left(\dfrac{\alpha}{2}\right) = \pm\sqrt{\dfrac{1 + \cos\left(\alpha\right)}{2}}\]                
+            </div>
+            <div class="slide1">
+                \[cos^2\left(\dfrac{\alpha}{2}\right) = \dfrac{1 + \cos\left(\alpha\right)}{2}\]                
+                \[cos\left(\dfrac{\alpha}{2}\right) = \pm\sqrt{\dfrac{1 + \cos\left(\alpha\right)}{2}}\]                
+                L'ultima formula scritta è quella di bisezione.
+            </div>
+            <div class="slide1">
+                \[cos^2\left(\dfrac{\alpha}{2}\right) = \dfrac{1 + \cos\left(\alpha\right)}{2}\]                
+                \[cos\left(\dfrac{\alpha}{2}\right) = \pm\sqrt{\dfrac{1 + \cos\left(\alpha\right)}{2}}\]                
+                L'ultima formula scritta è quella di bisezione.
+                <br>
+                <br>
+                La scelta del segno da usare dipende dalle informazioni che abbiamo sull'angolo \(\alpha\).
+            </div>
+            <div class="slide1">
+                \[cos^2\left(\dfrac{\alpha}{2}\right) = \dfrac{1 + \cos\left(\alpha\right)}{2}\]                
+                \[cos\left(\dfrac{\alpha}{2}\right) = \pm\sqrt{\dfrac{1 + \cos\left(\alpha\right)}{2}}\]                
+                L'ultima formula scritta è quella di bisezione.
+                <br>
+                <br>
+                La scelta del segno da usare dipende dalle informazioni che abbiamo sull'angolo \(\alpha\).
+                <br>
+                <br>
+                Ad esempio, se \(\alpha\) è un angolo compreso tra \(90°\) e \(180°\), la sua metà \(\dfrac{\alpha}{2}\)
+                sarà compresa tra \(45°\) e \(90°\), ovvero sarà nel primo quadrante. Di conseguenza nella formula sceglieremo il 
+                segno \(+\), perché angoli nel primo quadrante hanno il coseno positivo.
+            </div>
+            <div class="slide1">
+                La formula di bisezione del seno 
+                \[
+                    sin\left(\dfrac{\alpha}{2}\right) = \pm\sqrt{\dfrac{1 - cos(\alpha)}{2}}
+                \]
+                si dimostra in modo del tutto analogo a partire dalla formula di duplicazione 
+                del coseno scritta nella forma
+                \[
+                    cos(2\alpha) = 1 - 2sin^2(\alpha)
+                \]
+                Provate a dimostrarla per esercizio.
+            </div>
+            
+            
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div>  
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <ul>             
+        <li>
+            Studiare il materiale disponibile all'inizio della pagina ed il paragrafo
+            <b>Formula di bisezione</b> pagg. 534 e 535.
+        </li>
+        <li>
+            Svolgere l'esercizio n° 92 a pag. 543.
+        </li>   
+        <br>
+        <li>
+            Svolgere gli esercizi n° 94, 95 a pag. 544.
+        </li>            
+    </ul>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <ul>             
+        <li>
+            Studiare l'esercizio guida n° 108 a pag. 544
+        </li>
+        <li>
+            Svolgere l'esercizio n° 110 a pag. 545.
+        </li>           
+    </ul>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>                 
+            Svolgere gli esercizi n° 44 a pag. 541.    
+    </div>
+
+    
+    <br>
+    <br>    
+    
+    <script src="../../js/hintAndSlide.js"></script>
+</body>
+
+
+
+
+
