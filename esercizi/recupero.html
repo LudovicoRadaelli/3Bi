@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<style>
+    #esempiSelector-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    select {
+        display: block;
+        padding: auto; 
+        margin-right: 1rem;
+    }
+
+    #ex-button {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+</style>
+<body>
+    <h1>Programma recupero</h1>
+    
+    <br>    
+
+    <h2 class="green"></h2>    
+    <div class="grayBorder">
+        <h3 class="green">Goniometria</h3>
+        <br>
+        <ul>
+            <li>
+                Definizione geometrica di seno, coseno e tangente
+            </li>
+            <br>
+            <li>
+                Misurare angoli: gradi e radianti
+            </li>
+            <br>
+            <li>
+                Risoluzione di triangoli rettangoli                
+            </li>
+            <br>
+            <li>
+                Visualizzazione delle funzioni goniometriche sulla circonferenza goniometrica                
+            </li>
+            <br>
+            <li>
+                Estensione della definizione di seno, coseno e tangente ad angoli non compresi nell’intervallo \(\Big[0, \dfrac{\pi}{2}\Big)\)
+            </li>
+            <br>
+            <li>
+                Derivazione dei valori del seno, coseno e tangente degli angoli \(\dfrac{\pi}{6}\), \(\dfrac{\pi}{4}\), \(\dfrac{\pi}{3}\)  e \(\dfrac{\pi}{2}\)
+            </li>
+            <br>
+            <li>
+                Seno, coseno e tangente di angoli multipli di \(\dfrac{\pi}{6}\), \(\dfrac{\pi}{4}\), \(\dfrac{\pi}{3}\)  e \(\dfrac{\pi}{2}\)
+            </li>
+            <br>
+            <li>
+                Archi associati
+            </li>                    
+            <br>
+            <br>
+            <br>
+            <b>Link per il ripasso</b>
+            <br>
+            <br>
+            <div id="esempiSelector-container">
+                <select id="ex1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                  <button id="ex1-button" onclick="vai(1)">Seleziona esercizio</button>
+            </div>
+    
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2 class="green">Formule goniometriche</h2>    
+    <div class="grayBorder">
+        <ul>
+            <li>
+                Formule di addizione e sottrazione                
+            </li>
+            <br>
+            <li>
+                Formula dell'angolo aggiunto
+            </li>
+            <br>
+            <li>
+                Coefficiente angolare della retta in funzione dell'angolo tra retta e direzione orizzontale.
+            </li>
+            <br>
+            <li>
+                Formule di duplicazione
+            </li>
+            <br>
+            <li>
+                Formule di bisezione
+            </li>            
+            <br>
+            <br>            
+            <br>
+            <b>Link per il ripasso</b>
+            <br>
+            <br>
+            <div id="esempiSelector-container">
+                <select id="ex2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>                    
+                  </select>
+                  <button id="ex2-button" onclick="vai(2)">Seleziona esercizio</button>
+            </div>
+    
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2 class="green">Formule goniometriche</h2>    
+    <div class="grayBorder">
+        <ul>
+            <li>
+                Equazioni goniometriche elementari          
+            </li>
+            <br>
+            <li>
+                Equazioni riconducibili alle equazioni goniometriche elementari 
+            </li>
+            <br>
+            <li>
+                Equazioni lineari in seno e coseno
+            </li>                      
+            <br>
+            <br>            
+            <br>
+            <b>Link per il ripasso</b>
+            <br>
+            <br>
+            <div id="esempiSelector-container">
+                <select id="ex3">
+                    <option value="1">1</option>
+                    <option value="2">2</option>                       
+                  </select>
+                  <button id="ex3-button" onclick="vai(3)">Seleziona esercizio</button>
+            </div>
+    
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+<script>
+    function vai(n) {
+        let ex = document.getElementById(`ex${n}`).options;
+        let i = document.getElementById(`ex${n}`).selectedIndex;
+        console.log(`ex${n}[i]: ${ex[i].index}`)
+        
+        if(n === 1) {                    
+            document.location.href=`https://ludovicoradaelli.github.io/3Bi/esercizi/3goniometria/${ex[i].index + 1}.html`;
+        }
+
+        if(n === 2) {                 
+            document.location.href=`https://ludovicoradaelli.github.io/3Bi/esercizi/4formuleGoniometriche/${ex[i].index + 1}.html`;            
+        }
+
+        if(n === 3) {                 
+            document.location.href=`https://ludovicoradaelli.github.io/3Bi/esercizi/5equazioniGoniometriche/${ex[i].index + 1}.html`;            
+        }
+}
+</script>
+
+
+
+    
+</body>
