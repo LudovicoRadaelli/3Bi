@@ -16,6 +16,10 @@
             {
                 "titolo": "Polinomi di secondo grado e parabola",
                 "nomeCartella": "polinomiSecondoGradoEParabola"
+            },
+            {
+                "titolo": "Segno di un polinomio di secondo grado",
+                "nomeCartella": "segnoPolinomioSecondoGrado"
             }
         ]
         }
@@ -25,11 +29,7 @@
         {
         "numero": 1,
         "titolo": "Le disequazioni",        
-        "paragrafo": [            
-            {
-                "titolo": "Segno di un polinomio di secondo grado",
-                "nomeCartella": "segnoPolinomioSecondoGrado"
-            },
+        "paragrafo": [                        
             {
                 "titolo": "Disequazioni risovibili attraverso il grafico dei segni",
                 "nomeCartella": "disequazioniRegolaSegni"
