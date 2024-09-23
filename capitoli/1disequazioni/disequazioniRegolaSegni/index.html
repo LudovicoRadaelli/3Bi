@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title id="titleTag"><!-- Automatico --></title>
+</head>
+
+<body>
+        <br>
+        <div id="chapterNumber" style="display: none;">1</div>
+        <div id="paragraphTitle" style="display: none;">Disequazioni risovibili attraverso il grafico dei segni</div>
+        
+        <div class="gray"> 
+            <div class="homeIconContainer">
+                <a href="../../indiceMateriale.html"><img class="homeIcon" src="../../../css/img/home.png"></a>
+            </div>
+            
+            <code><b id="bTagTitoloCapitolo">
+                <!-- Automatico -->
+            </b></code> 
+            <br>
+            <div class="select">
+                <div class="selected-option"><code><b id="bTagTitoloParagrafo">/ <!-- Automatico --></b></code></div>
+                <div class="dropdown">
+                    <!-- Automatico -->
+                </div>
+            </div>            
+        </div>
+
+        <br>
+
+        <nav class="navigationBar">
+            <div onclick="changeParagraph(`previous`)" class="item prev">
+                <img class="icon" src="../../../css/img/leftArrow.png">
+            </div>
+            <div class="item explanationButton">
+                <div onclick="showExplanation()"><img class="icon" src="../../../css/img/presentation.png"></div>
+            </div>
+            <!-- <div class="item exerciseButton">
+                <div onclick="showExercise()"><img class="icon" src="../../../css/img/homework.png"></div>
+            </div> -->
+            <div onclick="changeParagraph(`next`)" class="item next">
+                <img class="icon" src="../../../css/img/rightArrow.png">
+            </div>
+        </nav>
+
+        <br>
+        <br>
+    
+
+        <section class="explanation">
+    
+            <div class="h3">
+                <span class="sub-par" id="paragraphCircledNumber"><!-- Automatico --></span>
+                <h3 id="h3ParagraphTitle"><!-- Automatico --></h3>
+            </div>
+            
+            <br>
+            <br>
+
+            <div>
+                <h3 class="blue">Disequazioni fratte</h3>
+
+                <br>
+                Consideriamo la seguente frazione:
+                \[
+                    \dfrac{1 - 5\color{blue}{}x\color{black}{}}{7\color{blue}{}x\color{black}{} - 2}
+                \]
+                Sia il numeratore che il denominatore dipendondo dal valore assegnato ad \(\color{blue}{}x\color{black}{}\).
+                <br>
+                Il nostro obiettivo è <b>studiare il <u>segno</u> assunto dalla frazione al variare del valore della \(\boldsymbol{x}\)</b>.
+                <br>
+                In altre parole ci poniamo tre domande: 
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        Quali sono i valori che assegnati alla \(x\) fanno assumere alla frazione valori <b>positivi</b>?
+                    </li>
+                    <br>
+                    <li>
+                        Quali sono i valori che assegnati alla \(x\) fanno assumere alla frazione valori <b>negativi</b>?
+                    </li>
+                    <br>
+                    <li>
+                        Quali sono i valori che assegnati alla \(x\) fanno assumere alla frazione valore <b>zero</b>?
+                    </li>
+                </ul>
+                
+                <!-- <br>
+            
+
+                Facciamo qualche esempio numerico:
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        Se sceglamo \(\color{blue}{}x\color{black}{} = \color{blue}{}1\color{black}{}\), la frazione assume valore
+                        \[
+                            \dfrac{1 - 5 \cdot \color{blue}{}1\color{black}{}}{7 \cdot \color{blue}{}1\color{black}{} - 2} =
+                            \dfrac{1 - 5}{7 - 2} = \dfrac{-4}{5} = \color{red}{}-\dfrac{4}{5}
+                        \]
+                        Osserviamo che tale valore è <b>negativo</b>.
+                    </li>
+                    <br>
+                    <li>
+                        Se sceglamo \(\color{blue}{}x\color{black}{} = \color{blue}{}0.25\color{black}{}\), la frazione assume valore
+                        \[
+                            \dfrac{1 - 5 \cdot \color{blue}{}0.25\color{black}{}}{7 \cdot \color{blue}{}0.25\color{black}{} - 2} =
+                            \dfrac{1 - 1.25}{1.75 - 2} = \dfrac{-0.25}{0.25} = \color{red}{}1
+                        \]
+                        Osserviamo che tale valore è <b>positivo</b>.
+                    </li>
+                    <br>
+                    <li>
+                        Se sceglamo \(\color{blue}{}x\color{black}{} = \color{blue}{}0.2\color{black}{}\), la frazione assume valore
+                        \[
+                            \dfrac{1 - 5 \cdot \color{blue}{}0.2\color{black}{}}{7 \cdot \color{blue}{}0.2\color{black}{} - 2} =
+                            \dfrac{1 - 1}{1.4 - 2} = \dfrac{0}{-0.6} = \color{red}{}0
+                        \]
+                        Osserviamo che in questo caso il valore della fraizone è <b>nullo</b>.
+                    </li>
+                </ul> -->
+
+                <br>
+                <br>
+
+                Vediamo nei prossimi video qual è la strategia per affrontare il problema.
+
+                <br>
+                <br>
+                <iframe style="width: 100%; border: 0.01rem solid gray;" src="https://www.youtube.com/embed/Os1htj7a-l0?si=O-TbORlO-qnHWQHe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br>
+                <br>
+                <iframe style="width: 100%; border: 0.01rem solid gray;" src="https://www.youtube.com/embed/B7kZy_1A9r4?si=R8p_5BjI97FytVI1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                <br>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+
+                Consideriamo la disequazione 
+                \[
+                    \dfrac{3x + 6}{-2x + 8} \geq 0
+                \]
+                Risolvere questa disequazione significa rispondere alla seguente domanda:
+                <br>
+                <br>
+                <div style="width: 90%; margin: auto; padding: 1rem; border: 0.01rem gray solid;">
+                    per quali valori della \(x\) la frazione 
+                    \[
+                        \dfrac{3x + 6}{-2x + 8}
+                    \]
+                    ha risultato <b>positivo</b> oppure uguale a <b>zero</b>?
+                </div>
+                <br>
+                <br>
+                Utilizzando il metodo del grafico dei segni possiamo individuare la risposta a questa domanda.
+
+                <br>
+                <br>
+
+                <iframe style="width: 100%; border: 0.01rem gray solid;" src="https://www.youtube.com/embed/9Njkhy53KtQ?si=dHB-JzVDeOdgtzuv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+
+                <h3 class="blue">Studio del segno del prodotto di polinomi</h3>
+                
+                <br>
+
+                Studiamo il segno del seguente prodotto di polinomi al variare del valore della \(x\):
+                \[
+                    (-2x +3)(x^2 -3x +2)(x + 5) 
+                \]
+                Questo problema si affronta esattamente come lo studio del segno di una frazione visto in precedenza.
+                <br>
+                Infatti, il segno del prodotto 
+                \[
+                    (-2x + 3)(x^2 -3x + 2)(x + 5)
+                \] 
+                dipende dal segno che assumono i tre fattori 
+                <div style="width: 100%; margin-top: 1rem; margin-bottom: 1rem; text-align: center;">
+                    \(-2x + 3\qquad\) \(x^2 -3x + 2\qquad\) e \(\,\,x +5\,\,\)
+                </div>
+                al variare del valore di \(x\).
+
+                <br>
+                <br>
+
+                <div style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow-y: scroll; max-height: 70vh;">
+                    <img src="img/segnoProdottoPolinomiSvolgimento.png" style="width: 100%">
+                </div>
+                <span class="gray" style="font-size: 1rem;">(Scorrere verso il basso per visualizzare tutto lo svolgimento)</span>
+                
+
+            </div>
+
+         </section>
+
+         <section class="exercise">
+            <div class="h3">
+                <span class="sub-par" id="exParagraphNumber"><!-- Automatico --></span>
+                <h3>Esercizi</h3>
+            </div>
+            <br>
+
+            <p>
+                <!-- Preambolo esercizio -->
+            </p>
+            
+            <br>
+
+            <!-- Esercizi -->
+            
+        </section>
+    
+
+
+    <script>
+        
+    </script>
+    
+    
+    
+    
+    
+    
+    
+
+
+    <br>
+    <br>
+
+    <script src="../../../js/pageManagment.js"></script>
+    <script src="../../../js/exerciseManagment.js"></script>
+</body>
