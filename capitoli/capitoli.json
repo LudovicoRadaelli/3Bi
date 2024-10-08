@@ -21,10 +21,14 @@
                 "titolo": "Segno di un polinomio di secondo grado",
                 "nomeCartella": "segnoPolinomioSecondoGrado"
             },
-             {
+            {
                 "titolo": "Disequazioni risovibili attraverso il grafico dei segni",
                 "nomeCartella": "disequazioniRegolaSegni"
-            }
+            },
+            {
+                "titolo": "Sistemi di disequazioni",
+                "nomeCartella": "sistemiDisequazioni"
+            }   
         ]
         }
     ],
@@ -33,12 +37,8 @@
         {
         "numero": 1,
         "titolo": "Le disequazioni",        
-        "paragrafo": [                        
-           
-            {
-                "titolo": "Sistemi di disequazioni",
-                "nomeCartella": "sistemiDisequazioni"
-            }            
+        "paragrafo": [                                    
+                     
         ]
         },
         {
