@@ -30,7 +30,26 @@
                 "nomeCartella": "sistemiDisequazioni"
             }   
         ]
-        }
+        },
+        {
+            "numero": 2,
+            "titolo": "Le disequazioni",
+            "nomeCartella": "2equazioneRetta",
+            "paragrafo": [
+                {
+                    "titolo": "Il piano cartesiano"
+                },
+                {
+                    "titolo": "Equazione esplicita della retta"                    
+                },
+                {
+                    "titolo": "Retta passante per due punti"                    
+                },
+                {
+                    "titolo": "Formula della distanza tra due punti"                    
+                }
+            ]
+            }
     ],
 
     "daSvolgere": [
