@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>    
+
+    <h3 class="green">Esercizio 0</h3>
+    <br>
+    <div>
+        Studiare le dispense sul <b>teorema di Pitagora</b> e la <b>formula della distanza tra due punti</b>
+        disponibile al seguente <a href="../../capitoli/2equazioneRetta/distanzaTraDuePunti/index.html">link</a> 
+        ed alle pagine da a del libro di testo
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio guida</h3>
+    <br>
+    <div>
+        Stabilire la distanza tra le seguenti coppie di punti         
+        \[
+             A(4\,;\,\,2) \qquad B(7\,;\,\,6)    
+        \]
+        <u><b>Svolgimento</b></u>
+        <br>
+        <div id="slide-container1" class="slide-container grayBorder">
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]    
+            </div>
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{(x_B - x_A)^2 + (y_B - y_A)^2}
+                \]
+            </div>            
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(\color{red}{}7\color{black}{}\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{(x_B - x_A)^2 + (y_B - y_A)^2}
+                \]
+            </div>
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{(\color{red}{}7\color{black}{} - x_A)^2 + (y_B - y_A)^2}
+                \]
+            </div>              
+            <div class="slide1">
+                \[
+                    A(\color{red}{}4\color{black}{}\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{(7 - x_A)^2 + (y_B - y_A)^2}
+                \]
+            </div>   
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{(7 - \color{red}{}4\color{black}{})^2 + (y_B - y_A)^2}
+                \]
+            </div>  
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,\color{red}{}6\color{black}{})
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{(7 - 4)^2 + (y_B - y_A)^2}
+                \]
+            </div>           
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{(7 - 4)^2 + (\color{red}{}6\color{black}{} - y_A)^2}
+                \]
+            </div>  
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,\color{red}{}2\color{black}{}) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{(7 - 4)^2 + (6 - y_A)^2}
+                \]
+            </div>  
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{(7 - 4)^2 + (6 - \color{red}{}2\color{black}{})^2}
+                \]
+            </div>  
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{(\color{red}{}7 - 4\color{black}{})^2 + (6 - 2)^2}
+                \]
+            </div>   
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{\color{red}{}3\color{black}{}^2 + (6 - 2)^2}
+                \]
+            </div>  
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{\color{red}{}3^2\color{black}{} + (6 - 2)^2}
+                \]
+            </div>         
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{\color{red}{}9\color{black}{} + (6 - 2)^2}
+                \]
+            </div>  
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{9 + (\color{red}{}6 - 2\color{black}{})^2}
+                \]
+            </div>
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{9 + \color{red}{}4\color{black}{}^2}
+                \]
+            </div>  
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{9 + \color{red}{}4^2\color{black}{}}
+                \]
+            </div>
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{9 + \color{red}{}16\color{black}{}}
+                \]
+            </div>       
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{\color{red}{}9 + 16\color{black}{}}
+                \]
+            </div>
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \sqrt{\color{red}{}25\color{black}{}}
+                \]
+            </div>  
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \color{red}{}\sqrt{25}
+                \]
+            </div>
+            <div class="slide1">
+                \[
+                    A(4\,;\,\,2) \qquad B(7\,;\,\,6)
+                \]                        
+                Applichiamo la formula studiata nell'Esercizio 0:
+                \[
+                    \overline{AB} = \color{red}{}5
+                \]
+            </div>       
+            
+            
+        </div>
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Indietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div> 
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        Stabilire la distanza tra le seguenti coppie di punti 
+        <br>
+        <br>
+        <ul>
+            <li>
+                \(A(2\,;\,\,3)\) e \(B(7\,;\,\,4)\)
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\sqrt{26}\)
+                </div>
+            </li>
+            <br>
+            <li>
+                \(C(-1\,;\,\,-2)\) e \(D(2\,;\,\,1)\)
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b> \(3\,\sqrt{2}\)
+                </div>
+            </li>
+            <br>
+            <li>
+                \(E(3\,;\,\,0)\) e \(F(-2\,;\,\,5)\)
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b> \(5\,\sqrt{2}\)
+                </div>
+            </li>
+            <br>
+            <li>
+                \(G\left(\dfrac{1}{2}\,;\,\,-1\right)\) e \(H\left(-1\,;\,\,\dfrac{2}{5}\right)\)
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\dfrac{\sqrt{421}}{10}\)
+                </div>
+            </li>
+            <br>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Scrivere l'equazione della retta passante per il punto \(A(0\,,\,\,-3)\) e parallela 
+        alla retta di equazione \(y = 2x -5\).
+    </div>    
+    
+    <br>
+
+    <div class="gray">
+        <b>Soluzione:</b> \(\,\,y = 2x -3\)
+    </div>
+
+    <br>
+    
+    <div class="gray">
+        Ricordate: il vostro obiettivo è determinare il <b>coefficiente angolare</b> ed il <b>termine noto</b>.
+        Le informazioni fornite dal testo permettono di ricavarli? Spoiler: sì!
+    </div>
+
+    <br>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 3</h3>
+    <br>
+    <div>
+        Scrivere l'equazione della retta passante per i punti \(P\left(2\,;\,\,-\dfrac{1}{2}\right)\) e \(Q\left(5\,;\,\,-3\right)\)
+    </div>
+
+    <br>
+    <br>
+
+
+    <div class="gray">
+        <b>Soluzione:</b>\(\,\,y = -\dfrac{5}{6}x + \dfrac{7}{6}\)
+    </div>
+    
+
+    <br>
+    <br>
+
+    <script src="../../js/hintAndSlide.js"></script>
+    
+</body>
