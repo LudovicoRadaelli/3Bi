@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>    
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        Consideriamo i punti 
+        \[
+            P(2\,;\,\,2\color{blue}{}n\color{black}{}) \qquad Q(\color{blue}{}n\color{black}{}\,;\,\,-1)
+        \]
+        con \(\color{blue}{}n\color{black}{}\) numero intero positivo.
+        <br>        
+        A seconda di come scegliamo il valore di \(\color{blue}{}n\color{black}{}\), le coordinate 
+        dei punti \(P\) e \(Q\) variano.
+        <br>
+        <br>
+        <ul>
+            <li>
+                se \(\color{blue}{}n\color{black}{} = \color{blue}{}1\color{black}{}\), allora 
+                \[
+                    \begin{align*}
+                        &P(2\,;\,\,2 \cdot \color{blue}{}1\color{black}{}) \,\,\,\,\Rightarrow \,\,\,\,P(2\,;\,\,2)
+                        \\\\
+                        &Q(\color{blue}{}1\color{black}{}\,;\,\,-1)
+                    \end{align*}
+                \]
+            </li>
+            <br>
+            <li>
+                se \(\color{blue}{}n\color{black}{} = \color{blue}{}2\color{black}{}\), allora 
+                \[
+                    \begin{align*}
+                        &P(2\,;\,\,2 \cdot \color{blue}{}2\color{black}{}) \,\,\,\,\Rightarrow \,\,\,\,P(2\,;\,\,4)
+                        \\\\
+                        &Q(\color{blue}{}2\color{black}{}\,;\,\,-1)
+                    \end{align*}
+                \]
+            </li>
+            <br>
+            <li>
+                se \(\color{blue}{}n\color{black}{} = \color{blue}{}3\color{black}{}\), allora 
+                \[
+                    \begin{align*}
+                        &P(2\,;\,\,2 \cdot \color{blue}{}3\color{black}{}) \,\,\,\,\Rightarrow \,\,\,\,P(2\,;\,\,6)
+                        \\\\
+                        &Q(\color{blue}{}3\color{black}{}\,;\,\,-1)
+                    \end{align*}
+                \]
+            </li>
+            <br>
+            <li>
+                se \(\color{blue}{}n\color{black}{} = \color{blue}{}4\color{black}{}\), allora 
+                \[
+                    \begin{align*}
+                        &P(2\,;\,\,2 \cdot \color{blue}{}4\color{black}{}) \,\,\,\,\Rightarrow \,\,\,\,P(2\,;\,\,8)
+                        \\\\
+                        &Q(\color{blue}{}4\color{black}{}\,;\,\,-1)
+                    \end{align*}
+                \]
+            </li>
+            <br>
+            <li>
+                se \(\color{blue}{}n\color{black}{} = \color{blue}{}5\color{black}{}\), allora 
+                \[
+                    \begin{align*}
+                        &P(2\,;\,\,2 \cdot \color{blue}{}5\color{black}{}) \,\,\,\,\Rightarrow \,\,\,\,P(2\,;\,\,10)
+                        \\\\
+                        &Q(\color{blue}{}5\color{black}{}\,;\,\,-1)
+                    \end{align*}
+                \]
+            </li>
+        </ul>
+        
+        Nella figura interattiva che segue potete usare lo slider per modificare il valore di \(n\). Di conseguenza 
+        Geogebra rappresenterà i punti \(P\) e \(Q\). 
+
+        <br>
+        <br>
+        <div class="geogebra-container">
+            <div id="geogebra1"></div>
+        </div>
+        <br>
+        Osserviamo che la <u>distanza</u> dei due punti \(P\) e \(Q\) varia al variare di \(\color{blue}{}n\)
+        <br>
+        <br>
+        <div class="grayBorder">
+            Le richieste dell'esercizio sono le seguenti
+        <ul>
+            <li>
+                Scrivere la distanza dei punti \(P\) e \(Q\).
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Suggerimento</b>
+                    <br>
+                    Non lasciatevi impressionare dal fatto che ci sia quell'\(\color{blue}{}n\) di mezzo. La formula 
+                    della distanza tra due punti è sempre la stessa. 
+                    <br>
+                    Il risultato non sarà un numero concreto, ma una 
+                    quantità dipendente da \(\color{blue}{}n\)
+                </div>
+            </li>
+            <br>
+            <li>
+                Stabilire per quale valore di \(n\) la distanza tra \(P\) e \(Q\) misura \(5\) unità.
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Suggerimento</b>
+                    <br>
+                    La distanza \(PQ\) l'avete calcolata nel punto precedente.
+                    <br>
+                    Ponetela uguale a \(5\) e risolvete l'equazione che ottenete rispetto all'incognita
+                    \(\color{blue}{}n\)
+                </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Date le rette 
+        \[
+            r:\qquad y = 2x - 1 
+        \]
+        \[
+            s:\qquad x + y + 1 = 0
+        \]
+        <ul>
+            <li>
+                Stabilire il coefficiente angolare ed il termine noto della retta \(r\)
+            </li>
+            <br>
+            <li>
+                Stabilire il coefficiente angolare ed il termine noto della retta \(s\)
+            </li>
+            <br>
+            <li>
+                Stabilire se il punto \(A(2\,;\,\,3)\) appartiene alla retta \(r\).
+            </li>
+            <br>
+            <li>
+                Stabilire se il punto \(A(1\,;\,\,-5)\) appartiene alla retta \(s\).
+            </li>
+            <br>
+            <li>
+                Individuare il loro <b>punto di intersezione</b>, ovvero le coordinate del punto nel quale le rette
+                si incontrano.
+            </li>
+        </ul>
+    </div>
+
+
+    
+        
+
+    
+
+    <br>
+    <br>
+
+    <script>
+        let ggbApp1 = new GGBApplet({
+        /* appletOnLoad(api) {
+            api.registerObjectUpdateListener("A","stampaValori2");
+        }, */
+        "appName": "classic", 
+        "id": "gg1",
+        "scaleContainerClass":"geogebra-container",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "filename":"img/distanzaPuntiDipendentiDaParametro.ggb"
+        },
+        true);
+
+        
+
+
+
+        
+
+        window.addEventListener("load", function() { 
+            ggbApp1.inject('geogebra1');
+            }
+        )
+    </script>
+    
+</body>
