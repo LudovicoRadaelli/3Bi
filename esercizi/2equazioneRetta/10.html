@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>    
+
+    <div class="gray">
+        Di seguito trovate cinque esercizi riassuntivi di quello che abbiamo fatto finora ed i riferimenti alle schede di esercizi passate suddivise per argomenti. 
+        Svolgete tutti gli esercizi in modo da presentarmi eventuali dubbi in classe.
+    </div>
+
+    <br>
+    <br>
+
+    <h3 class="yellow">Punto appartente ad una retta / retta passante per un punto</h3>
+    <div class="esempi-container">  
+        <b>Esercizio 1</b>
+        <br>
+        Consideriamo i punti \(A\), \(B\), \(C\), \(D\) rappresentati in figura.
+        <br>
+        Stabilire se le coordinate di tali punti soddisfano l'equazione 
+        \[
+            y = 2x + 5
+        \]
+        <img src="img/10(1).png" alt="">  
+        
+        <br>
+        <br>
+        <br>        
+
+        
+        <b>Esercizio 2</b>
+        <br>
+        Consideriamo la retta \(r\) di equazione
+        \[
+            y = 3x + 1
+        \]
+        ed i punti 
+        \[
+            A\left(1\,;\,\,4\right) \qquad B\left(-1\,;\,\,-5\right) 
+        \]        
+        Stabilire se la retta \(r\) passa per i punti \(A\) e \(B\).
+
+        <br>
+        <br>
+        <hr>
+        <br>
+
+        <div class="gray">
+            <b>Ripasso</b>
+            <br>
+            <br>
+            <ul>            
+                <li>
+                    Esercizi 2 e 4 della <a class="gray" href="3.html">scheda 3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 class="yellow">Equazione della retta</h3>
+    <div class="esempi-container">
+        <b>Esercizio 3</b>
+        <br>
+        Determinare l'equazione associata alla seguente retta
+        <br>
+        <br>
+        <img src="img/10(2).png" style="width: 70%; border: 0;">
+
+        <br>
+        <br>
+        <br>
+
+        <b>Esercizio 4</b>
+        <br>
+        Determinare l'equazione della retta passante per i punti
+        \[
+           A\left(\dfrac{2}{3}\,;\,\,-2\right)   \qquad   B\left(\dfrac{5}{3}\,;\,\,1\right)
+        \]
+
+        <br>
+        <br>
+        <hr>
+        <br>
+
+        <div class="gray">
+            <b>Ripasso</b>
+            <br>
+            <br>
+            <ul>       
+                <li>
+                    <a class="gray" href="../../capitoli/2equazioneRetta/equazioneRetta/index.html">Dispense</a> 
+                    e pagine da 136 a 140 del libro di testo.
+                </li>  
+                <br>   
+                <li>
+                    <a class="gray" href="4.html">Scheda 4</a>
+                </li>
+                <br>
+                <li>
+                    <a class="gray" href="5.html">Scheda 5</a>
+                </li>                
+            </ul>
+        </div>
+    </div>    
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 class="yellow">Distanza tra due punti</h3>
+    <div class="esempi-container">
+        <b>Esercizio 5</b>
+        <br>
+        Stabilire la distanza tra i punti 
+        \[
+            \left(-2\,;\,\,3\right)    \qquad  \left(8\,;\,\,2\right)
+        \]
+        
+        <hr>
+        <br>
+
+        <div class="gray">
+            <b>Ripasso</b>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    <a class="gray" href="../../capitoli/2equazioneRetta/distanzaTraDuePunti/index.html">dispense</a> e pagine da 133 a 135 del 
+                    libro di testo.
+                </li>
+                <br>
+                <li>
+                    <a class="gray" href="6.html">Scheda 6</a>                
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <script>
+        let ggbApp1 = new GGBApplet({
+        /* appletOnLoad(api) {
+            api.registerObjectUpdateListener("A","stampaValori2");
+        }, */
+        "appName": "classic", 
+        "id": "gg1",
+        "scaleContainerClass":"geogebra-container",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "filename":"img/distanzaPuntiDipendentiDaParametro(2).ggb"
+        },
+        true);
+
+        
+
+
+
+        
+
+        window.addEventListener("load", function() { 
+            ggbApp1.inject('geogebra1');
+            }
+        )
+    </script>
+
+</body>
