@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+        
+    <h3 class="yellow">Funzioni definite a tratti</h3>
+    <div class="esempi-container">
+        Consideriamo la funzione \(f\) strutturata come segue:
+        <br>
+        <br>
+        <div class="grayBorder">
+            <ul style="padding-inline-start: 1rem;">
+                <li>
+                    se \(x \geq 2\) la funzione è definita dalla legge 
+                    \[
+                        f(x) = 3x -2
+                    \]
+                </li>
+                <li>
+                    se \(x \lt 2\) la funzione è definita dalla legge 
+                    \[
+                        f(x) = -2x
+                    \]
+                </li>
+            </ul>
+        </div>
+        <br>
+        In maniera sintetica scriveremo che
+        <br>
+        <br>
+        <div class="grayBorder">
+            \[
+                f(x) = 
+                \begin{cases}
+                    3x -2 \quad &\text{se}\,\,\, x \geq 2
+                    \\\\
+                    -2x \quad &\text{se}\,\,\, x \lt 2
+                \end{cases}
+            \]
+        </div>    
+        <br>
+        Questo significa che 
+        <br>
+        <br>
+        <ul>
+            <li>
+                se l'input \(x\) è un numero più grande o uguale a \(2\) per calcolare \(f(x)\) eseguiamo il
+                calcolo \(3x -2\) 
+            </li>
+            <br>
+            <li>
+                se l'input \(x\) è un numero più piccolo di \(2\) per calcolare \(f(x)\)
+                eseguiamo il calcolo \(-2x\).
+            </li>
+        </ul>
+        <br>
+        Ad esempio 
+        \[
+            f(\color{blue}{5}\color{black}{}) = 3 \cdot \color{blue}{5}\color{black}{} - 2
+        \]
+        perché l'input \(\color{blue}{5}\) è maggiore di \(2\), quindi usiamo la legge \(y = 3x -2\);
+        \[
+            f(\color{blue}{-3}\color{black}{}) =  2 \cdot \color{blue}{(-3)}\color{black}{}
+        \]
+        perché l'input \(\color{blue}{-3}\) è minore di \(2\), quindi usiamo la legge \(y = -2x\);
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <div>
+        Consideriamo la funzione 
+        \[
+            f(x) = 
+            \begin{cases}
+                3x^2 + x - 2 \qquad &\text{se} \,\,\, x \leq 1
+                \\\\
+                \sqrt{x + 1} + 4 &\text{se} \,\,\, x \gt 1
+            \end{cases}
+        \]
+        <br>
+        <ol type="A" style="font-weight: bold;">
+            <li>
+                <span style="font-weight: normal;">
+                    Calcolare \(f(-2)\), \(f(1)\) ed \(f(4)\).
+                </span>
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b>
+                    <br>
+                    <br>
+                    \(f(-2) = 8\), \(\,\,f(1) = 2\), \(\,\,f(4) = \sqrt{5} + 4\)
+                </div>
+            </li>
+            <br>
+            <li>
+                <span style="font-weight: normal;">
+                    Studiare il segno del polinomio \(3x^2 + x - 2\) al variare del valore di \(x\).
+                </span>
+                <br>
+                <br>
+                <div class="gray" style="font-weight: normal;">
+                    <b>Soluzione:</b>
+                    <br>
+                    <br>
+                    Usando il metodo della parabola troviamo che \(3x^2 + x - 2\) è 
+                    <br>
+                    <br>
+                    <img src="img/9(1).png" style="width: 100%; border: 0;">
+                </div>
+            </li>
+            <br>
+            <li>
+                <span style="font-weight: normal;"> 
+                    Studiare il segno di \(\sqrt{x + 1} + 4\) al variare del valore di \(x\).
+                </span>
+                <br>
+                <br>
+                <div class="gray" style="font-weight: normal;">
+                    <b>Suggerimento</b>
+                    <br>  
+                    <br>                  
+                    Che segno ha il risultato di una radice quadrata?
+                    <br>
+                    <br>
+                    Quando a \(\sqrt{x + 1}\) (che è il risultato di una radice quadrata) sommiamo \(4\), 
+                    il risultato 
+                    \[
+                        \sqrt{x + 1} + 4
+                    \] 
+                    che otteniamo ha sicuramente un certo segno... quale?
+                    <br>
+                 </div>
+            </li>
+            <br>
+            <li>
+                <span style="font-weight: normal;">
+                    Studiare il segno della funzione \(f\) al variare del valore di \(x\).
+                    <br>
+                    (Usate i risultati ottenuti nei punti <b>B</b> e <b>C</b>.)
+                </span>
+                <br>
+                <br>
+                <div class="gray" style="font-weight: normal;">
+                    <b>Soluzione (senza parole):</b>
+                    <br>
+                    <video src="img/9(2).mp4" controls></video>
+                </div>
+            </li>
+        </ol>
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Consideriamo la funzione
+        \[
+            f(x) = -2x^2 + x + 1
+        \]
+        <br>
+        <ol type="A" style="font-weight: bold;">
+            <li>
+                <span style="font-weight: normal;">
+                    Calcolare \(f(x + 3)\).
+                </span>
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b>
+                    <br>
+                    \(f(x + 3) = -2x^2 -13x - 20\)
+                </div>
+            </li>
+            <br>
+            <li>
+                <span style="font-weight: normal;">
+                    Stabilire per quali valore di \(x\) si ha
+                    \[
+                        \dfrac{f(x - 3)}{f(x)} \geq 0
+                    \]
+                </span>
+                <br>
+                <br>
+                <div class="gray" style="font-weight: normal">
+                    <b>Soluzione</b>
+                    <br>
+                    <br>
+                    Usando la regola dei segni troviamo che
+                    <div class="formula">
+                        \[
+                            \begin{align*}
+                                &\dfrac{f(x - 3)}{f(x)} \geq 0
+                                \\\\
+                                &\text{se}\,\,\,x \lt -4 \,\,\, \text{oppure} \,\,\, -\dfrac{5}{2} \lt x \lt -1 \,\,\, \text{oppure} \,\,\, x \gt \dfrac{1}{2}
+                            \end{align*}
+                        \]
+                    </div>
+                    <span style="font-size: 0.9rem;">(scorrete per vedere tutta la soluzione)</span>
+                </div>
+            </li>
+            
+    </div>
+    
+    <br>
+    <br>
+    
+</body>
