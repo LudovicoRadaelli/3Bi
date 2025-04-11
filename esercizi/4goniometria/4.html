@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>    
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+    <h3 class="yellow">Visualizzazione delle funzioni trigonometriche</h3>
+    <div class="esempi-container">        
+        <div class="grayBackground">
+            Si definisce <b>circonferenza goniometrica</b> una circonferenza centrata nell'origine ed avente raggio \(1\).
+        </div>
+        
+        <br>
+    
+        <p>
+            La circonferenza goniometrica è uno strumento di grande importanza per la goniometria, poiché ci permette di 
+        </p>
+        <br>
+        <ul>
+            <li>
+                <b>visualizzare</b> i valori del seno, coseno e tangente di un angolo.
+            </li>
+            <br>
+            <li>
+                estendere le nozioni di seno, coseno e tangenti ad angoli <b>maggiori di \(90°\)</b>
+            </li>
+        </ul>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <u><b style="font-size: 1.3rem;">Visualizzazione del seno</b></u>
+    
+        <br>
+        <br>
+        <p>
+            Consideriamo un angolo \(\color{rgb(255, 127, 0)}{\alpha}\) avente come lati il semiasse positivo delle \(x\) ed il raggio \(OP\).
+        </p>
+        <p>
+            Proiettando il punto \(P\) perpendicolarmente sull'asse delle \(x\) otteniamo un triangolo rettangolo, \(OPH\).
+        </p>
+        <br>
+        <div class="geogebra-container">
+            <div id="geogebra3"></div>
+        </div>
+        <br>
+        <p>
+            Usiamo la definizione geometrica di seno che abbiamo visto nel primo paragrafo:
+            \[
+                sin\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right) = \dfrac{\color{red}{PH}}{\color{gray}{OP}} = 
+                \dfrac{\color{red}{PH}}{\color{gray}{1}} = \color{red}{PH}
+            \]
+        </p>
+        <p>
+            Abbiamo ottenuto che 
+            \[
+                sin\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right) = \color{red}{PH}
+            \]
+            ovvero che la misura del seno di \(\color{rgb(255, 127, 0)}{\alpha}\) coincide con la misura del segmento \(\color{red}{PH}\).
+        </p>
+    
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+    
+        <u><b style="font-size: 1.3rem;">Visualizzazione del coseno</b></u>
+    
+        <br>
+        <br>
+    
+        <p>
+            Prendiamo nuovamente in considerazione il triangolo \(OPH\) determinato dall'angolo \(\color{rgb(255, 127, 0)}{\alpha}\).
+        </p>
+        <br>
+        <div class="geogebra-container">
+            <div id="geogebra4"></div>
+        </div>
+        <br>
+        <p>
+            Usiamo la definizione geometrica di coseno:
+            \[
+                cos\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right) = \dfrac{\color{blue}{OH}}{\color{gray}{OP}} = 
+                \dfrac{\color{blue}{OH}}{\color{gray}{1}} = \color{blue}{OH}
+            \]
+        </p>
+        <p>
+            Abbiamo ottenuto che 
+            \[
+                sin\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right) = \color{blue}{OH}
+            \]
+            ovvero che la misura del seno di \(\color{rgb(255, 127, 0)}{\alpha}\) coincide con la misura del segmento \(\color{blue}{OH}\).
+        </p>
+        
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+    
+        <u><b style="font-size: 1.3rem;">Visualizzazione della tangente</b></u>
+    
+        <br>
+        <br>
+    
+        <p>
+            Prendiamo nuovamente in considerazione il triangolo \(OPH\) determinato dall'angolo \(\color{rgb(255, 127, 0)}{\alpha}\).
+        </p>
+        <p>
+            Consideriamo la retta tangente \(s\) alla circonferenza goniometrica nel punto \(T\left(1 \,;\,\,0\right)\). 
+        </p>
+        <p>
+            Prolunghiamo il raggio \(OP\) fino a che non si intrseca con la retta \(s\) in un punto \(Q\).
+        </p>
+        <p>
+            Il triangolo \(OQT\) è rettangolo.
+        </p>
+        <br>
+        <div class="geogebra-container">
+            <div id="geogebra5"></div>
+        </div>
+        <br>
+        <p>
+            Consideriamo il triangolo \(OQT\). Per definizione geometrica di tangente sappiamo che 
+            \[
+                tan\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right) = \dfrac{\color{#009900}{TQ}}{OT} = \dfrac{\color{#009900}{TQ}}{1} = \color{#009900}{TQ}
+            \]
+        </p>
+        <p>
+            Abbiamo ottenuto che 
+            \[
+                tan\left(\color{rgb(255, 127, 0)}{\alpha}\color{black}{}\right) = \color{#009900}{TQ}
+            \]
+            ovvero che la misura della tangente di \(\color{rgb(255, 127, 0)}{\alpha}\) coincide con la misura del segmento \(\color{#009900}{TQ}\).
+        </p>
+    
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+    
+        <u><b style="font-size: 1.3rem;">Estensione delle funzioni trigoniometriche ad angoli \(\geq 90°\)</b></u>        
+    
+        <br>
+        <br>
+
+        <p>
+            Abbiamo introdotto il seno, coseno e tangente di una funzione attraverso i triangoli rettangoli. 
+            Di conseguenza gli angoli che abbiamo considerato fino a questo momento sono <b>più piccoli di \(90°\)</b>.
+            <br>
+            <br>
+            La circonferenza goniometrica permette di considerare funzioni trigonometriche anche per angoli <b>maggiori o uguali di \(90°\)</b>.
+            <br>
+            <br>
+            Ad ogni <span style="color: darkorange;">angolo</span> possiamo associare un 
+            <span style="color: red">punto</span> sulla circonferenza goniometrica, dato dall'intersezione tra la 
+            circonferenza stessa ed il <span style="color: blue">raggio</span> che individua l'angolo.
+            <br>
+            Indicheremo questo punto con il nome di <b>punto goniometrico</b>.
+            <br>
+            <br>
+            <img src="img/1.png" alt="">
+            <br>
+            <br>
+            Ridefiniamo le funzioni come segue:
+        </p>
+    
+        <br>
+    
+    
+        <div class="geogebra-container sticky" style="width: 100%;">
+            <div id="geogebra6"></div>
+        </div>
+    
+    
+        <div class="grayBackground">
+            <b style="color: red">Seno</b>
+            <br>
+            Il seno di un angolo \(\alpha\) è la <span style="color: red">coordinata \(y\)</span> del punto goniometrico associato ad \(\alpha\).
+        </div>
+    
+        <br>
+    
+        <div class="grayBackground">
+            <b style="color: blue;">Coseno</b>
+            <br>
+            Il coseno di un angolo \(\alpha\) è la <span style="color: blue">coordinata \(x\)</span> del punto goniometrico associato ad \(\alpha\).
+        </div>
+    
+        <br>
+    
+        <div class="grayBackground">
+            <b style="color: green">Tangente</b>
+            <br>
+            La tangente di un angolo \(\alpha\) è la <span style="color: green">coordinata \(y\)</span> del punto che si ottiene intersecando il prolungamento del raggio che determina l'angolo con la tangente alla circonferenza del punto \(\left(1\,;\,\,0\right)\).
+        </div>
+    
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Quiz angoli multipli di \(\dfrac{\pi}{6}\), \(\dfrac{\pi}{4}\), \(\dfrac{\pi}{3}\), \(\dfrac{\pi}{2}\)</h3>
+    <br>
+    <p class="gray">
+        Attraverso questo esercizio potete allenare la memoria su seno, coseno e tangente  degli angoli multipli di \(\dfrac{\pi}{6}\), \(\dfrac{\pi}{4}\), \(\dfrac{\pi}{3}\) e multipli di \(\dfrac{\pi}{2}\)
+    </p>
+    <br>
+        
+    <div class="grayBorder">
+        <div class="geogebra-container">
+            <div id="geogebra1"></div>
+        </div>
+
+        <p id="domanda" style="min-height: 10vh;"></p>  
+        
+        <br>
+
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <button id="generaDomanda" onclick="generaDomanda()">Nuova domanda!</button>
+            <button id="rispostaCorretta" onclick="controllaSoluzione()" disabled>Controlla soluzione</button>
+        </div>
+    </div>
+
+    
+    
+    <br>
+    <br>
+
+    <script>
+        var ggbApp3 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg3",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/visualizzazioneSeno.ggb"}, true);
+
+        var ggbApp4 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg4",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/visualizzazioneCoseno.ggb"}, true);
+
+        var ggbApp5 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg5",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/visualizzazioneTangente.ggb"}, true);
+
+        var ggbApp6 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg6",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/visualizzazioneSenoCoseno.ggb"}, true);
+
+        var ggbApp1 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg1",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/quizSenoCosenoTangente.ggb"}, true);
+
+        window.addEventListener("load", function() { 
+            ggbApp3.inject('geogebra3');
+            ggbApp4.inject('geogebra4');
+            ggbApp5.inject('geogebra5');
+            ggbApp6.inject('geogebra6');
+            ggbApp1.inject('geogebra1');
+        });
+
+        let rispostaCorretta;
+
+        let trigFunction;
+        let angleGG;
+        let angleToPrint;
+
+        let trigFunctionIndex = 0;
+        let randomIndex = 0;
+
+        let trigFunctionList = [`sin`, `cos`, `tan`];
+        let angleListGradi = [0, 30, 45, 60, 90, 120, 135, 150, 180, 210, 225, 240, 270, 300, 315, 330];
+        let angleListRadianti = [
+            "0", 
+            "\\dfrac{\\pi}{6}", 
+            "\\dfrac{\\pi}{4}", 
+            "\\dfrac{\\pi}{3}", 
+            "\\dfrac{\\pi}{2}", 
+            "\\dfrac{2}{3}\\pi",  
+            "\\dfrac{3}{4}\\pi", 
+            "\\dfrac{5}{6}\\pi", 
+            "\\pi", 
+            "\\dfrac{7}{6}\\pi", 
+            "\\dfrac{5}{4}\\pi", 
+            "\\dfrac{4}{3}\\pi", 
+            "\\dfrac{3\\pi}{2}", 
+            "\\dfrac{5}{3}\\pi", 
+            "\\dfrac{7}{4}\\pi", 
+            "\\dfrac{11}{6}\\pi", 
+        ];
+
+
+
+        let trigFunctionValue = [
+
+            [`0`, `1`, `0`], //0 ***
+
+            [`\\dfrac{1}{2}`, `\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{\\sqrt{3}}{3}`], //pi/6
+
+            [`\\dfrac{\\sqrt{2}}{2}`, `\\dfrac{\\sqrt{2}}{2}`, `1`], //pi/4
+
+            [`\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{1}{2}`, `\\sqrt{3}`], //pi/3
+
+            [`1`, `0`, `\\text{non esiste}`], //pi/2 ***
+
+            [`\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{1}{2}`, `-\\sqrt{3}`], //2/3pi
+
+            [`\\dfrac{\\sqrt{2}}{2}`, `-\\dfrac{\\sqrt{2}}{2}`, `-1`], //3pi/4
+
+            [`\\dfrac{1}{2}`, `-\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{\\sqrt{3}}{3}`], //5/6pi
+
+            [`0`, `-1`, `0`], //pi ***
+
+            [`-\\dfrac{1}{2}`, `-\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{\\sqrt{3}}{3}`], //7/6pi
+
+            [`-\\dfrac{\\sqrt{2}}{2}`, `-\\dfrac{\\sqrt{2}}{2}`, `1`], //5pi/4
+
+            [`-\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{1}{2}`, `\\sqrt{3}`], //4/3pi
+
+            [`-1`, `0`, `\\text{non esiste}`], //3/2pi ***
+
+            [`-\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{1}{2}`, `-\\sqrt{3}`], //5/3pi
+
+            [`-\\dfrac{\\sqrt{2}}{2}`, `\\dfrac{\\sqrt{2}}{2}`, `-1`], //7pi/4
+
+            [`-\\dfrac{1}{2}`, `\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{\\sqrt{3}}{3}`], //11/6pi
+
+        ];
+
+        function generaDomanda() {
+
+            document.getElementById("rispostaCorretta").disabled = false;
+
+            trigFunctionIndex = (trigFunctionIndex +  Math.floor(Math.random()*trigFunctionList.length))%trigFunctionList.length;
+            trigFunction = trigFunctionList[trigFunctionIndex]
+
+            randomIndex = (randomIndex + Math.floor(Math.random()*angleListGradi.length - 1))%angleListGradi.length;
+            angleGG = angleListGradi[randomIndex];
+            angleToPrint = angleListRadianti[randomIndex];
+
+            console.log(`
+            randomIndex: ${randomIndex},
+            angleGG: ${angleGG},
+            trigFunctionIndex:${trigFunctionIndex},
+            trigFunction: ${trigFunctionList[trigFunctionIndex]}
+            `)
+
+            rispostaCorretta = trigFunctionValue[randomIndex][trigFunctionIndex];
+
+            
+
+            gg1.setValue("a", angleGG);
+
+            let grid30Index = [1, 7, 9, 15];
+            let grid60Index = [3, 5, 11, 13];
+            let grid45Index = [2, 6, 10, 14];
+            let grid90Index = [0, 4, 8, 12];
+
+            for(let i = 1; i <=4; i++) {
+                gg1.setVisible(`l${i}`, false)
+            }
+
+            if(randomIndex === 1 || randomIndex === 7 || randomIndex === 9 || randomIndex === 15) {
+                gg1.setVisible("l1", true)
+            }
+            if(randomIndex === 3 || randomIndex === 5 || randomIndex === 11 || randomIndex === 13) {
+                gg1.setVisible("l2", true)
+            }
+            if(randomIndex === 2 || randomIndex === 6 || randomIndex === 10 || randomIndex === 14) {
+                gg1.setVisible("l3", true)
+            }
+            if(randomIndex === 0 || randomIndex === 4 || randomIndex === 8 || randomIndex === 12) {
+                gg1.setVisible("l4", true)
+            }
+
+
+            let domanda = document.getElementById("domanda");
+            domanda.innerHTML = 
+            `\\[
+                ${trigFunction}\\left(${angleToPrint}\\right) = \\text{.......}\\,\\,\\,?
+            \\]`
+
+            MathJax.typesetClear([domanda]);
+            MathJax.typesetPromise([domanda]).then(() => {});
+        }
+
+        function controllaSoluzione() {
+            let domanda = document.getElementById("domanda");
+            domanda.innerHTML = 
+            `\\[
+                ${trigFunction}\\left(${angleToPrint}\\right) = ${rispostaCorretta}
+            \\]`
+            MathJax.typesetClear([domanda]);
+            MathJax.typesetPromise([domanda]).then(() => {});
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+
+
+
