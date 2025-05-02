@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>    
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+
+    <h3 class="yellow">Schema: seno, coseno dei multipli di \(\frac{\pi}{6}\), \(\frac{\pi}{4}\), \(\frac{\pi}{3}\), \(\frac{\pi}{2}\)</h3>    <br>
+    <div class="esempi-container">
+        <div class="grayBorder" style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <div>
+                <b>Multipli di \(\dfrac{\pi}{3}\) e \(\dfrac{\pi}{6}\)</b>
+            </div>
+            <div>
+                \(\longleftrightarrow\)
+            </div>
+            <div>
+                lato corto: \(\dfrac{1}{2}\)
+                <br>
+                <br>
+                lato lungo: \(\dfrac{\sqrt{3}}{2}\)
+            </div>
+        </div>
+        <br>        
+        <div class="grayBorder" style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <div>
+                <b>Multipli di \(\dfrac{\pi}{4}\)</b>
+            </div>
+            <div>
+                \(\longleftrightarrow\)
+            </div>
+            <div>
+                \(\dfrac{\sqrt{2}}{2}\)
+            </div>
+        </div>
+        <br>        
+        <div class="grayBorder" style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <div>
+                <b>Multipli di \(\dfrac{\pi}{2}\)</b>
+            </div>
+            <div>
+                \(\longleftrightarrow\)
+            </div>
+            <div>
+                \(0\,\,\) oppure \(\,\,1\)
+            </div>
+        </div>
+        
+
+    </div>
+
+    <br>
+    <br>
+
+    <h3 class="yellow">Schema: tangente dei multipli di \(\frac{\pi}{6}\), \(\frac{\pi}{4}\), \(\frac{\pi}{3}\), \(\frac{\pi}{2}\)</h3>    <br>
+    <div class="esempi-container">
+        <b>Multipli di \(\color{#E93E8D}{}\frac{\pi}{6}\), \(\color{#5D78FE}{}\frac{\pi}{4}\) e \(\color{#F5B501}{}\frac{\pi}{3}\)</b>     
+        <div class="grayBorder" style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <div>
+                <img src="img/5(3).png" style="border: 0; width: 60%;" >
+            </div>
+            <div>
+                \(\color{#F5B501}{\sqrt{3}}\)
+                <br>
+                <br>                
+                \(\color{#5D78FE}{1}\)
+                <br>
+                <br>
+                \(\color{#E93E8D}{\frac{\sqrt{3}}{3}}\)
+            </div>            
+        </div>
+        <br>           
+        <div class="grayBorder" style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <div>
+                <b>Multipli di \(\dfrac{\pi}{2}\)</b>
+            </div>
+            <div>
+                \(\longleftrightarrow\)
+            </div>
+            <div>
+                La tangente non è definita
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <p class="gray">
+        Attraverso questo esercizio potete allenare la memoria su seno, coseno e tangente  degli angoli multipli di \(\dfrac{\pi}{6}\), \(\dfrac{\pi}{4}\), \(\dfrac{\pi}{3}\) e multipli di \(\dfrac{\pi}{2}\)
+    </p>
+    <br>
+        
+    <div class="grayBorder">
+        <div class="geogebra-container">
+            <div id="geogebra1"></div>
+        </div>
+
+        <p id="domanda" style="min-height: 10vh;"></p>  
+        
+        <br>
+
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <button id="generaDomanda" onclick="generaDomanda()">Nuova domanda!</button>
+            <button id="rispostaCorretta" onclick="controllaSoluzione()" disabled>Controlla soluzione</button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Calcolare la seguente espressione 
+        \[
+            \dfrac{5\,tan\left(\dfrac{5}{3}\pi\right) - 6\,tan\left(\dfrac{5}{6}\pi\right)}{cos\left(\dfrac{3}{4}\pi\right) + 2\,sin\left(\dfrac{11}{6}\pi\right) + cos\left(\dfrac{7}{4}\pi\right)}
+        \]        
+
+        <div class="gray">
+            <b>Soluzione:</b>\(\,\, 3\sqrt{3}\)            
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 3</h3>
+    <br>
+    <div>
+        Due amici \(A\) e \(B\) si trovano lungo una strada piana alla distanza reciproca di \(500\) metri.
+        Dalla loro posizione entrambi scorgono una montagna. Per osservarne la vetta \(A\) deve inclinare lo 
+        sguardo di \(\frac{\pi}{6}\) radianti, mentre \(B\) di \(\frac{\pi}{4}\).
+        <br>        
+        <img src="img/5(1).png" style="border: 0;">
+        <br>
+        Rappresentiamo la situazione attraverso la seguente rappresentazione schematica        
+        <br>
+        <img src="img/5(2).png" style="border: 0;">
+        <br>
+        Determinare qual è l'altezza della montagna.
+
+        <br>
+        <br>
+
+        <div class="gray">
+            <b>Suggerimento:</b>
+            <br>
+            <br>
+            Etichettiamo i lati \(BC\) e \(CD\) rispettivamente con \(d\) ed \(h\).
+            Considerate il triangolo rettangolo \(BCD\). 
+            <br>
+            Scrivete attraverso la definizione la tangente di \(\widehat{CBD}\).
+            <br>
+            <br>
+            Considerate il triangolo rettangolo \(ACD\). 
+            <br>
+            Scrivete attraverso la definizione la tangente di \(\widehat{CAD}\).
+            <br>
+            <br>
+            In questo modo ottenete due equazioni nelle incognite \(d\) e \(h\). Mettetele a sistema ed il gioco è fatto.
+        </div>
+    </div>
+
+    
+    
+    <br>
+    <br>
+
+    <script>
+        var ggbApp3 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg3",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/visualizzazioneSeno.ggb"}, true);
+
+        var ggbApp4 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg4",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/visualizzazioneCoseno.ggb"}, true);
+
+        var ggbApp5 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg5",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/visualizzazioneTangente.ggb"}, true);
+
+        var ggbApp6 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg6",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/visualizzazioneSenoCoseno.ggb"}, true);
+
+        var ggbApp1 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg1",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/quizSenoCosenoTangente.ggb"}, true);
+
+        window.addEventListener("load", function() { 
+            ggbApp3.inject('geogebra3');
+            ggbApp4.inject('geogebra4');
+            ggbApp5.inject('geogebra5');
+            ggbApp6.inject('geogebra6');
+            ggbApp1.inject('geogebra1');
+        });
+
+        let rispostaCorretta;
+
+        let trigFunction;
+        let angleGG;
+        let angleToPrint;
+
+        let trigFunctionIndex = 0;
+        let randomIndex = 0;
+
+        let trigFunctionList = [`sin`, `cos`, `tan`];
+        let angleListGradi = [0, 30, 45, 60, 90, 120, 135, 150, 180, 210, 225, 240, 270, 300, 315, 330];
+        let angleListRadianti = [
+            "0", 
+            "\\dfrac{\\pi}{6}", 
+            "\\dfrac{\\pi}{4}", 
+            "\\dfrac{\\pi}{3}", 
+            "\\dfrac{\\pi}{2}", 
+            "\\dfrac{2}{3}\\pi",  
+            "\\dfrac{3}{4}\\pi", 
+            "\\dfrac{5}{6}\\pi", 
+            "\\pi", 
+            "\\dfrac{7}{6}\\pi", 
+            "\\dfrac{5}{4}\\pi", 
+            "\\dfrac{4}{3}\\pi", 
+            "\\dfrac{3\\pi}{2}", 
+            "\\dfrac{5}{3}\\pi", 
+            "\\dfrac{7}{4}\\pi", 
+            "\\dfrac{11}{6}\\pi", 
+        ];
+
+
+
+        let trigFunctionValue = [
+
+            [`0`, `1`, `0`], //0 ***
+
+            [`\\dfrac{1}{2}`, `\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{\\sqrt{3}}{3}`], //pi/6
+
+            [`\\dfrac{\\sqrt{2}}{2}`, `\\dfrac{\\sqrt{2}}{2}`, `1`], //pi/4
+
+            [`\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{1}{2}`, `\\sqrt{3}`], //pi/3
+
+            [`1`, `0`, `\\text{non esiste}`], //pi/2 ***
+
+            [`\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{1}{2}`, `-\\sqrt{3}`], //2/3pi
+
+            [`\\dfrac{\\sqrt{2}}{2}`, `-\\dfrac{\\sqrt{2}}{2}`, `-1`], //3pi/4
+
+            [`\\dfrac{1}{2}`, `-\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{\\sqrt{3}}{3}`], //5/6pi
+
+            [`0`, `-1`, `0`], //pi ***
+
+            [`-\\dfrac{1}{2}`, `-\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{\\sqrt{3}}{3}`], //7/6pi
+
+            [`-\\dfrac{\\sqrt{2}}{2}`, `-\\dfrac{\\sqrt{2}}{2}`, `1`], //5pi/4
+
+            [`-\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{1}{2}`, `\\sqrt{3}`], //4/3pi
+
+            [`-1`, `0`, `\\text{non esiste}`], //3/2pi ***
+
+            [`-\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{1}{2}`, `-\\sqrt{3}`], //5/3pi
+
+            [`-\\dfrac{\\sqrt{2}}{2}`, `\\dfrac{\\sqrt{2}}{2}`, `-1`], //7pi/4
+
+            [`-\\dfrac{1}{2}`, `\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{\\sqrt{3}}{3}`], //11/6pi
+
+        ];
+
+        function generaDomanda() {
+
+            document.getElementById("rispostaCorretta").disabled = false;
+
+            trigFunctionIndex = (trigFunctionIndex +  Math.floor(Math.random()*trigFunctionList.length))%trigFunctionList.length;
+            trigFunction = trigFunctionList[trigFunctionIndex]
+
+            randomIndex = (randomIndex + Math.floor(Math.random()*angleListGradi.length - 1))%angleListGradi.length;
+            angleGG = angleListGradi[randomIndex];
+            angleToPrint = angleListRadianti[randomIndex];
+
+            console.log(`
+            randomIndex: ${randomIndex},
+            angleGG: ${angleGG},
+            trigFunctionIndex:${trigFunctionIndex},
+            trigFunction: ${trigFunctionList[trigFunctionIndex]}
+            `)
+
+            rispostaCorretta = trigFunctionValue[randomIndex][trigFunctionIndex];
+
+            
+
+            gg1.setValue("a", angleGG);
+
+            let grid30Index = [1, 7, 9, 15];
+            let grid60Index = [3, 5, 11, 13];
+            let grid45Index = [2, 6, 10, 14];
+            let grid90Index = [0, 4, 8, 12];
+
+            for(let i = 1; i <=4; i++) {
+                gg1.setVisible(`l${i}`, false)
+            }
+
+            if(randomIndex === 1 || randomIndex === 7 || randomIndex === 9 || randomIndex === 15) {
+                gg1.setVisible("l1", true)
+            }
+            if(randomIndex === 3 || randomIndex === 5 || randomIndex === 11 || randomIndex === 13) {
+                gg1.setVisible("l2", true)
+            }
+            if(randomIndex === 2 || randomIndex === 6 || randomIndex === 10 || randomIndex === 14) {
+                gg1.setVisible("l3", true)
+            }
+            if(randomIndex === 0 || randomIndex === 4 || randomIndex === 8 || randomIndex === 12) {
+                gg1.setVisible("l4", true)
+            }
+
+
+            let domanda = document.getElementById("domanda");
+            domanda.innerHTML = 
+            `\\[
+                ${trigFunction}\\left(${angleToPrint}\\right) = \\text{.......}\\,\\,\\,?
+            \\]`
+
+            MathJax.typesetClear([domanda]);
+            MathJax.typesetPromise([domanda]).then(() => {});
+        }
+
+        function controllaSoluzione() {
+            let domanda = document.getElementById("domanda");
+            domanda.innerHTML = 
+            `\\[
+                ${trigFunction}\\left(${angleToPrint}\\right) = ${rispostaCorretta}
+            \\]`
+            MathJax.typesetClear([domanda]);
+            MathJax.typesetPromise([domanda]).then(() => {});
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+
+
+
