@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>    
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <br>
+
+    <h3 class="yellow">Schema: seno, coseno dei multipli di \(\frac{\pi}{6}\), \(\frac{\pi}{4}\), \(\frac{\pi}{3}\), \(\frac{\pi}{2}\)</h3>    <br>
+    <div class="esempi-container">
+        <div class="grayBorder" style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <div>
+                <b>Multipli di \(\dfrac{\pi}{3}\) e \(\dfrac{\pi}{6}\)</b>
+            </div>
+            <div>
+                \(\longleftrightarrow\)
+            </div>
+            <div>
+                lato corto: \(\dfrac{1}{2}\)
+                <br>
+                <br>
+                lato lungo: \(\dfrac{\sqrt{3}}{2}\)
+            </div>
+        </div>
+        <br>        
+        <div class="grayBorder" style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <div>
+                <b>Multipli di \(\dfrac{\pi}{4}\)</b>
+            </div>
+            <div>
+                \(\longleftrightarrow\)
+            </div>
+            <div>
+                \(\dfrac{\sqrt{2}}{2}\)
+            </div>
+        </div>
+        <br>        
+        <div class="grayBorder" style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <div>
+                <b>Multipli di \(\dfrac{\pi}{2}\)</b>
+            </div>
+            <div>
+                \(\longleftrightarrow\)
+            </div>
+            <div>
+                \(0\,\,\) oppure \(\,\,1\)
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h3 class="yellow">Schema: tangente dei multipli di \(\frac{\pi}{6}\), \(\frac{\pi}{4}\), \(\frac{\pi}{3}\), \(\frac{\pi}{2}\)</h3>    <br>
+    <div class="esempi-container">
+        <b>Multipli di \(\color{#E93E8D}{}\frac{\pi}{6}\), \(\color{#5D78FE}{}\frac{\pi}{4}\) e \(\color{#F5B501}{}\frac{\pi}{3}\)</b>     
+        <div class="grayBorder" style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <div>
+                <img src="img/5(3).png" style="border: 0; width: 60%;" >
+            </div>
+            <div>
+                \(\color{#F5B501}{\sqrt{3}}\)
+                <br>
+                <br>                
+                \(\color{#5D78FE}{1}\)
+                <br>
+                <br>
+                \(\color{#E93E8D}{\frac{\sqrt{3}}{3}}\)
+            </div>            
+        </div>
+        <br>           
+        <div class="grayBorder" style="display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <div>
+                <b>Multipli di \(\dfrac{\pi}{2}\)</b>
+            </div>
+            <div>
+                \(\longleftrightarrow\)
+            </div>
+            <div>
+                La tangente non è definita
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="yellow">Cosecante, secante e  cotangante</h3>
+    <div class="esempi-container">
+        Oltre a seno, coseno e tangente esistono altre tre funzioni goniometriche definite attraverso i loro
+        rispettivi reciproci.
+        \[
+            \begin{align*}
+                &cosec(\alpha) = \dfrac{1}{sin(\alpha)} \qquad \boldsymbol{cosecante}
+                \\\\
+                &sec(\alpha) = \dfrac{1}{cos(\alpha)} \qquad \boldsymbol{secante}
+                \\\\    
+                &cotan(\alpha) = \dfrac{1}{tan(\alpha)} \qquad \boldsymbol{cotangente}
+            \end{align*}
+        \]
+
+        <b>Esempi</b>
+        <br>
+        <div class="grayBorder">
+            <div class="formula">
+                \(csc\left(\dfrac{\pi}{4}\right) = \dfrac{1}{sin\left(\dfrac{\pi}{4}\right)} = \dfrac{1}{\dfrac{\sqrt{2}}{2}} = \dfrac{2}{\sqrt{2}} = \sqrt{2}\) 
+            </div>
+            <br>
+            <br>
+            <div class="formula">
+                \(sec\left(\dfrac{\pi}{3}\right) = \dfrac{1}{cos\left(\dfrac{\pi}{3}\right)} = \dfrac{1}{\dfrac{1}{2}} = 2\)
+            </div>
+            <br>
+            <div class="formula">
+                \(cot\left(\dfrac{3\pi}{4}\right) = \dfrac{1}{tan\left(\dfrac{3\pi}{4}\right)} = \dfrac{1}{-1} = -1\)
+            </div>
+        </div>
+
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="yellow">Prima relazione fondamentale della goniometria</h3>
+    <div class="esempi-container">
+        <div class="grayBorder" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <div style="width: fit-content;">
+                \(
+                    sin^2(\alpha) + cos^2(\alpha) = 1 \,\,\,
+                \)
+            </div>
+            <div style="width: fit-content;">
+                per ogni angolo \(\alpha \in \mathbb{R}\)
+            </div>
+        </div>
+        <br>
+        <br>
+        Prendiamo un qualsiasi angolo  \(\alpha \in \mathbb{R}\).
+        Applichiamo il teorema di Pitagora al triangolo rettangolo \(OPH\)
+        \[            
+            \text{ipotenusa}^2 = \text{cateto}_1^2 + \text{cateto}_2^2
+        \]
+        \[
+            OP^2 = PH^2 + OH^2
+        \]
+        \[
+            1^2 = sin^2(\alpha) + cos^2(\alpha)
+        \]
+        \[
+            sin^2(\alpha) + cos^2(\alpha) = 1            
+        \]
+        <img src="img/circonfGoniom.png" style="width: 70%;">
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="yellow">Seconda relazione fondamentale della goniometria</h3>
+    <div class="esempi-container">
+        <div class="grayBorder" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <div style="width: fit-content;">
+                \(
+                    tan(\alpha) = \dfrac{sin(\alpha)}{cos(\alpha)}
+                \)
+            </div>
+            <div style="width: fit-content;">
+                per ogni angolo \(\alpha \in \mathbb{R}\)
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        Ricordando la definizione geometrica del seno, coseno e tangente abbiamo
+        <div class="formula">
+            \[
+            \begin{align*}
+                \dfrac{sin(\alpha)}{cos(\alpha)} &= \, \dfrac{\frac{\text{cateto opposto}}{\text{ipotenusa}}}{\frac{\text{cateto adiacente}}{\text{ipotenusa}}} =
+                \\\\
+                &= \, \frac{\text{cateto opposto}}{\cancel{\text{ipotenusa}}} \cdot \frac{\cancel{\text{ipotenusa}}}{\text{cateto adicente}} =
+                \\\\
+                &= \, \frac{\text{cateto opposto}}{\text{cateto adiacente}} = 
+                \\\\
+                &= \, tan(\alpha)
+            \end{align*}
+        \]
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 1</h3>
+    <br>
+    <p class="gray">
+        Attraverso questo esercizio potete allenare la memoria su seno, coseno e tangente  degli angoli multipli di \(\dfrac{\pi}{6}\), \(\dfrac{\pi}{4}\), \(\dfrac{\pi}{3}\) e multipli di \(\dfrac{\pi}{2}\)
+    </p>
+    <br>
+        
+    <div class="grayBorder">
+        <div class="geogebra-container">
+            <div id="geogebra1"></div>
+        </div>
+
+        <p id="domanda" style="min-height: 10vh;"></p>  
+        
+        <br>
+
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <button id="generaDomanda" onclick="generaDomanda()">Nuova domanda!</button>
+            <button id="rispostaCorretta" onclick="controllaSoluzione()" disabled>Controlla soluzione</button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 2</h3>
+    <br>
+    <div>
+        Calcolare le seguenti funzioni goniometriche
+        <br>
+        <br>
+        <ol type="A" style="font-weight: bold;">
+            <li>
+                <span style="font-weight: normal;">
+                \(
+                    \,\,\,cos\left(\dfrac{3}{4}\pi\right)  
+                \)
+                </span>                
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\,\,-\dfrac{\sqrt{2}}{2}\)
+                </div>
+            </li>
+            <br>
+            <li>
+                <span style="font-weight: normal;">
+                \(
+                    \,\,\,sin\left(\dfrac{11}{6}\pi\right)
+                \)
+                </span>   
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\,\,-\dfrac{1}{2}\)
+                </div>             
+            </li>
+            <br>
+            <li>
+                <span style="font-weight: normal;">
+                \(
+                    \,\,\,tan\left(\dfrac{5}{4}\pi\right)
+                \)
+                </span> 
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\,\,1\)
+                </div>               
+            </li>
+            <br>
+            <li>
+                <span style="font-weight: normal;">
+                \(
+                    \,\,\,cos\left(-\dfrac{5}{6}\pi\right)
+                \)
+                </span>     
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\,\,-\dfrac{\sqrt{3}}{2}\)
+                </div>           
+            </li>
+            <br>
+            <li>
+                <span style="font-weight: normal;">
+                \(
+                    \,\,\,sin\left(\dfrac{19}{2}\pi\right)
+                \)
+                </span> 
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\,\,-1\)
+                </div>              
+            </li>
+            <br>
+            <li>
+                <span style="font-weight: normal;">
+                \(
+                    \,\,\,cos\left(\dfrac{100}{3}\pi\right)
+                \)
+                </span>   
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\,\,-\dfrac{1}{2}\)
+                </div>             
+            </li>
+            <br>
+            <li>
+                <span style="font-weight: normal;">
+                \(
+                    \,\,\,tan\left(\dfrac{3}{2}\pi\right)
+                \)
+                </span> 
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\,\,\) non è definita
+                </div>               
+            </li>
+            <br>
+            <li>
+                <span style="font-weight: normal;">
+                \(
+                    \,\,\,sin\left(-37\pi\right)
+                \)
+                </span>    
+                <br>
+                <br>
+                <div class="gray">
+                    <b>Soluzione:</b> \(\,\,0\)
+                </div>            
+            </li>            
+        </ol>
+    </div>
+
+    <br>
+    <br>
+    <b class="gray">Svolgimento:</b>
+    <br>
+    <iframe style="width: 100%;" src="https://www.youtube.com/embed/5NmkfX53600?si=RtA17J2axV13OR_W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <br>
+    <iframe style="width: 100%;" src="https://www.youtube.com/embed/t9rBZgBQm0Q?si=y6viICd6rH1UUOHq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 3</h3>
+    <br>
+    <div>
+        Calcolare la seguente espressione 
+        \[
+            \dfrac{7\,sin\left(\dfrac{4}{3}\pi\right) - 2\,cos\left(\dfrac{11}{6}\pi\right) - cos\left(\dfrac{\pi}{2}\right)}{30\,cos\left(\pi\right) - tan\left(\dfrac{7}{4}\pi\right) - \sqrt{3}\,tan\left(\dfrac{7}{6}\pi\right)}
+        \]  
+              
+        <div class="gray">
+            <b>Soluzione:</b>\(\,\, \dfrac{3\,\sqrt{3}}{20}\)            
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <b class="gray">Svolgimento:</b>
+    <br>
+    <iframe style="width: 100%;" src="https://www.youtube.com/embed/v2_V98OpfTc?si=UQZi34qIe0aOTYaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 4</h3>
+    <br>
+    <div>
+        Il triangolo rettangolo in figura ha l'ipotenusa \(a\) di misura \(4\) unità e l'angolo \(\beta\) di misura \(36°\).
+        Risolvere il triangolo.
+
+        <br>
+        <br>
+        <img src="img/triangoloABC.png" style="width: 60%; border: 0;">
+    </div>
+    
+    <br>
+    <br>
+
+    <b class="gray">Svolgimento:</b>
+    <br>
+    <iframe style="width: 100%;" src="https://www.youtube.com/embed/T-sqEdFnUwg?si=X49NWwEHITTYBLby" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 5</h3>
+    <br>
+    <div>
+        Il triangolo rettangolo in figura il cateto  \(b\) di misura \(12\) unità e l'angolo \(\alpha\) di misura \(65°\).
+        Risolvere il triangolo.
+
+        <br>
+        <br>
+        <img src="img/triangoloABC.png" style="width: 60%; border: 0;">
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 6</h3>
+    <br>
+    <div>
+        Consideriamo l'esagono regolare in figura. Il segmento evidenziato in rosso misura \(10\) unità.        
+        Individuare la misura dei lati dell'esagono e dei suoi angoli.
+
+        <br>
+        <br>
+        <img src="img/esagono.png" style="width: 60%; border: 0;">
+
+        <br>
+        <br>
+        
+        <b>Suggerimento:</b>
+        <br>
+        Un esagono può essere visto come composto da dodici triangoli rettangoli, quindi possiamo 
+        sfruttare la definizione geometrica di seno, coseno e tangente.
+    </div>
+    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 7</h3>
+    <br>
+    <div class="grayBorder">
+        <div class="slide-container grayBorder">
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        tan(-\alpha)cos(\pi + \alpha) - cos\left(\dfrac{3}{2}\pi + \alpha\right) - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        \color{blue}{}{}tan(-\alpha)\color{black}{}cos(\pi + \alpha) - cos\left(\dfrac{3}{2}\pi + \alpha\right) - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        \color{blue}{}{}-tan(\alpha)\color{black}{}cos(\pi + \alpha) - cos\left(\dfrac{3}{2}\pi + \alpha\right) - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)\color{blue}{}{}cos(\pi + \alpha)\color{black}{} - cos\left(\dfrac{3}{2}\pi + \alpha\right) - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)\color{blue}{}{}(-cos(\alpha))\color{black}{} - cos\left(\dfrac{3}{2}\pi + \alpha\right) - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)(-cos(\alpha))- \color{blue}{}{}cos\left(\dfrac{3}{2}\pi + \alpha\right)\color{black}{} - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)(-cos(\alpha))- \color{blue}{}{}sin(\alpha)\color{black}{} - cot\left(\dfrac{\pi}{2} + \alpha\right)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)(-cos(\alpha))- sin(\alpha) - \color{blue}{}{}cot\left(\dfrac{\pi}{2} + \alpha\right)\color{black}{}
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>            
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)(-cos(\alpha))- sin(\alpha) - \color{blue}{}{}\dfrac{cos\left(\dfrac{\pi}{2} + \alpha\right)}{sin\left(\dfrac{\pi}{2} + \alpha\right)}\color{black}{}
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)(-cos(\alpha))- sin(\alpha) - \dfrac{\color{blue}{}{}cos\left(\dfrac{\pi}{2} + \alpha\right)}{sin\left(\dfrac{\pi}{2} + \alpha\right)}\color{black}{}
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)(-cos(\alpha))- sin(\alpha) - \dfrac{\color{blue}{}{}-sin(\alpha)}{sin\left(\dfrac{\pi}{2} + \alpha\right)}\color{black}{}
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)(-cos(\alpha))- sin(\alpha) - \dfrac{-sin(\alpha)}{\color{blue}{}{}sin\left(\dfrac{\pi}{2} + \alpha\right)}\color{black}{}
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)(-cos(\alpha))- sin(\alpha) - \dfrac{-sin(\alpha)}{\color{blue}{}{}cos(\alpha)}
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)(-cos(\alpha))- sin(\alpha) \color{red}{}-\color{black}{} \dfrac{\color{red}{}-\color{black}{}\sin(\alpha)}{cos(\alpha)}
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)(-cos(\alpha))- sin(\alpha) \color{red}{} + \color{black}{} \dfrac{\sin(\alpha)}{cos(\alpha)}
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        -tan(\alpha)(-cos(\alpha))- sin(\alpha)  + \color{blue}{}\dfrac{sin(\alpha)}{cos(\alpha)}
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        \color{red}{}-\color{black}{}tan(\alpha)(\color{red}{}-\color{black}{}cos(\alpha))- sin(\alpha)  + \color{blue}{}tan(\alpha)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        tan(\alpha)cos(\alpha)- sin(\alpha)  + \color{blue}{}tan(\alpha)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        \color{blue}{}tan(\alpha)\color{black}{}cos(\alpha)- sin(\alpha)  + tan(\alpha)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        \color{blue}{}\dfrac{sin(\alpha)}{cos(\alpha)}\color{black}{}cos(\alpha)- sin(\alpha)  + tan(\alpha)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        \dfrac{sin(\alpha)}{\cancel{cos(\alpha)}}\cancel{cos(\alpha)}- sin(\alpha)  + tan(\alpha)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        sin(\alpha) - sin(\alpha)  + tan(\alpha)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+            <div class="slide1">
+                <div class="formula">
+                    \(
+                        tan(\alpha)
+                    \)
+                </div>
+                <br>
+                <span class="gray">
+
+                </span>            
+            </div>
+        </div>        
+        <div style="display: flex; flex-direction:row; justify-content: space-evenly; align-items: center;">
+            <button id="previousSlide-button1" onclick="previousSlide(1)">Inietro</button>
+            <button id="nextSlide-button1" onclick="nextSlide(1)">Avanti</button>
+        </div> 
+    
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio 8</h3>
+    <iframe style = "width: 100%" src="https://www.youtube.com/embed/SU3buIT5qh0?si=g_TNqgtBVbxc-0NQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+
+    <br>
+    <br>
+
+    <script>
+        var ggbApp3 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg3",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/visualizzazioneSeno.ggb"}, true);
+
+        var ggbApp4 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg4",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/visualizzazioneCoseno.ggb"}, true);
+
+        var ggbApp5 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg5",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/visualizzazioneTangente.ggb"}, true);
+
+        var ggbApp6 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg6",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/visualizzazioneSenoCoseno.ggb"}, true);
+
+        var ggbApp1 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg1",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "filename":"img/quizSenoCosenoTangente.ggb"}, true);
+
+        window.addEventListener("load", function() { 
+            ggbApp3.inject('geogebra3');
+            ggbApp4.inject('geogebra4');
+            ggbApp5.inject('geogebra5');
+            ggbApp6.inject('geogebra6');
+            ggbApp1.inject('geogebra1');
+        });
+
+        let rispostaCorretta;
+
+        let trigFunction;
+        let angleGG;
+        let angleToPrint;
+
+        let trigFunctionIndex = 0;
+        let randomIndex = 0;
+
+        let trigFunctionList = [`sin`, `cos`, `tan`];
+        let angleListGradi = [0, 30, 45, 60, 90, 120, 135, 150, 180, 210, 225, 240, 270, 300, 315, 330];
+        let angleListRadianti = [
+            "0", 
+            "\\dfrac{\\pi}{6}", 
+            "\\dfrac{\\pi}{4}", 
+            "\\dfrac{\\pi}{3}", 
+            "\\dfrac{\\pi}{2}", 
+            "\\dfrac{2}{3}\\pi",  
+            "\\dfrac{3}{4}\\pi", 
+            "\\dfrac{5}{6}\\pi", 
+            "\\pi", 
+            "\\dfrac{7}{6}\\pi", 
+            "\\dfrac{5}{4}\\pi", 
+            "\\dfrac{4}{3}\\pi", 
+            "\\dfrac{3\\pi}{2}", 
+            "\\dfrac{5}{3}\\pi", 
+            "\\dfrac{7}{4}\\pi", 
+            "\\dfrac{11}{6}\\pi", 
+        ];
+
+
+
+        let trigFunctionValue = [
+
+            [`0`, `1`, `0`], //0 ***
+
+            [`\\dfrac{1}{2}`, `\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{\\sqrt{3}}{3}`], //pi/6
+
+            [`\\dfrac{\\sqrt{2}}{2}`, `\\dfrac{\\sqrt{2}}{2}`, `1`], //pi/4
+
+            [`\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{1}{2}`, `\\sqrt{3}`], //pi/3
+
+            [`1`, `0`, `\\text{non esiste}`], //pi/2 ***
+
+            [`\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{1}{2}`, `-\\sqrt{3}`], //2/3pi
+
+            [`\\dfrac{\\sqrt{2}}{2}`, `-\\dfrac{\\sqrt{2}}{2}`, `-1`], //3pi/4
+
+            [`\\dfrac{1}{2}`, `-\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{\\sqrt{3}}{3}`], //5/6pi
+
+            [`0`, `-1`, `0`], //pi ***
+
+            [`-\\dfrac{1}{2}`, `-\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{\\sqrt{3}}{3}`], //7/6pi
+
+            [`-\\dfrac{\\sqrt{2}}{2}`, `-\\dfrac{\\sqrt{2}}{2}`, `1`], //5pi/4
+
+            [`-\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{1}{2}`, `\\sqrt{3}`], //4/3pi
+
+            [`-1`, `0`, `\\text{non esiste}`], //3/2pi ***
+
+            [`-\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{1}{2}`, `-\\sqrt{3}`], //5/3pi
+
+            [`-\\dfrac{\\sqrt{2}}{2}`, `\\dfrac{\\sqrt{2}}{2}`, `-1`], //7pi/4
+
+            [`-\\dfrac{1}{2}`, `\\dfrac{\\sqrt{3}}{2}`, `-\\dfrac{\\sqrt{3}}{3}`], //11/6pi
+
+        ];
+
+        function generaDomanda() {
+
+            document.getElementById("rispostaCorretta").disabled = false;
+
+            trigFunctionIndex = (trigFunctionIndex +  Math.floor(Math.random()*trigFunctionList.length))%trigFunctionList.length;
+            trigFunction = trigFunctionList[trigFunctionIndex]
+
+            randomIndex = (randomIndex + Math.floor(Math.random()*angleListGradi.length - 1))%angleListGradi.length;
+            angleGG = angleListGradi[randomIndex];
+            angleToPrint = angleListRadianti[randomIndex];
+
+            console.log(`
+            randomIndex: ${randomIndex},
+            angleGG: ${angleGG},
+            trigFunctionIndex:${trigFunctionIndex},
+            trigFunction: ${trigFunctionList[trigFunctionIndex]}
+            `)
+
+            rispostaCorretta = trigFunctionValue[randomIndex][trigFunctionIndex];
+
+            
+
+            gg1.setValue("a", angleGG);
+
+            let grid30Index = [1, 7, 9, 15];
+            let grid60Index = [3, 5, 11, 13];
+            let grid45Index = [2, 6, 10, 14];
+            let grid90Index = [0, 4, 8, 12];
+
+            for(let i = 1; i <=4; i++) {
+                gg1.setVisible(`l${i}`, false)
+            }
+
+            if(randomIndex === 1 || randomIndex === 7 || randomIndex === 9 || randomIndex === 15) {
+                gg1.setVisible("l1", true)
+            }
+            if(randomIndex === 3 || randomIndex === 5 || randomIndex === 11 || randomIndex === 13) {
+                gg1.setVisible("l2", true)
+            }
+            if(randomIndex === 2 || randomIndex === 6 || randomIndex === 10 || randomIndex === 14) {
+                gg1.setVisible("l3", true)
+            }
+            if(randomIndex === 0 || randomIndex === 4 || randomIndex === 8 || randomIndex === 12) {
+                gg1.setVisible("l4", true)
+            }
+
+
+            let domanda = document.getElementById("domanda");
+            domanda.innerHTML = 
+            `\\[
+                ${trigFunction}\\left(${angleToPrint}\\right) = \\text{.......}\\,\\,\\,?
+            \\]`
+
+            MathJax.typesetClear([domanda]);
+            MathJax.typesetPromise([domanda]).then(() => {});
+        }
+
+        function controllaSoluzione() {
+            let domanda = document.getElementById("domanda");
+            domanda.innerHTML = 
+            `\\[
+                ${trigFunction}\\left(${angleToPrint}\\right) = ${rispostaCorretta}
+            \\]`
+            MathJax.typesetClear([domanda]);
+            MathJax.typesetPromise([domanda]).then(() => {});
+        }
+
+
+
+
+
+    </script>
+    
+    <script src="../../js/hintAndSlide.js"></script>
+</body>
+
+
