@@ -18,125 +18,268 @@
     <h1>Compiti per casa</h1>
 
     <br>
-    
-    <h3 class="green">Esercizio</h3>
+
+
+    <h3 class="yellow">Metodo della parabola</h3>
     <br>
-    <div>
-        Studiare il segno del polinomio
+    <div class="esempi-container">
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/7-4q_OwrISA?si=mo7tiwn9gWOloPzY"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+        <iframe style="width: 100%;" src="https://www.youtube.com/embed/LFutYV_HdWQ?si=gPAapImp2W3ZeQlE"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <br>
+        <br>
+
+        Consideriamo il polinomio
         \[
-        -15x^2 +16x -4
+        3x^2 +2x -5
         \]
-        al variare del valore della \(x\).
-
+        Il <b>segno</b> di questo polinomio dipende dal valore che assegnamo alla \(x\).
         <br>
         <br>
-
-        <button id="hintAAAAAAA(1)-button" onclick="showHint(`AAAAAAA(1)`)">Soluzione</button>
-        <div id="hintAAAAAAA(1)" class="hint gray" style="display: none;">
-            <b class="gray">Soluzione</b>
-            <br>
-            <br>
-            \(-15x^2 +16x -4 \gt 0\,\,\) se \(\,\, \dfrac{2}{5} \lt x \lt \dfrac{2}{3}\)
-            <br>
-            <br>
-            \(-15x^2 +16x -4 \lt 0\,\,\) se \(\,\,x \lt \dfrac{2}{5}\,\,\) oppure \(\,\, x \gt \dfrac{2}{3}\)
-            <br>
-            <br>
-            \(-15x^2 +16x -4 = 0\,\,\) se \(\,\,x = \dfrac{2}{5}\) oppure \(x = \dfrac{2}{3}\)
-        </div>        
-    </div>
-
-
-
-
-    <br>
-    <br>
-    <hr>
-    <br>
-    <br>
-
-    <h3 class="green">Esercizio</h3>
-    <br>
-    <div>
-        Studiare il segno del polinomio
-        \[
-        25x^2 - 4
-        \]
-        al variare del valore della \(x\).
-
+        Raccogliamo qualche esempio nella taballa che segue
         <br>
         <br>
+        <div style="width: 100%; overflow-x:auto">
+            <table style="margin: 0.1rem">
+                <tr>
+                    <th>
+                        \[
+                        \text{valore di}\,\,\,\color{red}{x}
+                        \]
+                    </th>
+                    <th style="font-size: 0.9rem;">
+                        \[
+                        \text{valore di}\,\,\, 3\color{red}{x}\color{black}{}^2 +2\color{red}{x}\color{black}{} -5
+                        \]
+                    </th>
+                    <th>
+                        <p>Segno</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        \[
+                        \color{red}{2}
+                        \]
+                    </td>
+                    <td style="font-size: 0.8rem;">
+                        \[
+                        3\cdot\color{red}{2}\color{black}{}^2 +2\cdot\color{red}{2}\color{black}{} -5 = \color{blue}{}11
+                        \]
+                    </td>
+                    <td>
+                        \[
+                        \boldsymbol{\color{blue}{}+}
+                        \]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \[
+                        \color{red}{-1}
+                        \]
+                    </td>
+                    <td style="font-size: 0.8rem;">
+                        \[
+                        3\cdot\color{red}{\left(-1\right)}\color{black}{}^2
+                        +2\cdot\color{red}{\left(-1\right)}\color{black}{} -5 = \color{blue}{}-4
+                        \]
+                    </td>
+                    <td>
+                        \[
+                        \boldsymbol{\color{blue}{}-}
+                        \]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \[
+                        \color{red}{0}
+                        \]
+                    </td>
+                    <td style="font-size: 0.8rem;">
+                        \[
+                        3\cdot\color{red}{0}\color{black}{}^2 +2\cdot\color{red}{0}\color{black}{} -5 = \color{blue}{}-5
+                        \]
+                    </td>
+                    <td>
+                        \[
+                        \boldsymbol{\color{blue}{}-}
+                        \]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \[
+                        \color{red}{-5}
+                        \]
+                    </td>
+                    <td style="font-size: 0.8rem;">
+                        \[
+                        3\cdot\color{red}{\left(-5\right)}\color{black}{}^2
+                        +2\cdot\color{red}{\left(-5\right)}\color{black}{} -5 = \color{blue}{}110
+                        \]
+                    </td>
+                    <td>
+                        \[
+                        \boldsymbol{\color{blue}{}+}
+                        \]
+                    </td>
+                </tr>
 
-        <button id="hintAAAAAAA(3)-button" onclick="showHint(`AAAAAAA(3)`)">Soluzione</button>
-        <div id="hintAAAAAAA(3)" class="hint gray" style="display: none;">
-            <b class="gray">Soluzione</b>
-            <br>
-            <br>
-            \(25x^2 - 4 \gt 0\,\,\) se \(\,\,x \lt -\dfrac{2}{5}\,\,\) oppure \(\,\,x \gt \dfrac{2}{5}\)
-            <br>
-            <br>
-            \(25x^2 - 4 \lt 0\,\,\) se \(\,\, -\dfrac{2}{5} \lt x \lt \dfrac{2}{5}\)
-            <br>
-            <br>
-            \(25x^2 - 4 = 0\,\,\) se \(\,\,x = -\dfrac{2}{5}\,\,\) oppure \(\,\,x = \dfrac{2}{5}\)
+            </table>
         </div>
+        <br>
 
+
+        Il nostro obiettivo è scoprire quali valori della \(x\) rendono il polinomio
+        <br>
+        <ul>
+            <li>
+                positivo
+            </li>
+            <li>
+                nullo
+            </li>
+            <li>
+                negativo
+            </li>
+        </ul>
+        <br>
+        In altre parole vogliamo <b>studiare il segno</b> del polinomio al variare del valore della \(x\).
+        <br>
+        Per farlo risolviamo l'equazione associata al polinomio e disegnamo la parabola che lo rappresenta:
+        \[
+        \begin{align*}
+        x = \,& \dfrac{-2 \pm \sqrt{2^2 -4 \cdot 3 \cdot \left(-5\right)}}{2 \cdot 3} =
+        \\\\
+        = \,& \dfrac{-2 \pm \sqrt{64}}{6} = \dfrac{-2 \pm 8}{6}
+        \end{align*}
+        \]
+        quindi
+        \[
+        \begin{align*}
+        x = \dfrac{-2 + 8}{6} \quad&\text{oppure}\quad x = \dfrac{-2 - 8}{6}
+        \\\\
+        x = 1 \quad&\text{oppure}\quad x = -\dfrac{5}{3}
+        \end{align*}
+        \]
+        di conseguenza la parabola che rappresenta il polinomio è la seguente
+        <br>
+        <img src="img/segnoParabola(1).png" alt="" style="max-width: 300px; width: 50%; margin: auto; border: 0;">
+        <br>
+        A partire da questo grafico è possibile stabilire il segno del polinomio \(3x^2 +2x -5\). Infatti,
+        <br>
+        <br>
+        <ul>
+            <li>
+                i valori della \(x\) in corrispondenza dei quali il grafico si trova <b style="color: red">sopra</b>
+                l'asse
+                delle \(x\) sono quelli per cui il polinomio ha segno \(\boldsymbol{\color{red}{+}}\)
+            </li>
+            <br>
+            <li>
+                i valori della \(x\) in corrispondenza dei quali il grafico si trova <b style="color: blue">sotto</b>
+                l'asse
+                delle \(x\) sono quelli per cui il polinomio ha segno \(\boldsymbol{\color{blue}{-}}\)
+            </li>
+            <br>
+            <li>
+                i valori della \(x\) in corrispondenza dei quali il grafico <b style="color: gray">interseca</b> l'asse
+                delle \(x\) sono quelli per cui il polinomio vale \(\boldsymbol{\color{gray}{0}}\)
+            </li>
+        </ul>
+        <br>
+        Rappresentiamo queste informazioni sul grafico della parabola:
+        <br>
+        <img src="img/segnoParabola(2).png" alt="" style="max-width: 300px; width: 50%; margin: auto; border: 0;">
+        <br>
+        Possiamo concludere che
+        <br>
+        <br>
+        <ul>
+            <li>
+                \(3x^2 +2x -5 \lt 0 \quad\)
+                <br>
+                <br>
+                se \(\,\,\,\,\,x \lt -\dfrac{5}{3}\quad\) oppure \(\quad x \gt 1\)
+            </li>
+            <br>
+            <li>
+                \(3x^2 +2x -5 = 0 \quad\)
+                <br>
+                <br>
+                se \(\,\,\,\,\,x = -\dfrac{5}{3}\quad\) oppure \(\quad x = 1\)
+            </li>
+            <br>
+            <li>
+                \(3x^2 +2x -5 \gt 0 \quad\) se
+                <br>
+                <br>
+                se \(\,\,\,\,\,\dfrac{5}{3} \lt x \lt 1\)
+            </li>
+        </ul>
     </div>
 
+
     <br>
     <br>
-    <hr>
     <br>
     <br>
+
 
     <h3 class="green">Esercizio</h3>
     <br>
     <div>
-        Risolvere la seguente disequazione di secondo grado
+        Studiare il segno del polinomio
         \[
-        \dfrac{2 - x}{4} - \dfrac{1 - x}{8} \leq \dfrac{5}{4} - x^2
+        -2x^2 - x + 3
         \]
-        al variare del valore della \(x\).    
-        
+        al variare del valore della \(x\).
         <br>
         <br>
-
-        <button id="hintAAAAAAA(4)-button" onclick="showHint(`AAAAAAA(4)`)">Soluzione</button>
-        <div id="hintAAAAAAA(4)" class="hint gray" style="display: none;">
+        <button id="hintAAAAAA(11)-button" onclick="showHint(`AAAAAA(11)`)">Soluzione</button>
+        <div id="hintAAAAAA(11)" class="hint gray" style="display: none;">
             <b class="gray">Soluzione</b>
-            <br>            
-            La disequazione è risolta per \(-\dfrac{7}{8} \leq x \leq 1\).
-            <br>
-            <br>
-            <b>Suggerimento</b>
-            <br>
-            Per risolvere la disequazione 
             <br>
             <br>
             <ul>
                 <li>
-                    Svolgete i calcoli e portate la disequazione in forma normale. Vi verrà
-                    \[
-                        8x^2 -x -7 \leq 0
-                    \]
+                    \(-2x^2 - x + 3 \gt 0\)
+                    <br>
+                    <br>
+                    se \(\quad -\dfrac{3}{2} \lt x \lt 1 \quad\)
                 </li>
                 <br>
                 <li>
-                    Per studiate il segno del polinomio \(8x^2 -x - 7\) rappresentate
-                    la parabola che gli è associata.
+                    \(-2x^2 - x + 3 \lt 0\)
+                    <br>
+                    <br>
+                    se \(\quad x \lt -\dfrac{3}{2} \quad\) oppure \(x \gt 1\)
                 </li>
                 <br>
                 <li>
-                    Guardando la parabola potete stabilire per quali valori di \(x\) si ha  
-                    \[
-                    8x^2 -x -7 \leq 0
-                    \]
-                    ovvero per quali valori della \(x\) il polinomio assume segno meno.
+                    \(-2x^2 - x + 3 = 0\)
+                    <br>
+                    <br>
+                    se \(\quad x = -\dfrac{3}{2} \quad\) oppure \(x = 1\)
                 </li>
             </ul>
-            
         </div>
 
+        <br>
+
+        <button id="hintAAAAAA(12)-button" onclick="showHint(`AAAAAA(12)`)">Svolgimento</button>
+        <div id="hintAAAAAA(12)" class="hint gray" style="display: none;">
+            <b class="gray">Svolgimento</b>
+        </div>
     </div>
 
     <br>
@@ -150,23 +293,185 @@
     <div>
         Studiare il segno del polinomio
         \[
-        \dfrac{x - 2}{12} - \dfrac{2x + 5}{15} \geq 1
+        6x^2 - 13x + 2
         \]
         al variare del valore della \(x\).
-
         <br>
         <br>
-
-        <button id="hintAAAAAAA(5)-button" onclick="showHint(`AAAAAAA(5)`)">Soluzione</button>
-        <div id="hintAAAAAAA(5)" class="hint gray" style="display: none;">
+        <button id="hintAAAAAA(21)-button" onclick="showHint(`AAAAAA(21)`)">Soluzione</button>
+        <div id="hintAAAAAA(21)" class="hint gray" style="display: none;">
             <b class="gray">Soluzione</b>
             <br>
-            La disequazione è di <b>primo grado</b> ed è risolta per \(x \leq -30\)
+            <br>
+            <ul>
+                <li>
+                    \(6x^2 - 13x + 2 \gt 0\)
+                    <br>
+                    <br>
+                    se \(\quad x \lt \dfrac{1}{6} \quad\) oppure \(x \gt 2\)
+                </li>
+                <br>
+                <li>
+                    \(6x^2 - 13x + 2 \lt 0\)
+                    <br>
+                    <br>
+                    se \(\quad \dfrac{1}{6} \lt x \lt 2 \quad\)
+                </li>
+                <br>
+                <li>
+                    \(6x^2 - 13x + 2 = 0\)
+                    <br>
+                    <br>
+                    se \(\quad x =\dfrac{1}{6} \quad\) oppure \(x = 2\)
+                </li>
+            </ul>
         </div>
 
+        <br>
+
+        <button id="hintAAAAAA(22)-button" onclick="showHint(`AAAAAA(22)`)">Svolgimento</button>
+        <div id="hintAAAAAA(22)" class="hint gray" style="display: none;">
+            <b class="gray">Svolgimento</b>
+        </div>
     </div>
 
-    
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Studiare il segno del polinomio
+        \[
+        -x^2 + 5
+        \]
+        al variare del valore della \(x\).
+        <br>
+        <br>
+        <button id="hintAAAAAA(31)-button" onclick="showHint(`AAAAAA(31)`)">Soluzione</button>
+        <div id="hintAAAAAA(31)" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    \(-x^2 + 5 \gt 0\)
+                    <br>
+                    <br>
+                    se \(\quad -\sqrt{5} \lt x \lt \sqrt{5} \quad\)
+                </li>
+                <br>
+                <li>
+                    \(-x^2 + 5 \lt 0\)
+                    <br>
+                    <br>
+                    se \(\quad x \lt -\sqrt{5} \quad\) oppure \(x \gt \sqrt{5}\)
+                </li>
+                <br>
+                <li>
+                    \(-x^2 + 5 = 0\)
+                    <br>
+                    <br>
+                    se \(\quad x = -\sqrt{5} \quad\) oppure \(x = \sqrt{5}\)
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <button id="hintAAAAAA(32)-button" onclick="showHint(`AAAAAA(32)`)">Svolgimento</button>
+        <div id="hintAAAAAA(32)" class="hint gray" style="display: none;">
+            <b class="gray">Svolgimento</b>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Studiare il segno del polinomio
+        \[
+        8x^2 + x + 1
+        \]
+        al variare del valore della \(x\).
+        <br>
+        <br>
+        <button id="hintAAAAAA(41)-button" onclick="showHint(`AAAAAA(41)`)">Soluzione</button>
+        <div id="hintAAAAAA(41)" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            Si ha \(8x^2 + x + 1 \gt 0\) per ogni valore \(x \in \mathbb{R}\).
+        </div>
+
+        <br>
+
+        <button id="hintAAAAAA(42)-button" onclick="showHint(`AAAAAA(42)`)">Svolgimento</button>
+        <div id="hintAAAAAA(42)" class="hint gray" style="display: none;">
+            <b class="gray">Svolgimento</b>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Studiare il segno del polinomio
+        \[
+        -7x^2 + 4x
+        \]
+        al variare del valore della \(x\).
+        <br>
+        <br>
+        <button id="hintAAAAAA(51)-button" onclick="showHint(`AAAAAA(51)`)">Soluzione</button>
+        <div id="hintAAAAAA(51)" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    \(-7x^2 + 4x \gt 0\)
+                    <br>
+                    <br>
+                    se \(\quad 0 \lt x \lt \dfrac{4}{7} \quad\)
+                </li>
+                <br>
+                <li>
+                    \(-7x^2 + 4x \lt 0\)
+                    <br>
+                    <br>
+                    se \(\quad x \lt 0 \quad\) oppure \(x \gt \dfrac{4}{7}\)
+                </li>
+                <br>
+                <li>
+                    \(-7x^2 + 4x = 0\)
+                    <br>
+                    <br>
+                    se \(\quad x = 0 \quad\) oppure \(x = \dfrac{4}{7}\)
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <button id="hintAAAAAA(52)-button" onclick="showHint(`AAAAAA(52)`)">Svolgimento</button>
+        <div id="hintAAAAAA(52)" class="hint gray" style="display: none;">
+            <b class="gray">Svolgimento</b>
+        </div>
+    </div>
+
     <br>
     <br>
 
