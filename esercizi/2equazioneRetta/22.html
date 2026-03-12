@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="monomialAndPolynomial.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Compiti per casa</title>
+</head>
+
+<body>
+    <h1>Compiti per casa</h1>
+
+    <br>
+
+    <h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Consideriamo gli insiemi di rette
+        \[
+        \begin{align*}
+        &r_k:\quad (k^2 + 3k + 1)x + k^2y - 3 = 0
+        \\\\
+        &s_k:\quad 2x + y + 5 = 0
+        \end{align*}
+        \]
+
+        Stabilire per quale scelta di \(k\) le rette \(r_k\) ed \(s_k\) sono parallele tra
+        di loro.
+
+        <br>
+        <br>
+
+        <button id="hintAAAAAAA(1)-button" onclick="showHint(`AAAAAAA(1)`)">Soluzione</button>
+        <div id="hintAAAAAAA(1)" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            Le rette sono parallele per \(k = \dfrac{3 \pm \sqrt{13}}{2}\)
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Consideriamo il seguente insieme di rette dipendenti da un parametro \(k\):
+        \[
+        r_k:\quad (3k^2 - 10k + 3)x + (2k - 4)y + 7k = 0
+        \]
+        Stabilire per quali scelte di \(k\) si ottengono rette crescenti.
+
+        <br>
+        <br>
+
+        <button id="hintAAAAAAA(2)-button" onclick="showHint(`AAAAAAA(2)`)">Soluzione</button>
+        <div id="hintAAAAAAA(2)" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            Le rette \(r_k\) sono crescenti se
+            \[
+            k \in \left(\dfrac{1}{3}\,,\,\,2\right) \cup \left(3\,,\,\,+\infty\right)
+            \]
+
+            Per arrivare alla soluzione si deve risolvere una <b>disequazione fratta</b>. Se non ricordate
+            come farlo, <a href="https://ludovicoradaelli.github.io/3Cm/esercizi/1fondamenti/12.html">QUI</a> il
+            materiale di ripasso.
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h3 class="green">Esercizio</h3>
+    <br>
+    <div>
+        Consideriamo l'insieme di rette
+        \[
+        (2k - 1)x + (2k + 3)y - k = 0
+        \]
+        Stabilire per quale scelta del valore di \(k\) si ottiene la retta \(r\) passante per il punto
+        \((-3\,,\,\,2)\).
+        Successivamente, trovare il punto \(P\) d'intersezione tra la retta \(r\) e la retta \(s:\quad 3x + 3y - 2 =
+        0\)
+
+        <br>
+
+        <button id="hintAAAAAAA(3)-button" onclick="showHint(`AAAAAAA(3)`)">Soluzione</button>
+        <div id="hintAAAAAAA(3)" class="hint gray" style="display: none;">
+            <b class="gray">Soluzione</b>
+            <br>
+            Per \(k = 3\) la retta \(r\) passante per \((-3\,,\,\,2)\), che ha equazione 
+            \[
+                r:\quad 5x + 9y - 3 = 0
+            \]
+            Il punto \(P\) ha coordinate \(\left(\dfrac{3}{4}\,,\,\,-\dfrac{1}{12}\right)\).
+            <br>
+        </div>
+
+    </div>
+
+
+
+    <script src="../../js/hintAndSlide.js"></script>
+    <script src="script.js"></script>
+
+    <br>
+    <br>
+
+
+</body>
